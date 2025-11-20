@@ -3,13 +3,13 @@ import { motion } from 'framer-motion';
 import { Navigation, Settings2, Map, MapPin } from 'lucide-react';
 import BuildingSelect from './BuildingSelect';
 
-function RouteInput({ startLocation, setStartLocation, endLocation, setEndLocation, onCalculate, isCalculating }) {
+function RouteInput({ startLocation, setStartLocation, endLocation, setEndLocation, onCalculate, isCalculating, activeField, onFieldFocus }) {
   return (
     <motion.div 
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5, delay: 0.2 }}
-      className="glass rounded-3xl p-6 sm:p-8 w-full shadow-2xl shadow-primary-900/10 border border-white/50"
+      className="bg-white/95 backdrop-blur-xl rounded-3xl p-6 sm:p-8 w-full shadow-2xl shadow-neutral-900/20 border border-white/50"
     >
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-xl font-bold text-neutral-800 flex items-center gap-2">
@@ -26,7 +26,8 @@ function RouteInput({ startLocation, setStartLocation, endLocation, setEndLocati
         <BuildingSelect 
           label="Start"
           value={startLocation}
-          onChange={setStartLocation}
+          onFocus={() => onFieldFocus('start')}
+          isActive={activeField === 'start'}
           placeholder="Select starting point..."
           icon={Map}
         />
@@ -35,7 +36,8 @@ function RouteInput({ startLocation, setStartLocation, endLocation, setEndLocati
         <BuildingSelect 
           label="Destination"
           value={endLocation}
-          onChange={setEndLocation}
+          onFocus={() => onFieldFocus('end')}
+          isActive={activeField === 'end'}
           placeholder="Select destination..."
           icon={MapPin}
         />

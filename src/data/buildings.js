@@ -31,10 +31,10 @@ export const buildings = [
   { id: 'morrison', name: 'Morrison Hall', lat: 37.8702, lng: -122.2562, category: 'Arts & Design', popular: false },
   { id: 'bauer_wurster', name: 'Bauer Wurster Hall', lat: 37.8704, lng: -122.2546, category: 'Arts & Design', popular: true },
 
-  // Professional (Business/Law etc)
-  { id: 'haas', name: 'Haas School of Business', lat: 37.8716, lng: -122.2533, category: 'Professional', popular: true },
-  { id: 'chou', name: 'Chou Hall', lat: 37.8720, lng: -122.2539, category: 'Professional', popular: false },
-  { id: 'cheit', name: 'Cheit Hall', lat: 37.8717, lng: -122.2538, category: 'Professional', popular: false },
+  // Business (Business/Law etc)
+  { id: 'haas', name: 'Haas School of Business', lat: 37.8716, lng: -122.2533, category: 'Business', popular: true },
+  { id: 'chou', name: 'Chou Hall', lat: 37.8720, lng: -122.2539, category: 'Business', popular: false },
+  { id: 'cheit', name: 'Cheit Hall', lat: 37.8717, lng: -122.2538, category: 'Business', popular: false },
 
   // Libraries
   { id: 'moffitt', name: 'Moffitt Library', lat: 37.8726, lng: -122.2606, category: 'Libraries', popular: true },

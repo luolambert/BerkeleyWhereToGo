@@ -1,10 +1,12 @@
 import React, { useState, useCallback } from 'react';
 import { useJsApiLoader } from '@react-google-maps/api';
+import { AnimatePresence, motion } from 'framer-motion';
 import Header from './components/Header';
 import MapContainer from './components/MapContainer';
 import RouteInput from './components/RouteInput';
 import TravelTimeDisplay from './components/TravelTimeDisplay';
 import ElevationChart from './components/ElevationChart';
+import BuildingSelectionPanel from './components/BuildingSelectionPanel';
 import { buildings } from './data/buildings';
 
 const LIBRARIES = ['places', 'geometry'];
@@ -22,6 +24,7 @@ function App() {
   const [isCalculating, setIsCalculating] = useState(false);
   const [routePoints, setRoutePoints] = useState(null);
   const [elevationData, setElevationData] = useState(null);
+  const [activeField, setActiveField] = useState(null); // 'start' | 'end' | null
 
   const calculateRoute = useCallback(async () => {
     if (!startLocation || !endLocation || !isLoaded) return;
@@ -96,31 +99,59 @@ function App() {
       </div>
 
       {/* Floating Panel Container */}
-      <div className="absolute inset-0 z-10 pointer-events-none flex flex-col justify-end sm:justify-center sm:items-start p-4 sm:p-8 lg:p-12">
-        <div className="pointer-events-auto w-full max-w-md space-y-4">
-          <Header />
-          <RouteInput 
-            startLocation={startLocation}
-            setStartLocation={setStartLocation}
-            endLocation={endLocation}
-            setEndLocation={setEndLocation}
-            onCalculate={calculateRoute}
-            isCalculating={isCalculating}
-          />
-          
-          {/* Results Area */}
-          <div className="relative min-h-[100px] space-y-4">
-            {travelTimes && (
-              <TravelTimeDisplay 
-                walkingTime={travelTimes.walking}
-                scooterTime={travelTimes.scooter}
-              />
-            )}
-            {elevationData && (
-                <ElevationChart data={elevationData} />
-            )}
-          </div>
+      <div className="absolute inset-0 z-10 pointer-events-none">
+        {/* Left Panel - Route Input */}
+        <div className="absolute left-0 top-0 bottom-0 w-full sm:w-[400px] lg:w-[450px] p-4 sm:p-6 flex flex-col justify-center pointer-events-auto">
+            <div className="w-full space-y-4">
+            <Header />
+            <RouteInput 
+                startLocation={startLocation}
+                setStartLocation={setStartLocation}
+                endLocation={endLocation}
+                setEndLocation={setEndLocation}
+                onCalculate={calculateRoute}
+                isCalculating={isCalculating}
+                activeField={activeField}
+                onFieldFocus={(field) => setActiveField(current => current === field ? null : field)}
+            />
+            
+            {/* Results Area */}
+            <div className="relative min-h-[100px] space-y-4">
+                {travelTimes && (
+                <TravelTimeDisplay 
+                    walkingTime={travelTimes.walking}
+                    scooterTime={travelTimes.scooter}
+                />
+                )}
+                {elevationData && (
+                    <ElevationChart data={elevationData} />
+                )}
+            </div>
+            </div>
         </div>
+
+        {/* Right Panel - Building Selection (Floating) */}
+        <AnimatePresence>
+            {activeField && (
+                <motion.div 
+                    className="absolute left-0 sm:left-[400px] lg:left-[450px] top-4 bottom-4 right-4 z-20 pointer-events-auto"
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -20 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                >
+                    <BuildingSelectionPanel 
+                        selectedValue={activeField === 'start' ? startLocation : endLocation}
+                        onSelect={(buildingName) => {
+                            if (activeField === 'start') setStartLocation(buildingName);
+                            else setEndLocation(buildingName);
+                            setActiveField(null);
+                        }}
+                        onClose={() => setActiveField(null)}
+                    />
+                </motion.div>
+            )}
+        </AnimatePresence>
       </div>
     </div>
   );

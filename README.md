@@ -1,278 +1,459 @@
-# 🚶‍♂️ Berkeley Where-To-Go
+# 🎓 Berkeley Where-To-Go
 
-一个专为加州大学伯克利分校学生设计的智能校园路线规划应用，帮助新生和全体学生轻松规划课间路线，避免因"伯克利时间"不够而迟到。
+<div align="center">
 
-![Berkeley Where-To-Go](https://img.shields.io/badge/Built%20for-UC%20Berkeley-blue) ![React](https://img.shields.io/badge/React-19.2.0-blue) ![Vite](https://img.shields.io/badge/Vite-7.2.2-purple)
+**一个专为加州大学伯克利分校学生设计的智能校园路线规划应用**
 
-## ✨ 核心特性
+_Intelligent Campus Route Planning App for UC Berkeley Students_
 
-### 🗺️ 智能地图导航
-- **Google Maps集成**：基于真实地理数据的路线规划
-- **自定义路线显示**：使用坡度颜色编码的路线可视化
-- **自定义标记**：优雅的起点/终点标识系统
+[![React](https://img.shields.io/badge/React-19.2.0-61DAFB?logo=react)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-7.2.2-646CFF?logo=vite)](https://vitejs.dev/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.1.17-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
+[![Google Maps](https://img.shields.io/badge/Google%20Maps-API-4285F4?logo=google-maps)](https://developers.google.com/maps)
 
-### 📊 海拔分析工具
-- **海拔剖面图**：实时显示路线的地形变化
-- **坡度可视化**：路线颜色根据陡峭程度变化
-  - 🔵 **蓝色-浅**：平缓路线 (< 3%)
-  - 🔵 **蓝色-中**：中等坡度 (3-8%)
-  - 🔵 **蓝色-深**：陡峭路段 (> 8%)
-- **爬升统计**：显示总爬升高度和海拔范围
+帮助新生和全体学生轻松规划课间路线，准时到达教室！
 
-### 🏢 智能建筑选择
-- **自动完成搜索**：支持20个热门校园建筑
-- **直观选择界面**：带有图标的建筑选择器
-- **精确坐标定位**：基于真实GPS坐标
+_Helping freshmen and all students easily plan their inter-class routes and arrive on time!_
 
-### ⏱️ 精确时间计算
-- **多种交通方式**：
-  - 🚶‍♂️ **步行时间**：考虑实际地形和时间
-  - 🛴 **滑板车/自行车**：更快的替代方案
-- **"伯克利时间"提醒**：超过10分钟的步行自动警告
-- **实时路线计算**：基于Google Maps Directions API
-
-### 🎨 优雅的UI设计
-- **伯克利品牌色彩**：官方蓝金配色方案
-- **流畅动画效果**：使用Framer Motion实现
-- **响应式设计**：完美适配桌面和移动设备
-- **毛玻璃效果**：现代化的界面设计
-
-## 🚀 快速开始
-
-### 环境要求
-- Node.js (推荐 18.x 或更高版本)
-- Google Maps API 密钥
-
-### 安装步骤
-
-1. **克隆项目**
-```bash
-git clone <项目地址>
-cd berkeley-where-to-go
-```
-
-2. **安装依赖**
-```bash
-npm install
-```
-
-3. **配置API密钥**
-```bash
-# 编辑 .env 文件
-VITE_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
-```
-
-4. **启动开发服务器**
-```bash
-npm run dev
-```
-
-5. **构建生产版本**
-```bash
-npm run build
-```
-
-### 📋 Google Maps API 配置
-
-**必需的API服务：**
-- Maps JavaScript API
-- Places API
-- Directions API
-- Elevation API
-
-**配置步骤：**
-1. 访问 [Google Cloud Console](https://console.cloud.google.com/)
-2. 创建新项目或选择现有项目
-3. 启用上述API服务
-4. 创建API密钥
-5. 在 `.env` 文件中配置密钥
-
-## 📱 使用指南
-
-### 基本操作
-1. **选择起点**：从下拉菜单中选择起始建筑
-2. **选择终点**：选择目的地建筑
-3. **获取路线**：点击"Get Directions"按钮
-4. **分析结果**：
-   - 查看地图上的彩色路线
-   - 阅读时间估算
-   - 分析海拔剖面图
-   - 查看路线坡度信息
-
-### 高级功能
-- **海拔分析**：查看底部剖面图了解地形
-- **坡度识别**：根据路线颜色判断陡峭程度
-- **时间规划**：根据时间估算合理安排课表
-
-## 🏗️ 项目架构
-
-```
-src/
-├── components/           # React组件
-│   ├── Header.jsx       # 页面头部
-│   ├── MapContainer.jsx # 地图容器 & 路线渲染
-│   ├── RouteInput.jsx   # 路线输入表单
-│   ├── TravelTimeDisplay.jsx # 时间显示卡片
-│   ├── ElevationChart.jsx    # 海拔剖面图
-│   └── BuildingSelect.jsx    # 建筑选择器
-├── data/
-│   └── buildings.js     # 校园建筑数据库
-├── App.jsx              # 主应用组件
-└── main.jsx             # 应用入口
-```
-
-## 🛠️ 技术栈
-
-### 前端框架
-- **React 19.2.0** - 现代化前端框架
-- **Vite 7.2.2** - 快速构建工具
-- **TailwindCSS 4.1.17** - 原子化CSS框架
-
-### UI组件 & 动画
-- **Framer Motion** - 高性能动画库
-- **Lucide React** - 现代图标库
-- **Recharts** - 数据可视化图表
-
-### 地图服务
-- **@react-google-maps/api** - Google Maps React集成
-- **Google Maps JavaScript API** - 地图显示和地理服务
-- **Google Directions API** - 路线规划
-- **Google Elevation API** - 海拔数据
-
-### 开发工具
-- **ESLint** - 代码质量检查
-- **PostCSS** - CSS处理
-- **Autoprefixer** - CSS前缀自动添加
-
-## 📊 支持的校园建筑
-
-应用内置了20个最常用的伯克利校园建筑：
-
-### 🏛️ 学术建筑
-- Dwinelle Hall
-- Wheeler Hall  
-- Evans Hall
-- Soda Hall
-- Cory Hall
-
-### 📚 图书馆
-- Moffitt Library
-- Doe Library
-- Kresge Engineering Library
-
-### 🏃 运动 & 生活
-- Recreational Sports Facility (RSF)
-- Martin Luther King Jr. Student Union
-- Sproul Hall
-
-### 🏢 学院建筑
-- Haas School of Business
-- Wurster Hall
-- Stanley Hall
-- Hearst Memorial Mining Building
-
-*更多建筑数据请查看 `src/data/buildings.js`*
-
-## 🎯 使用场景
-
-### 新生入学
-- 快速熟悉校园布局
-- 规划课间转换路线
-- 避免迟到和迷路
-
-### 日常学习
-- 优化课程表安排
-- 选择最优教学楼
-- 评估交通方式
-
-### 特殊活动
-- 参加校园活动
-- 访问不同学院
-- 访客导览
-
-## 🌍 部署选项
-
-### 静态托管平台
-- **Vercel** (推荐) - 零配置部署
-- **Netlify** - 拖拽式部署
-- **GitHub Pages** - 免费托管
-- **AWS S3 + CloudFront** - 企业级部署
-
-### 自定义部署
-```bash
-# 构建项目
-npm run build
-
-# 部署 dist/ 目录到任何静态服务器
-```
-
-## 📈 项目状态
-
-### ✅ 已完成功能
-- [x] Google Maps 集成
-- [x] 真实路线规划
-- [x] 海拔数据分析
-- [x] 坡度颜色编码
-- [x] 自定义标记系统
-- [x] 海拔剖面图表
-- [x] 响应式设计
-- [x] 动画效果
-- [x] 伯克利品牌设计
-
-### 🚀 性能指标
-- **首屏加载**：< 3秒
-- **路线计算**：< 2秒
-- **海拔数据**：实时获取
-- **移动端适配**：完美支持
-
-## 📝 更新日志
-
-### v1.0.0 (最新)
-- ✨ 集成Google Elevation API
-- ✨ 添加海拔剖面图
-- ✨ 实现坡度颜色编码路线
-- ✨ 自定义标记系统
-- ✨ 升级到React 19
-- ✨ 集成Framer Motion动画
-- ✨ 添加Recharts图表
-
-### v0.1.0
-- 基础路线规划功能
-- 简单的地图显示
-- 时间计算
-
-## 🤝 贡献指南
-
-欢迎提交Issue和Pull Request！
-
-### 开发环境设置
-```bash
-# 克隆项目
-git clone <项目地址>
-cd berkeley-where-to-go
-
-# 安装依赖
-npm install
-
-# 启动开发服务器
-npm run dev
-
-# 运行代码检查
-npm run lint
-```
-
-## 📄 许可证
-
-本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
-
-## 🙏 致谢
-
-- UC Berkeley 官方提供的校园数据支持
-- Google Maps API 提供的地理数据服务
-- React 社区的优秀工具和库
+</div>
 
 ---
 
+## 📸 预览 Preview
+
+<!-- 在此处添加应用截图 -->
+<!-- Add application screenshots here -->
+
+---
+
+## ✨ 核心特性 Core Features
+
+### 🗺️ 智能地图导航 Smart Map Navigation
+
+- **Google Maps 深度集成** - 基于真实地理数据的精确路线规划
+  - _Deep Google Maps Integration - Accurate route planning based on real geographic data_
+- **坡度可视化路线** - 路线颜色根据陡峭程度动态变化
+  - 🔵 **浅蓝**：平缓路线 (< 3% 坡度)
+  - 🔵 **中蓝**：中等坡度 (3-8% 坡度)
+  - 🔵 **深蓝**：陡峭路段 (> 8% 坡度)
+  - _Slope-Colored Routes - Route colors change dynamically based on steepness_
+- **智能路线标记** - 优雅的起点/终点标识，显示完整建筑名称
+  - _Smart Route Markers - Elegant start/end markers showing full building names_
+- **动态标记定位** - 标记自动调整位置，避免遮挡路线
+  - _Dynamic Marker Positioning - Markers auto-adjust to avoid obscuring routes_
+
+### 📊 海拔分析工具 Elevation Analysis
+
+- **交互式海拔剖面图** - 实时显示路线的地形变化
+  - _Interactive Elevation Profile - Real-time display of route terrain changes_
+- **爬升数据统计** - 显示总爬升高度和海拔范围
+  - _Climb Statistics - Shows total elevation gain and range_
+- **坡度图例** - 地图上清晰的坡度等级说明
+  - _Slope Legend - Clear slope grade indicators on map_
+
+### 🏢 智能建筑选择器 Smart Building Selector
+
+- **全屏浮动面板** - 现代化的建筑选择界面，浮动在地图上方
+  - _Full-Screen Floating Panel - Modern building selection interface floating over map_
+- **实时搜索** - 支持建筑名称即时搜索过滤
+  - _Real-Time Search - Instant building name search filtering_
+- **分类浏览** - 8 大类别快速定位：
+  - 📚 **全部** All Buildings
+  - ⭐ **热门** Popular Buildings
+  - 🧪 **STEM** Science & Engineering
+  - 🎓 **人文** Humanities & Social Sciences
+  - 💼 **商科** Business School
+  - 🎨 **艺术** Arts & Design
+  - 📖 **图书馆** Libraries
+  - 👥 **校园生活** Campus Life
+- **网格布局展示** - 所有建筑一目了然，支持 PC 和移动端
+  - _Grid Layout Display - All buildings at a glance, PC and mobile friendly_
+- **智能交互** - 支持 ESC 键关闭、点击切换等便捷操作
+  - _Smart Interactions - ESC to close, click to toggle, and more_
+
+### 🏛️ 建筑数据库 Building Database
+
+覆盖**38 个校园重点建筑**，包括：
+
+- **三大教学楼**：Dwinelle, Wheeler, Pimentel
+- **工程学院**：Soda, Cory, Etcheverry, Jacobs
+- **科学楼**：Evans, LeConte, VLSB, Stanley
+- **商学院**：Haas, Chou, Cheit
+- **图书馆**：Moffitt, Doe, Kresge
+- **校园生活**：RSF, MLK Student Union, Sproul
+- **更多**：Wurster, Hertz, Morgan 等
+
+_Covers **38 key campus buildings**, including major lecture halls, engineering buildings, science complexes, libraries, and campus life facilities_
+
+### ⏱️ 精确时间计算 Precise Time Calculation
+
+- **多种交通方式**：
+  - 🚶‍♂️ **步行时间** - 基于真实路线和地形
+  - 🛴 **滑板车/自行车** - 快速出行选项（约为步行时间的 1/4）
+  - _Multiple Transportation Modes - Walking and scooter/bike options_
+- **"伯克利时间"智能提醒** - 超过 10 分钟自动警告
+  - _"Berkeley Time" Smart Alert - Automatic warning for routes over 10 minutes_
+- **实时 API 计算** - 基于 Google Maps Directions API 的准确估算
+  - _Real-Time API Calculation - Accurate estimates via Google Maps API_
+
+### 🎨 现代化 UI 设计 Modern UI Design
+
+- **毛玻璃效果** - 优雅的模糊背景
+  - _Glassmorphism Effects - Elegant blurred backgrounds_
+- **流畅动画** - 基于 Framer Motion 的丝滑交互
+  - _Smooth Animations - Silky interactions powered by Framer Motion_
+- **响应式布局** - 完美适配桌面、平板和手机
+  - _Responsive Design - Perfect for desktop, tablet, and mobile_
+- **Berkeley 品牌元素** - 集成伯克利官方标志
+  - _Berkeley Branding - Integrated official UC Berkeley seal_
+- **浮动面板设计** - 所有 UI 元素带阴影效果，层次分明
+  - _Floating Panel Design - All UI elements with shadow effects, clear hierarchy_
+
+---
+
+## 🚀 快速开始 Quick Start
+
+### 前置要求 Prerequisites
+
+- **Node.js** 18.x 或更高版本 _(18.x or higher)_
+- **Google Maps API Key** 需启用以下服务 _(with the following APIs enabled)_:
+  - Maps JavaScript API
+  - Places API
+  - Directions API
+  - Elevation API
+
+### 安装步骤 Installation
+
+```bash
+# 1. 克隆项目 Clone the repository
+git clone <your-repo-url>
+cd berkeley-where-to-go
+
+# 2. 安装依赖 Install dependencies
+npm install
+
+# 3. 配置环境变量 Configure environment variables
+# 创建 .env 文件并添加你的 Google Maps API Key
+# Create .env file and add your Google Maps API Key
+echo "VITE_GOOGLE_MAPS_API_KEY=your_api_key_here" > .env
+
+# 4. 启动开发服务器 Start development server
+npm run dev
+
+# 5. 在浏览器中打开 Open in browser
+# 通常是 http://localhost:5173
+```
+
+### 生产构建 Production Build
+
+```bash
+# 构建生产版本 Build for production
+npm run build
+
+# 预览生产构建 Preview production build
+npm run preview
+```
+
+---
+
+## 📖 使用指南 Usage Guide
+
+### 基本操作 Basic Operations
+
+1. **选择起点**
+
+   - 点击 "Start" 输入框
+   - 浮动选择面板将出现在右侧
+   - 使用搜索或分类浏览找到建筑
+   - 点击选择，面板自动关闭
+
+   _Select Start Location - Click input → Use floating panel → Search or browse → Select building_
+
+2. **选择终点**
+
+   - 点击 "Destination" 输入框
+   - 同样的方式选择目的地建筑
+
+   _Select Destination - Same process as start location_
+
+3. **获取路线**
+
+   - 点击 "Get Directions" 按钮
+   - 等待路线计算（通常<2 秒）
+
+   _Get Route - Click button and wait for calculation_
+
+4. **查看结果**
+
+   - 🗺️ 地图上显示坡度编码路线
+   - ⏱️ 左侧显示步行和滑板车时间
+   - 📊 底部显示海拔剖面图
+   - 🏷️ 查看路线坡度图例
+
+   _View Results - See route on map, travel times on left, elevation profile at bottom_
+
+### 高级功能 Advanced Features
+
+- **键盘快捷键**：按 `ESC` 关闭建筑选择面板
+  - _Keyboard Shortcuts: Press ESC to close building selection panel_
+- **快速切换**：点击已激活的输入框可关闭选择面板
+  - _Quick Toggle: Click active input to close selection panel_
+- **分类过滤**：使用顶部标签快速筛选建筑类别
+  - _Category Filtering: Use top tabs to quickly filter building categories_
+
+---
+
+## 🏗️ 项目结构 Project Structure
+
+```
+berkeley-where-to-go/
+├── src/
+│   ├── components/                    # React 组件 Components
+│   │   ├── Header.jsx                # 页面标题 Page header
+│   │   ├── RouteInput.jsx            # 路线输入表单 Route input form
+│   │   ├── BuildingSelect.jsx        # 建筑输入组件 Building input component
+│   │   ├── BuildingSelectionPanel.jsx # 建筑选择面板 Building selection panel
+│   │   ├── MapContainer.jsx          # 地图容器和路线渲染 Map container & route rendering
+│   │   ├── TravelTimeDisplay.jsx     # 时间显示卡片 Travel time display
+│   │   └── ElevationChart.jsx        # 海拔剖面图 Elevation profile chart
+│   ├── data/
+│   │   └── buildings.js              # 38个校园建筑数据 38 campus buildings data
+│   ├── App.jsx                       # 主应用组件 Main app component
+│   ├── main.jsx                      # 应用入口 App entry point
+│   └── index.css                     # 全局样式 Global styles
+├── public/                           # 静态资源 Static assets
+├── .env                              # 环境变量 Environment variables
+├── package.json                      # 项目依赖 Project dependencies
+├── vite.config.js                   # Vite 配置 Vite configuration
+├── tailwind.config.js               # Tailwind 配置 Tailwind configuration
+└── README.md                        # 项目文档 Project documentation
+```
+
+---
+
+## 🛠️ 技术栈 Tech Stack
+
+### 核心框架 Core Frameworks
+
+- **React 19.2.0** - 最新的 React 框架，支持并发特性
+- **Vite 7.2.2** - 极速开发构建工具
+- **TailwindCSS 4.1.17** - 现代化原子 CSS 框架
+
+### UI & 动画 UI & Animations
+
+- **Framer Motion 12.23.24** - 高性能动画库
+- **Lucide React 0.554.0** - 精美图标库
+- **Recharts 3.4.1** - React 数据可视化图表
+
+### 地图服务 Map Services
+
+- **@react-google-maps/api 2.20.7** - Google Maps React 集成
+- **Google Maps JavaScript API** - 地图显示
+- **Google Directions API** - 路线规划
+- **Google Elevation API** - 海拔数据获取
+
+### 开发工具 Development Tools
+
+- **ESLint 9.39.1** - 代码质量保证
+- **PostCSS + Autoprefixer** - CSS 处理和兼容性
+
+---
+
+## 🎯 适用场景 Use Cases
+
+### 👶 新生入学 Freshmen Orientation
+
+- 快速熟悉校园地理位置
+- 评估宿舍到教室的距离
+- 提前规划开学第一周的路线
+
+### 📅 课程规划 Course Planning
+
+- 选课时评估课间转换时间
+- 避免连续课程间距离太远
+- 优化每日课程安排
+
+### 🏃 日常通勤 Daily Commute
+
+- 选择最快/最平缓的路线
+- 决定步行还是骑车/滑板车
+- 了解路线的体力消耗
+
+### 🎉 活动参与 Event Participation
+
+- 快速找到活动地点
+- 计划从宿舍/停车场的路线
+- 为访客提供导航指引
+
+---
+
+## 🌍 部署方案 Deployment Options
+
+### 推荐平台 Recommended Platforms
+
+**Vercel** (推荐 Recommended) ⭐
+
+```bash
+# 一键部署 One-click deployment
+npm install -g vercel
+vercel
+```
+
+**Netlify**
+
+```bash
+# 拖拽 dist/ 文件夹即可
+# Simply drag and drop dist/ folder
+npm run build
+```
+
+**GitHub Pages**
+
+```bash
+# 构建并推送到 gh-pages 分支
+# Build and push to gh-pages branch
+npm run build
+# 将 dist/ 内容部署到 GitHub Pages
+```
+
+### 环境变量配置 Environment Variables
+
+生产部署时，确保在平台上配置 `VITE_GOOGLE_MAPS_API_KEY`
+
+_When deploying to production, make sure to configure `VITE_GOOGLE_MAPS_API_KEY` in your platform settings_
+
+---
+
+## 📊 性能指标 Performance Metrics
+
+| 指标 Metric                       | 数值 Value            |
+| --------------------------------- | --------------------- |
+| 首屏加载时间 Initial Load         | < 3s                  |
+| 路线计算时间 Route Calculation    | < 2s                  |
+| 海拔数据获取 Elevation Data Fetch | < 1s                  |
+| 移动端适配 Mobile Compatibility   | ✅ 完美 Perfect       |
+| 响应式布局 Responsive Layout      | ✅ 全设备 All Devices |
+| PWA 支持 PWA Support              | 🔄 可扩展 Extensible  |
+
+---
+
+## 🗺️ 路线图 Roadmap
+
+### ✅ 已完成 Completed
+
+- [x] Google Maps 核心集成
+- [x] 38 个建筑数据库
+- [x] 智能建筑选择面板（分类、搜索）
+- [x] 路线规划和时间计算
+- [x] 海拔数据和坡度可视化
+- [x] 响应式 UI 设计
+- [x] 动画和交互效果
+- [x] 自定义地图标记
+
+### 🚧 规划中 Planned
+
+- [ ] 更多校园建筑数据
+- [ ] 保存常用路线
+- [ ] 多路线比较
+- [ ] 实时天气影响提示
+- [ ] 夜间模式
+- [ ] 多语言支持（英文/中文切换）
+- [ ] PWA 离线支持
+- [ ] 用户评论和建议功能
+
+---
+
+## 🤝 贡献指南 Contributing
+
+欢迎提交 Issue 和 Pull Request！
+
+_Issues and Pull Requests are welcome!_
+
+### 贡献流程 Contribution Workflow
+
+1. **Fork 本仓库** _(Fork this repository)_
+2. **创建特性分支** _(Create feature branch)_
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. **提交更改** _(Commit changes)_
+   ```bash
+   git commit -m 'Add some AmazingFeature'
+   ```
+4. **推送到分支** _(Push to branch)_
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+5. **创建 Pull Request** _(Open Pull Request)_
+
+### 开发规范 Development Guidelines
+
+- 遵循现有代码风格
+- 添加适当的注释
+- 更新相关文档
+- 确保通过 ESLint 检查
+
+---
+
+## 📝 更新日志 Changelog
+
+### v1.1.0 (Current - 2025-11)
+
+- ✨ 全新建筑选择器 UI - 浮动面板设计
+- ✨ 建筑分类系统 - 8 大类别
+- ✨ 实时搜索功能
+- ✨ 网格布局显示所有建筑
+- ✨ ESC 快捷键和智能交互
+- 🐛 修复标记遮挡路线问题
+- 💄 UI 层次优化和阴影效果
+
+### v1.0.0 (2025-11)
+
+- ✨ 集成 Google Elevation API
+- ✨ 海拔剖面图表
+- ✨ 坡度颜色编码路线
+- ✨ 自定义地图标记系统
+- ✨ 升级到 React 19
+- ✨ Framer Motion 动画
+- ✨ Recharts 图表集成
+
+### v0.1.0 (Initial)
+
+- 基础路线规划
+- 简单地图显示
+- 时间计算
+
+---
+
+## 📄 许可证 License
+
+本项目采用 **MIT License** 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情
+
+_This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details_
+
+---
+
+## 🙏 致谢 Acknowledgments
+
+- **UC Berkeley** - 校园数据和灵感来源
+- **Google Maps Platform** - 强大的地图和地理服务
+- **React 社区** - 优秀的开源工具和库
+- **所有贡献者** - 感谢每一位改进本项目的开发者
+
+---
+
+<div align="center">
+
 **Made with ❤️ for UC Berkeley Students**
 
-> 帮助每个伯克利学生都能准时到达目的地，不再为课间转换时间而烦恼！
+**为伯克利学生精心打造**
+
+🐻 _Go Bears!_ 🐻
+
+> "帮助每个伯克利学生都能准时到达目的地，不再为课间转换时间而烦恼！"
+>
+> _"Helping every Berkeley student arrive on time, no more worrying about inter-class transition times!"_
+
+[🐛 报告问题](https://github.com/your-repo/issues) · [✨ 功能建议](https://github.com/your-repo/issues) · [📖 文档](https://github.com/your-repo/wiki)
+
+</div>
