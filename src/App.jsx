@@ -99,9 +99,9 @@ function App() {
       </div>
 
       {/* Floating Panel Container */}
-      <div className="absolute inset-0 z-10 pointer-events-none">
+      <div className="absolute inset-0 z-10 pointer-events-none flex flex-col sm:flex-row p-4 sm:p-6 gap-4 sm:gap-6">
         {/* Left Panel - Route Input */}
-        <div className="absolute left-0 top-0 bottom-0 w-full sm:w-[400px] lg:w-[450px] p-4 sm:p-6 flex flex-col justify-center pointer-events-auto">
+        <div className="relative w-full sm:w-[400px] lg:w-[450px] shrink-0 flex flex-col justify-center pointer-events-auto">
             <div className="w-full space-y-4">
             <Header />
             <RouteInput 
@@ -133,23 +133,25 @@ function App() {
         {/* Right Panel - Building Selection (Floating) */}
         <AnimatePresence>
             {activeField && (
-                <motion.div 
-                    className="absolute left-0 sm:left-[400px] lg:left-[450px] top-4 bottom-4 right-4 z-20 pointer-events-auto"
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -20 }}
-                    transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                >
-                    <BuildingSelectionPanel 
-                        selectedValue={activeField === 'start' ? startLocation : endLocation}
-                        onSelect={(buildingName) => {
-                            if (activeField === 'start') setStartLocation(buildingName);
-                            else setEndLocation(buildingName);
-                            setActiveField(null);
-                        }}
-                        onClose={() => setActiveField(null)}
-                    />
-                </motion.div>
+                <div className="flex-1 relative min-w-0 pointer-events-none">
+                    <motion.div 
+                        className="absolute inset-0 pointer-events-auto z-20 pr-0 lg:pr-20"
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: -20 }}
+                        transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                    >
+                        <BuildingSelectionPanel 
+                            selectedValue={activeField === 'start' ? startLocation : endLocation}
+                            onSelect={(buildingName) => {
+                                if (activeField === 'start') setStartLocation(buildingName);
+                                else setEndLocation(buildingName);
+                                setActiveField(null);
+                            }}
+                            onClose={() => setActiveField(null)}
+                        />
+                    </motion.div>
+                </div>
             )}
         </AnimatePresence>
       </div>
