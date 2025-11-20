@@ -45,31 +45,31 @@
 
 ### 🏢 智能建筑选择器
 
+- **双重选择模式** - 满足不同需求：
+  - 👶 **新生模式**：精选 38 个新生必备建筑
+  - 🎓 **高级模式**：包含 100+ 个校园地点的完整数据库
 - **全屏浮动面板** - 现代化的建筑选择界面，浮动在地图上方
 - **实时搜索** - 支持建筑名称即时搜索过滤
-- **分类浏览** - 8 大类别快速定位：
-  - 📚 **全部** All Buildings
-  - ⭐ **热门** Popular Buildings
-  - 🧪 **STEM** Science & Engineering
-  - 🎓 **人文** Humanities & Social Sciences
-  - 💼 **商科** Business School
-  - 🎨 **艺术** Arts & Design
-  - 📖 **图书馆** Libraries
-  - 👥 **校园生活** Campus Life
+- **分类浏览** - 全面的分类系统：
+  - 📚 **学术**：STEM、人文、艺术、商科、图书馆
+  - 🏠 **校园生活**：宿舍、餐饮、体育、学生活动中心
+  - 🔬 **科研**：LBNL、研究所、实验室
+  - 🏛️ **行政与地标**：Sproul、钟楼等
 - **网格布局展示** - 所有建筑一目了然，支持 PC 和移动端
 - **智能交互** - 支持 ESC 键关闭、点击切换等便捷操作
 
 ### 🏛️ 建筑数据库
 
-覆盖**38 个校园重点建筑**，包括：
+覆盖 **100+ 个校园建筑**（高级模式），包括：
 
-- **三大教学楼**：Dwinelle, Wheeler, Pimentel
-- **工程学院**：Soda, Cory, Etcheverry, Jacobs
-- **科学楼**：Evans, LeConte, VLSB, Stanley
-- **商学院**：Haas, Chou, Cheit
-- **图书馆**：Moffitt, Doe, Kresge
-- **校园生活**：RSF, MLK Student Union, Sproul
-- **更多**：Wurster, Hertz, Morgan 等
+- **主要教学楼**：Dwinelle, Wheeler, Pimentel, VLSB, Evans
+- **工程学院**：Soda, Cory, Etcheverry, Jacobs, Hearst Mining
+- **专业学院**：Haas, Berkeley Law, Optometry
+- **图书馆**：Moffitt, Doe, Kresge, East Asian, Bancroft
+- **学生宿舍**：Units 1-3, Blackwell, Foothill, Clark Kerr, I-House
+- **体育设施**：Memorial Stadium, RSF, Haas Pavilion
+- **科研中心**：LBNL, Space Sciences Lab
+- **校园地标**：Sather Gate, The Campanile
 
 ### ⏱️ 精确时间计算
 
@@ -344,7 +344,14 @@ npm run build
 
 ## 📝 更新日志
 
-### v1.1.0 (Current - 2025-11)
+### v1.2.0 (Current - 2025-11)
+
+- ✨ **高级模式** - 包含 100+ 建筑的完整校园数据库
+- ✨ **双重选择系统** - 自由切换新生/高级视图
+- ✨ **全新分类** - 新增宿舍、体育、科研等类别
+- ✨ **品牌升级** - 全新 Logo 和视觉优化
+
+### v1.1.0 (2025-11)
 
 - ✨ 全新建筑选择器 UI - 浮动面板设计
 - ✨ 建筑分类系统 - 8 大类别

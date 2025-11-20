@@ -45,31 +45,31 @@ Helping freshmen and all students easily plan their inter-class routes and arriv
 
 ### 🏢 Smart Building Selector
 
+- **Dual Selection Modes** - Tailored for different needs:
+  - 👶 **Freshman Mode**: Curated list of 38 essential buildings for new students
+  - 🎓 **Advanced Mode**: Complete database of over 100 campus locations
 - **Full-Screen Floating Panel** - Modern building selection interface floating over map
 - **Real-Time Search** - Instant building name search filtering
-- **Category Browsing** - 8 categories for quick access:
-  - 📚 **All Buildings**
-  - ⭐ **Popular**
-  - 🧪 **STEM** (Science & Engineering)
-  - 🎓 **Humanities** (Humanities & Social Sciences)
-  - 💼 **Business** (Business School)
-  - 🎨 **Arts** (Arts & Design)
-  - 📖 **Libraries**
-  - 👥 **Campus Life**
+- **Category Browsing** - Comprehensive categorization:
+  - 📚 **Academic**: STEM, Humanities, Arts, Business, Libraries
+  - 🏠 **Campus Life**: Housing, Dining, Athletics, Student Centers
+  - 🔬 **Research**: LBNL, Institutes, Labs
+  - 🏛️ **Admin & Landmarks**: Sproul, Campanile, etc.
 - **Grid Layout Display** - All buildings at a glance, PC and mobile friendly
 - **Smart Interactions** - Support ESC to close, click to toggle, and more
 
 ### 🏛️ Building Database
 
-Covers **38 key campus buildings**, including:
+Covers **Over 100 campus buildings** (Advanced Mode), including:
 
-- **Major Lecture Halls**: Dwinelle, Wheeler, Pimentel
-- **Engineering**: Soda, Cory, Etcheverry, Jacobs
-- **Sciences**: Evans, LeConte, VLSB, Stanley
-- **Business School**: Haas, Chou, Cheit
-- **Libraries**: Moffitt, Doe, Kresge
-- **Campus Life**: RSF, MLK Student Union, Sproul
-- **More**: Wurster, Hertz, Morgan, etc.
+- **Academic Halls**: Dwinelle, Wheeler, Pimentel, VLSB, Evans
+- **Engineering**: Soda, Cory, Etcheverry, Jacobs, Hearst Mining
+- **Professional Schools**: Haas, Berkeley Law, Optometry
+- **Libraries**: Moffitt, Doe, Kresge, East Asian, Bancroft
+- **Housing**: Units 1-3, Blackwell, Foothill, Clark Kerr, I-House
+- **Athletics**: Memorial Stadium, RSF, Haas Pavilion
+- **Research**: LBNL, Space Sciences Lab
+- **Landmarks**: Sather Gate, The Campanile
 
 ### ⏱️ Precise Time Calculation
 
@@ -344,7 +344,14 @@ Issues and Pull Requests are welcome!
 
 ## 📝 Changelog
 
-### v1.1.0 (Current - 2025-11)
+### v1.2.0 (Current - 2025-11)
+
+- ✨ **Advanced Mode** - Complete campus database with over 100 buildings
+- ✨ **Dual Selection System** - Switch between Freshman and Advanced views
+- ✨ **New Categories** - Added Housing, Athletics, Research, and more
+- ✨ **Brand Identity** - New logo and visual refinements
+
+### v1.1.0 (2025-11)
 
 - ✨ New Building Selector UI - Floating Panel Design
 - ✨ Building Category System - 8 Categories
