@@ -109,12 +109,12 @@ const BuildingSelectionPanel = ({ onSelect, onClose, selectedValue }) => {
       {/* Grid Content */}
       <div className="flex-1 overflow-y-auto p-6 bg-neutral-50/50">
         {filteredBuildings.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-3">
             {filteredBuildings.map((b) => (
               <button
                 key={b.id}
                 onClick={() => onSelect(b.name)}
-                className={`text-left p-4 rounded-2xl border transition-all group relative overflow-hidden
+                className={`text-left p-3 rounded-2xl border transition-all group relative overflow-hidden
                                 ${
                                   selectedValue === b.name
                                     ? "bg-primary-50 border-primary-500 ring-1 ring-primary-500"
@@ -124,21 +124,21 @@ const BuildingSelectionPanel = ({ onSelect, onClose, selectedValue }) => {
               >
                 <div className="flex items-start justify-between mb-2">
                   <div
-                    className={`p-2 rounded-xl ${
+                    className={`p-1.5 rounded-xl ${
                       selectedValue === b.name
                         ? "bg-primary-100 text-primary-600"
                         : "bg-neutral-100 text-neutral-500 group-hover:bg-primary-50 group-hover:text-primary-600"
                     } transition-colors`}
                   >
-                    <Building2 size={20} />
+                    <Building2 size={18} />
                   </div>
                   {b.popular && (
-                    <span className="bg-amber-100 text-amber-700 text-[10px] font-bold px-2 py-1 rounded-full flex items-center gap-1">
+                    <span className="bg-amber-100 text-amber-700 text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
                       <Users size={10} /> Popular
                     </span>
                   )}
                 </div>
-                <div className="font-bold text-neutral-800 group-hover:text-primary-700 transition-colors">
+                <div className="font-bold text-neutral-800 group-hover:text-primary-700 transition-colors text-sm leading-tight break-words">
                   {b.name}
                 </div>
                 <div className="text-xs text-neutral-500 mt-1 font-medium">
