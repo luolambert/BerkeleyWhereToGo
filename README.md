@@ -20,7 +20,8 @@ Helping freshmen and all students easily plan their inter-class routes and arriv
 ## 📸 Preview
 
 ![FrontPage](src/assets/FrontPage.jpg)
-![BuildingSelectPanel](src/assets/BuildingSelectPanel.jpg)
+![BuildingSelectPanel_Freshman](src/assets/BuildingSelectPanel_Freshman.jpg)
+![BuildingSelectPanel_Advanced](src/assets/BuildingSelectPanel_Advanced.jpg)
 ![RouteDisplay](src/assets/RouteDisplay.jpg)
 
 ---
