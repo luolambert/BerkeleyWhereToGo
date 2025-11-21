@@ -368,7 +368,7 @@ const MapContainer = ({ isLoaded, routePoints, onElevationLoaded }) => {
 
 
 
-      {directions && (
+      {directions && routePoints && (
         <>
             {/* Custom Start Marker */}
             <CustomMarker 

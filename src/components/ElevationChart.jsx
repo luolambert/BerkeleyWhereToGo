@@ -1,4 +1,4 @@
-import React from 'react';
+import { motion } from 'framer-motion';
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
 const ElevationChart = ({ data }) => {
@@ -30,7 +30,13 @@ const ElevationChart = ({ data }) => {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-4 w-full">
+    <motion.div 
+      initial={{ opacity: 0, y: 20, height: 0 }}
+      animate={{ opacity: 1, y: 0, height: 'auto' }}
+      exit={{ opacity: 0, y: 20, height: 0 }}
+      transition={{ duration: 0.2, ease: "easeInOut" }}
+      className="bg-white rounded-xl shadow-sm border border-gray-100 p-4 w-full overflow-hidden"
+    >
       <div className="flex justify-between items-end mb-2">
         <h3 className="text-sm font-bold text-gray-800">Elevation Profile</h3>
         <div className="text-xs text-gray-500 flex gap-3">
@@ -79,7 +85,7 @@ const ElevationChart = ({ data }) => {
           </AreaChart>
         </ResponsiveContainer>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -4,18 +4,34 @@ import { Footprints, Bike } from 'lucide-react';
 
 function TravelTimeDisplay({ walkingTime, scooterTime }) {
   const container = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 0, height: 0 },
     show: {
       opacity: 1,
+      height: 'auto',
       transition: {
         staggerChildren: 0.1
+      }
+    },
+    exit: {
+      opacity: 0,
+      height: 0,
+      transition: {
+        duration: 0.2,
+        staggerChildren: 0.05,
+        staggerDirection: -1,
+        when: "afterChildren"
       }
     }
   };
 
   const item = {
     hidden: { y: 20, opacity: 0 },
-    show: { y: 0, opacity: 1 }
+    show: { y: 0, opacity: 1 },
+    exit: { 
+      y: 20, 
+      opacity: 0,
+      transition: { duration: 0.2 } 
+    }
   };
 
   return (
@@ -23,7 +39,8 @@ function TravelTimeDisplay({ walkingTime, scooterTime }) {
       variants={container}
       initial="hidden"
       animate="show"
-      className="grid grid-cols-2 gap-4 mt-4"
+      exit="exit"
+      className="grid grid-cols-2 gap-4 mt-4 overflow-hidden"
     >
       {/* Walking Card */}
       <motion.div 

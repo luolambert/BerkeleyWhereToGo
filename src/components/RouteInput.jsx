@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Navigation, Settings2, Map, MapPin } from 'lucide-react';
+import { Navigation, Map, MapPin, RefreshCw } from 'lucide-react';
 import BuildingSelect from './BuildingSelect';
 
-function RouteInput({ startLocation, setStartLocation, endLocation, setEndLocation, onCalculate, isCalculating, activeField, onFieldFocus }) {
+function RouteInput({ startLocation, setStartLocation, endLocation, setEndLocation, onCalculate, isCalculating, activeField, onFieldFocus, onReset }) {
   return (
     <motion.div 
       initial={{ opacity: 0, x: -20 }}
@@ -16,9 +16,15 @@ function RouteInput({ startLocation, setStartLocation, endLocation, setEndLocati
           <Navigation className="text-primary-600" size={20} />
           Plan Your Route
         </h2>
-        <button className="p-2 rounded-full hover:bg-neutral-100 text-neutral-400 hover:text-primary-600 transition-colors">
-          <Settings2 size={18} />
-        </button>
+        <motion.button 
+          whileTap={{ rotate: 180 }}
+          transition={{ duration: 0.4 }}
+          onClick={onReset}
+          className="p-2 rounded-full hover:bg-neutral-100 text-neutral-400 hover:text-primary-600 transition-colors"
+          title="Clear selection"
+        >
+          <RefreshCw size={18} />
+        </motion.button>
       </div>
 
       <div className="space-y-5">
