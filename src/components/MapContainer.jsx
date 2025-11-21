@@ -8,7 +8,7 @@ const containerStyle = {
 
 const center = {
   lat: 37.8715, // Berkeley coordinates
-  lng: -122.2600
+  lng: -122.2620 // Shifted west to place the campus on the right side (avoiding sidebar)
 };
 
 const options = {
@@ -244,12 +244,18 @@ const MapContainer = ({ isLoaded, routePoints, onElevationLoaded }) => {
         setError(null);
         setColoredSegments([]);
         if (onElevationLoaded) onElevationLoaded(null);
+        
+        // Reset map view
+        if (map) {
+            map.panTo(center);
+            map.setZoom(16);
+        }
     }
 
     return () => {
       isCancelled = true;
     };
-  }, [isLoaded, routePoints, onElevationLoaded]);
+  }, [isLoaded, routePoints, onElevationLoaded, map]);
 
   React.useEffect(() => {
     if (map && directions && directions.routes[0].overview_path) {
