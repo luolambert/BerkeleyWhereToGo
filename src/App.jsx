@@ -90,15 +90,22 @@ function App() {
 
   return (
     <div className="relative w-full h-screen overflow-hidden bg-neutral-50">
-      <a
+      <motion.a
         href="https://github.com/luolambert/BerkeleyWhereToGo"
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute bottom-[20px] right-[60px] z-50 w-10 h-10 bg-white rounded-full shadow-xl border border-neutral-200 flex items-center justify-center hover:scale-110 transition-all duration-300"
+        className="absolute bottom-[20px] z-[200] w-10 h-10 bg-white rounded-full shadow-xl border border-neutral-200 flex items-center justify-center"
         title="View on GitHub"
+        initial={{ opacity: 0, right: '60px' }}
+        animate={{ 
+          opacity: 1, 
+          right: currentView === 'navigation' ? '60px' : '20px' 
+        }}
+        whileHover={{ scale: 1.1 }}
+        transition={{ duration: 0.3 }}
       >
         <Github className="w-5 h-5 text-neutral-900" />
-      </a>
+      </motion.a>
       <LayoutGroup>
       <AnimatePresence mode="wait">
         {currentView === 'navigation' ? (
@@ -226,7 +233,7 @@ function App() {
                         />
                      </div>
 
-                     <div className="flex-1 w-full overflow-hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+                     <div className="flex-1 w-full overflow-hidden mx-auto px-4 sm:px-6 lg:px-8 pb-8">
                         <BuildingInfo />
                      </div>
                  </div>

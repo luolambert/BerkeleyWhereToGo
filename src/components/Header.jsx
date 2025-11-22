@@ -59,7 +59,7 @@ function Header({ onNavigate, currentView, hasResults, centered = false }) {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`w-full relative z-50 ${centered ? 'flex justify-center items-start pt-12' : ''}`}
+      className={`w-full relative z-50 ${centered ? 'flex justify-center items-start pt-6' : ''}`}
     >
       <div 
         className={`relative ${centered ? 'inline-flex items-center' : ''}`}
