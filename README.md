@@ -11,7 +11,8 @@
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.1.17-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
 [![Google Maps](https://img.shields.io/badge/Google%20Maps-API-4285F4?logo=google-maps)](https://developers.google.com/maps)
 
-"Where To Go" helps you plan routes and arrive on time. "Where To Know" helps you discover the stories behind the buildings.
+"Where To Go" helps you plan routes and arrive on time.
+"Where To Know" helps you discover the stories behind the buildings.
 
 ### [🚀 Try App Online](https://berkeleywheretogo.vercel.app)
 
@@ -37,12 +38,12 @@
 
 ![staticRouteDisplay](src/assets/staticRouteDisplay.jpg)
 
-### 🚶 Dynamic Navigation Demo
+### 🚶 Dynamic Navigation
 
 ![dynamicRouteDisplay1](src/assets/dynamicRouteDisplay1.gif)
 ![dynamicRouteDisplay2](src/assets/dynamicRouteDisplay2.gif)
 
-### 🔄 Mode Switching Demo
+### 🔄 Mode Switching
 
 ![SwitchTab](src/assets/SwitchTab.gif)
 
@@ -50,7 +51,7 @@
 
 ![Know_FrontPage](src/assets/Know_FrontPage.jpg)
 
-### 🏛️ Building Details Demo
+### 🏛️ Building Details
 
 ![BuildingDetail](src/assets/BuildingDetail.gif)
 
