@@ -15,36 +15,45 @@ import {
   Microscope,
   Flag,
   Scale,
+  Car,
+  Bus,
+  Wrench,
 } from "lucide-react";
 import { buildings as freshmanBuildings } from "../data/buildings";
 import { buildings as advancedBuildings } from "../data/advanced_building";
 
 const FRESHMAN_CATEGORIES = [
   { id: "all", label: "All", icon: Building2 },
-  { id: "popular", label: "Popular", icon: Users },
-  { id: "STEM", label: "STEM", icon: Beaker },
-  { id: "Humanities", label: "Humanities", icon: GraduationCap },
-  { id: "Business", label: "Business", icon: Briefcase },
-  { id: "Arts & Design", label: "Arts", icon: Palette },
-  { id: "Libraries", label: "Libraries", icon: BookOpen },
-  { id: "Campus Life", label: "Campus Life", icon: Users },
+  { id: "STEM", label: "STEM", icon: Beaker, match: ["Science", "Engineering"] },
+  { id: "Humanities", label: "Humanities", icon: GraduationCap, match: ["General", "Social Sci"] },
+  { id: "Business", label: "Business", icon: Briefcase, match: ["Business"] },
+  { id: "Arts", label: "Arts & Culture", icon: Palette, match: ["Arts", "Culture"] },
+  { id: "Libraries", label: "Libraries", icon: BookOpen, match: ["Library"] },
+  { id: "Campus Life", label: "Campus Life", icon: Users, match: ["Student Life", "Wellness", "Food"] },
+  { id: "Housing", label: "Housing", icon: Home, match: ["Housing"] },
+  { id: "Athletics", label: "Athletics", icon: Dumbbell, match: ["Athletics"] },
+  { id: "Landmark", label: "Landmarks", icon: Flag, match: ["Landmark"] },
+  { id: "Admin", label: "Admin", icon: Building2, match: ["Admin"] },
 ];
 
 const ADVANCED_CATEGORIES = [
   { id: "all", label: "All", icon: Building2 },
   { id: "popular", label: "Popular", icon: Users },
-  { id: "STEM", label: "STEM", icon: Beaker },
-  { id: "Humanities", label: "Humanities", icon: GraduationCap },
-  { id: "Business", label: "Business", icon: Briefcase },
-  { id: "Arts & Design", label: "Arts", icon: Palette },
-  { id: "Libraries", label: "Libraries", icon: BookOpen },
-  { id: "Campus Life", label: "Campus Life", icon: Users },
-  { id: "Housing", label: "Housing", icon: Home },
-  { id: "Athletics", label: "Athletics", icon: Dumbbell },
-  { id: "Research", label: "Research", icon: Microscope },
-  { id: "Professional", label: "Professional", icon: Scale },
-  { id: "Admin", label: "Admin", icon: Building2 },
-  { id: "Landmark", label: "Landmark", icon: Flag },
+  { id: "STEM", label: "STEM", icon: Beaker, match: ["STEM"] },
+  { id: "Humanities", label: "Humanities", icon: GraduationCap, match: ["Humanities"] },
+  { id: "Business", label: "Business", icon: Briefcase, match: ["Business"] },
+  { id: "Arts", label: "Arts", icon: Palette, match: ["Arts & Design"] },
+  { id: "Libraries", label: "Libraries", icon: BookOpen, match: ["Libraries"] },
+  { id: "Campus Life", label: "Campus Life", icon: Users, match: ["Campus Life"] },
+  { id: "Housing", label: "Housing", icon: Home, match: ["Housing"] },
+  { id: "Athletics", label: "Athletics", icon: Dumbbell, match: ["Athletics"] },
+  { id: "Research", label: "Research", icon: Microscope, match: ["Research"] },
+  { id: "Professional", label: "Professional", icon: Scale, match: ["Professional"] },
+  { id: "Admin", label: "Admin", icon: Building2, match: ["Admin"] },
+  { id: "Landmark", label: "Landmark", icon: Flag, match: ["Landmark"] },
+  { id: "Services", label: "Services", icon: Wrench, match: ["Services"] },
+  { id: "Parking", label: "Parking", icon: Car, match: ["Parking"] },
+  { id: "Transport", label: "Transport", icon: Bus, match: ["Transport"] },
 ];
 
 const BuildingSelectionPanel = ({ onSelect, onClose, selectedValue }) => {
@@ -54,8 +63,6 @@ const BuildingSelectionPanel = ({ onSelect, onClose, selectedValue }) => {
   const inputRef = useRef(null);
 
   const categories = mode === "freshman" ? FRESHMAN_CATEGORIES : ADVANCED_CATEGORIES;
-
-
 
   // Focus search input when mounted
   useEffect(() => {
@@ -74,6 +81,13 @@ const BuildingSelectionPanel = ({ onSelect, onClose, selectedValue }) => {
 
     if (activeCategory === "all") return matchesSearch;
     if (activeCategory === "popular") return matchesSearch && b.popular;
+
+    // Find the category definition to check for matches
+    const categoryDef = categories.find(c => c.id === activeCategory);
+    if (categoryDef && categoryDef.match) {
+        return matchesSearch && categoryDef.match.includes(b.category);
+    }
+
     return matchesSearch && b.category === activeCategory;
   });
 
