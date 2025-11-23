@@ -279,4 +279,299 @@ export const knowLocations = [
     officialLink: 'https://ce.berkeley.edu/about/facilities/davis',
     tags: ['STEM', 'Engineering', 'Construction', 'Labs']
   },
+
+  {
+  images: ['https://funginstitute.berkeley.edu/wp-content/uploads/2015/06/vlsb.jpg'],
+  id: 'valley_life',
+  title: 'Valley Life Sciences Building (VLSB)',
+  yearBuilt: '1930',
+  architect: 'George W. Kelham',
+  summary: '恐龙镇守的生物学迷宫，拥有全校最酷的图书馆之一 🦖',
+  description: `
+    欢迎来到伯克利最大的教学楼（没有之一）！这不仅仅是一栋楼，它更像是一个巨大的生物学博物馆。当你走进中庭，迎接你的不是保安，而是一具名为 "Osborn" 的霸王龙（T-Rex）化石复制品，头顶还悬挂着一只名为 "Wallace" 的翼龙。
+
+    VLSB 曾经是密西西比河以西最大的混凝土建筑，风格宏伟甚至带点压迫感。这里汇集了综合生物学（IB）和分子细胞生物学（MCB）等系所，以及著名的古生物博物馆（UCMP）和脊椎动物博物馆（MVZ）。虽然大多数博物馆藏品仅供研究，但光是走廊里展示的化石和标本就足够让你看上一整天了。
+  `,
+  funFacts: [
+    '大厅里的霸王龙 "Osborn" 是一具 90% 完整的骨架模型，原件是在蒙大拿州发现的。',
+    '这栋楼在 1930 年建成时，耗资 180 万美元；而在 90 年代的翻新工程花了超过 1 亿美元。',
+    '虽然看起来像个堡垒，但在 90 年代翻新前，它是全校抗震能力最差的建筑之一。'
+  ],
+  studentTips: [
+    '🤫 学习圣地：楼内的生物科学图书馆（Bioscience & Natural Resources Library）非常安静，且拥有极高的挑高和古典氛围，是绝佳的自习点。',
+    '🚽 厕所指南：一楼和地下的厕所可能像迷宫一样阴森，建议去图书馆内部或者高楼层的厕所，通常更干净且人少。',
+    '☠️ 迷路警告：这栋楼非常大，楼梯和走廊错综复杂，第一次来上 Lab 课请务必预留找教室的时间。'
+  ],
+  relatedLegend: '传说深夜在 VLSB 独自自习时，会听到标本室里传出奇怪的声音（其实可能只是老旧的水管声...吧？）。',
+  photoSpots: [
+    '一楼中庭与霸王龙 T-Rex 的合影（必打卡！）',
+    '生物科学图书馆内部的古典螺旋楼梯'
+  ],
+  accessibility: '主要入口设有自动门和坡道，楼内有多部电梯，但由于建筑结构复杂，寻找特定电梯可能需要看地图。',
+  officialLink: 'https://bds.berkeley.edu/vlsb',
+  tags: ['STEM', 'Museum', 'Library', 'Landmark']
+  },
+  
+  {
+  images: ['https://bloximages.chicago2.vip.townnews.com/dailycal.org/content/tncms/assets/v3/editorial/4/ae/4ae9190c-2f4f-11ef-a3fa-838acad1d195/6674a48d2a90f.image.jpg'],
+  id: 'evans',
+  title: 'Evans Hall',
+  yearBuilt: '1971',
+  architect: 'Gardner Dailey',
+  summary: '全校公认"最丑"建筑，数学和经济系的堡垒，拆除倒计时中 🚧',
+  description: `
+    如果你觉得这栋楼挡住了从草坪（Memorial Glade）看金门大桥的视线，别担心，你不是一个人——校方也这么觉得，所以它已经被列入了拆除计划。
+
+    Evans Hall 是典型的野兽派（Brutalist）建筑，外观灰暗厚重，内部像是迷宫。这里是数学、经济和统计系的各种 "得分为 C 的噩梦" 的发源地。尽管大家都在吐槽它的长相，但它确实承载了无数伯克利学子刷题和赶 Due 的记忆。
+  `,
+  funFacts: [
+    '有一个经典的校园笑话：全伯克利风景最好的地方是 Evans Hall 的顶楼，因为那里是唯一你看不到 Evans Hall 的地方。',
+    '流言终结者：传闻著名的 "大学航空炸弹客" (Unabomber) Ted Kaczynski 曾在这栋楼教书，但这其实是谣言。他 1969 年就离职了，而 Evans 是 1971 年才建好的。',
+    '这栋楼原本的设计目的是为了展示混凝土的现代美感，但显然现在的审美已经不吃这一套了。'
+  ],
+  studentTips: [
+    '🚧 **拆除预警：** 这栋楼因抗震性能差和阻挡景观，已计划在未来几年内拆除。想体验 "监狱风" 教室的要趁早。',
+    '🧗 **电梯惊魂：** 这里的电梯出了名的慢且摇晃，被称为 "Tower of Terror"。如果去低楼层，建议走楼梯。',
+    '🚽 **厕所情报：** 一楼有翻新过的单间性别中立厕所（Gender-Inclusive Restrooms），私密性很好，是全楼最佳如厕点。',
+    '📸 **绝美视野：** 混进 10 楼的数学系休息室或阳台，你可以拍到以此楼为视角的绝美湾区日落。'
+  ],
+  relatedLegend: '传说由于挂科率太高加上建筑压抑，这里也是各种校园鬼故事的高发地（大多是期末考试周逼出来的幻觉）。',
+  photoSpots: [
+    '10 楼阳台俯瞰整个湾区和金门大桥',
+    '从 Memorial Glade 拍摄它如何"毁掉"天际线（作为历史留念）'
+  ],
+  accessibility: '入口设有坡道，电梯可达各楼层，但电梯经常排队或维修。',
+  officialLink: 'https://www.berkeley.edu/map/evans-hall/',
+  tags: ['Academic', 'STEM', 'Views', 'Demolition']
+  },
+
+  {
+  images: ['https://dac.berkeley.edu/sites/default/files/styles/openberkeley_widgets_spotlight_full/public/buildings-2/buildings-2/Leconte-Building.jpg?itok=GKbRHrAN'],
+  id: 'physics_north',
+  title: 'Physics North (Old LeConte)',
+  yearBuilt: '1924',
+  architect: 'John Galen Howard',
+  summary: '诺贝尔奖的摇篮，奥本海默曾经的秘密基地 ⚛️',
+  description: `
+    这栋楼不仅仅是物理系的大本营，更是现代物理学的圣地。著名的曼哈顿计划（Manhattan Project）的早期会议就是在这里——J. Robert Oppenheimer 在顶楼角落的办公室里秘密召开的。
+
+    以前叫 "LeConte Hall"，后来因为原名纪念的 LeConte 兄弟涉及种族主义争议而改名。这栋楼见证了无数诺贝尔奖的诞生，包括 Ernest Lawrence 在这里建造了世界上第一台回旋加速器（Atom Smasher）。虽然历史厚重，但这里的教室设施有点老旧，不过在这样的环境里上课，说不定能吸点欧气呢？
+  `,
+  funFacts: [
+    '奥本海默（Oppenheimer）的办公室在顶楼西北角（4楼），据说当时为了保密，他在那里组织了 "Luminaries" 小组的会议。',
+    '这里是全校诺贝尔奖密度最高的地方之一，走廊里挂满了物理系历年诺奖得主的照片，甚至为此设有专门的预留停车位。',
+    '尽管这栋楼建于 1924 年，但为了纪念 Oppenheimer，诺兰的电影《奥本海默》剧组特地回到这里取景，还原了当年的氛围。'
+  ],
+  studentTips: [
+    '⚛️ **历史朝圣：** 如果你是《奥本海默》粉丝，一定要去顶楼看看。虽然办公室现在可能不开放，但走廊里的历史感依然拉满。',
+    '🚽 **厕所避坑：** 老楼的通病——厕所设施比较陈旧。建议去旁边较新的 Physics South 或者 Birge Hall 解决。',
+    '📚 **学习氛围：** 这里的物理天文图书馆（Physics-Astronomy Library）位于 Physics South 的地下，连接两栋楼，非常安静且有格调，适合深度自闭学习。'
+  ],
+  relatedLegend: '传说如果你在深夜的实验室里听到奇怪的金属撞击声，那是 Ernest Lawrence 的幽灵在调试他的回旋加速器（其实大概率是暖气管道的热胀冷缩）。',
+  photoSpots: [
+    'Physics North 正门的古典柱廊（John Galen Howard 的经典 Beaux-Arts 风格）',
+    '物理系楼下的 "Nobel Laureate Parking" 标志（吸欧气专用）'
+  ],
+  accessibility: '作为老建筑，无障碍设施主要是后期加装的。主要入口有坡道，楼内有电梯连接各层。',
+  officialLink: 'https://physics.berkeley.edu/',
+  tags: ['STEM', 'History', 'Library', 'Oppenheimer']
+  },
+
+  {
+  images: ['https://www.usnews.com/cmsmedia/b2/f7/0776ad8f4bdb81e93fd317995d14/hero-azh-511m-1920x760.jpg'],
+  id: 'haas',
+  title: 'Haas School of Business',
+  yearBuilt: '1995',
+  architect: 'Charles Moore',
+  summary: '传说中全校最豪华的建筑，拥有最干净的厕所和最卷的学生 💼',
+  description: `
+    欢迎来到伯克利的"校中校"——Haas 商学院。这里的建筑风格与其他地方截然不同，由三栋相互连接的建筑围成一个精致的庭院，仿佛是一个独立的豪华度假村。
+
+    作为全美顶尖的商学院之一，这里的设施也是顶级的。除了现代化的教室和研讨室，还有一个据说是全校网速最快的图书馆。当你走进这里，你会发现空气中弥漫着咖啡香和"我要改变世界（或者至少去华尔街）"的野心。
+  `,
+  funFacts: [
+    'Haas 是全美公立大学中第一所商学院，成立于 1898 年。',
+    '建筑师 Charles Moore 是伯克利前建筑系系主任，他设计的初衷是创造一个促进交流的"微型社区"。',
+    '尽管位于加州，但这里的学生（尤其是 MBA）以不怎么"奢华（Bougie）"而闻名，相比东部名校的商学院，Haas 更接地气。'
+  ],
+  studentTips: [
+    '🚽 **厕所之王：** 全校公认最干净、最豪华的厕所就在这里。甚至有人专门从其他系跑来这里上厕所。',
+    '🤫 **学习宝地：** Long Business Library 是一个非常安静且舒适的学习场所，而且不需要是商学院学生也能进。',
+    '☕ **咖啡与社交：** 庭院里的 Cafe 是偶遇大佬和听各种创业点子的好地方，但记得带够钱，这里的物价也很"商学院"。',
+    '🐍 **文化梗：** 虽然有"Haas-hole"（形容过度竞争的学生）的刻板印象，但实际上这里的很多项目都强调社会责任和影响力。'
+  ],
+  relatedLegend: '据说如果你在 Haas 的庭院里大喊一声 "Consulting"，至少会有 10 个人回头递给你名片。',
+  photoSpots: [
+    'Haas 庭院中央的拱门和阶梯',
+    '连接几栋楼的空中走廊（光影效果极佳）'
+  ],
+  accessibility: '作为较新的建筑群，无障碍设施非常完善，所有楼层均有电梯直达。',
+  officialLink: 'https://haas.berkeley.edu/',
+  tags: ['Business', 'Modern', 'Library', 'Study Spot']
+  },
+
+  {
+  images: ['https://images.squarespace-cdn.com/content/v1/5d5b8ebf066cad00017d0b0f/1618700101777-VPK9BBKN6GWAJZAKWDB3/UCB+Latimer+Hall+Renovations+1.png?format=2500w'],
+  id: 'latimer',
+  title: 'Latimer Hall',
+  yearBuilt: '1963',
+  architect: 'Anshen & Allen',
+  summary: '化学系的迷宫核心，连接着过去、现在和通往 Pimentel 的地下通道 ⚗️',
+  description: `
+    Latimer Hall 是伯克利化学学院的心脏地带。这栋建于 60 年代的建筑以其错综复杂的结构和连接多栋楼的通道而闻名。它不仅是化学系的主要办公和实验楼，还是通往著名的旋转教室 Pimentel Hall 的必经之路。
+
+    虽然外观看起来像是一个典型的现代主义方盒子，但它的重要性不言而喻。这里曾走出过多位诺贝尔化学奖得主，空气中似乎都飘散着（有时候是真的有味道）各种化学试剂的气息。
+  `,
+  funFacts: [
+    '这栋楼是以 Wendell Latimer 命名的，他是 40 年代的化学学院院长，也是 Gilbert N. Lewis 的得意门生。',
+    'Latimer Hall 与旁边的 Lewis Hall 和 Pimentel Hall 通过复杂的地下和地上通道相连，第一次来很容易迷路。',
+    '楼西南侧广场上的那个看起来像个小亭子的东西（Cupola），其实是伯克利最初的老化学楼（Original Chemistry Building）仅存的遗迹。'
+  ],
+  studentTips: [
+    '🚧 **施工警告：** Latimer 旁边正在建设新的 Heathcock Hall，原来的连接桥和部分通道可能会被拆除或改道，请留意路标。',
+    '🤫 **秘密通道：** 如果你想去 Pimentel Hall 上大课但不想走外面晒太阳，可以通过 Latimer 的地下室走廊直接穿过去（前提是你能在迷宫里找到路）。',
+    '🚽 **厕所指南：** 高楼层的厕所通常比低楼层的干净很多，而且人少。特别是 6 楼以上的区域。',
+    '☕ **课间休息：** Bixby Commons（就在 Pimentel 入口附近）是化学系学生课间补给和小组讨论的热门地点。'
+  ],
+  relatedLegend: '传说在某些深夜，你能在 Latimer 的实验室里看到那些已故的诺贝尔奖得主们还在为了一个新的元素发现而争论不休（其实大概率是通宵做实验的研究生在自言自语）。',
+  photoSpots: [
+    '从 Latimer 高层走廊拍摄 Campanile（钟楼）的独特视角',
+    '西南广场上的老化学楼遗迹（Cupola）'
+  ],
+  accessibility: '主入口设有坡道，楼内电梯可达各层，但去往 Pimentel 的通道可能需要绕行。',
+  officialLink: 'https://chemistry.berkeley.edu/',
+  tags: ['STEM', 'Chemistry', 'History', 'Maze']
+  },
+
+  {
+  images: ['https://eventservices.berkeley.edu/wp-content/uploads/2022/10/Social-Sciences-C.-3.jpg'],
+  id: 'social_sciences',
+  title: 'The Social Sciences Building (Old Barrows)',
+  yearBuilt: '1964',
+  architect: 'Aleck Wilson',
+  summary: '曾经的 Barrows Hall，社会学的据点，以涂鸦和幽灵电梯闻名 👻',
+  description: `
+    这栋楼位于校园南侧，曾经名为 Barrows Hall，但在 2020 年因为原名纪念者的种族主义历史而被除名，现在暂时被称为 "The Social Sciences Building"。
+
+    它是社会学、政治学和少数族裔研究系的所在地。建筑风格沉闷，内部走廊狭长昏暗，加上经常发生的电梯故障，让这里充满了各种都市传说。不过，虽然楼本身不讨喜，但它却是伯克利学生活动和思想碰撞最活跃的地方之一。
+  `,
+  funFacts: [
+    '2020 年的更名运动是由学生发起的，因为原名 David Prescott Barrows 支持殖民主义和白人至上主义。',
+    '虽然大楼外观平平无奇，但 8 楼的某些教室拥有极佳的海湾景观（只要窗户擦干净了的话）。',
+    '这栋楼的厕所墙壁上经常能看到高质量的学术（和非学术）涂鸦辩论，堪称 "线下 Reddit"。'
+  ],
+  studentTips: [
+    '👻 **电梯传说：** 这里的电梯是全校最诡异的，经常会自动停在没人的楼层，或者发出奇怪的声音。胆子小的建议结伴而行。',
+    '🚽 **涂鸦圣地：** 一楼和二楼的厕所虽然设施一般，但墙上的涂鸦非常精彩，从哲学探讨到对教授的吐槽应有尽有。',
+    '📚 **隐秘自习：** 顶楼（8楼）有一些不太为人知的角落和空教室，适合想要躲避人群自习的社恐人士。',
+    '📢 **抗议中心：** 由于紧邻 Sproul Plaza，楼下的广场经常是各种学生活动和抗议的集结地。'
+  ],
+  relatedLegend: '传说在深夜的走廊里，有时能听到早已搬走的旧系办公室里传来的打字机声。',
+  photoSpots: [
+    '从 8 楼窗户向西拍摄的海湾日落',
+    '楼下经常更换的充满政治色彩的学生横幅和海报'
+  ],
+  accessibility: '虽然有电梯，但经常维修。主入口有坡道，但楼内布局对轮椅使用者不太友好。',
+  officialLink: 'https://www.berkeley.edu/map/social-sciences-building/',
+  tags: ['Social Sciences', 'History', 'Activism', 'Haunted']
+  },
+
+  {
+  images: ['https://www.sosbrutalism.org/sixcms/media.php/1685/thumbnails/Wurster%20Hall%20-%20UC%20Berkeley%20%28Vernon%20De%20Mars%2C%20Donald%20Olsen%2C%20Joseph%20Esherick%2C%201964%29%2C%20Berkeley.jpg.3065879.jpg'],
+  id: 'bauer_wurster',
+  title: 'Bauer Wurster Hall',
+  yearBuilt: '1964',
+  architect: 'DeMars, Esherick, and Olsen',
+  summary: '全校"最丑"建筑的强力竞争者，环境设计学院的野兽派堡垒 🏗️',
+  description: `
+    Bauer Wurster Hall 是环境设计学院（CED）的所在地。这栋楼是典型的野兽派（Brutalist）风格，外观是裸露的混凝土，加上突出的遮阳板，常年被评为校园里最丑的建筑之一（和 Evans Hall 有的一拼）。
+
+    但不要以貌取人，这栋楼的设计初衷其实非常实用主义——它是为了让建筑系学生看到建筑的内部构造（管线、混凝土结构都是裸露的），就像一个巨大的教学模具。在这里，你会看到无数通宵做模型、画图纸的建筑生，这是他们的第二个家。
+  `,
+  funFacts: [
+    '这栋楼原本叫 Wurster Hall，但在 2020 年更名为 Bauer Wurster Hall，以同时纪念前院长 William Wurster 和他的妻子 Catherine Bauer Wurster（城市规划先驱）。',
+    '传说设计这栋楼的初衷之一就是要是"反叛"的，甚至有说法是建筑师故意设计得让校董们讨厌，以此来表达对传统审美的挑战。',
+    '从高楼层的画室（Studios）可以看到极佳的校园全景，甚至能看到金门大桥。'
+  ],
+  studentTips: [
+    '☕ **深夜食堂：** 一楼的 Ramona\'s Cafe 是建筑系学生的生命线，不仅有咖啡，还有不错的卷饼和披萨。',
+    '🎨 **艺术氛围：** 走廊和庭院里经常会有学生的作品展和模型展示，路过时不妨停下来看看。',
+    '🚽 **厕所探险：** 这里的厕所分布有点奇怪，特别是在塔楼部分，男女厕所是交替楼层设置的，一定要看清楚标志。',
+    '🏗️ **实用主义：** 楼内的电梯很大（为了运模型），但速度感人。楼梯间经常被用来测试各种建筑模型的光影效果。'
+  ],
+  relatedLegend: '据说这栋楼的设计是为了在抗议活动期间易于"防守"，但其实它只是单纯的野兽派风格而已。',
+  photoSpots: [
+    '站在楼下仰拍巨大的混凝土遮阳板（Brise-soleil）',
+    '从高层 Studio 拍摄的校园全景'
+  ],
+  accessibility: '主要入口有坡道，楼内有电梯，但由于经常运送大型模型，电梯可能比较繁忙。',
+  officialLink: 'https://ced.berkeley.edu/',
+  tags: ['Arts & Design', 'Architecture', 'Brutalist', 'Views']
+  },
+
+  {
+  images: ['https://www.usgbc.org/sites/default/files/chou-hall-v2.jpg'],
+  id: 'chou',
+  title: 'Chou Hall',
+  yearBuilt: '2018',
+  architect: 'Perkins+Will',
+  summary: '全美"最绿"的教学楼，不设垃圾桶的零废弃实验场 ♻️',
+  description: `
+    Chou Hall 是 Haas 商学院最新的扩建项目，也是全美最环保的学术建筑之一。它获得了 LEED 白金认证和 TRUE 零废弃认证，甚至还有一个专门的 "WELL" 认证（关注用户健康）。
+
+    这栋楼最大的特点就是——没有垃圾桶！它推行极端的 "Zero Waste" 政策，鼓励学生自备水杯和容器。建筑采用了大量的玻璃幕墙，自然采光极佳，与周围的红杉树融为一体，让你感觉像是在森林里上课。
+  `,
+  funFacts: [
+    '它是全美第一栋同时获得 LEED 白金级认证和 TRUE 零废弃白金级认证的学术建筑。',
+    '楼内真的没有普通垃圾桶（Landfill Bins），所有垃圾都必须分类回收或堆肥，如果不符合要求，你得自己带走。',
+    '这栋楼是由 Haas 校友 Kevin Chou（移动游戏公司 Kabam 创始人）捐赠 1500 万美元建造的，这是伯克利历史上 40 岁以下校友捐赠的最大一笔款项。'
+  ],
+  studentTips: [
+    '♻️ **自带装备：** 来这里上课或自习，最好带上自己的水杯和餐具，不然产生垃圾会很尴尬。',
+    '☕ **Cafe Think：** 位于二楼的 Cafe Think 是这里的社交中心，提供各种健康（且昂贵）的有机食品，视野也非常棒。',
+    '🤫 **顶级自习室：** 楼内的研讨室（Breakout Rooms）非常抢手，配备了顶级影音设备，是小组作业的五星级选择。',
+    '🚽 **豪华体验：** 和 Haas 其他楼一样，这里的厕所设施也是全校顶级的，甚至用雨水回收系统冲厕所。'
+  ],
+  relatedLegend: '据说如果你在 Chou Hall 偷偷扔了不可回收的垃圾，会有一个"环保警察"（其实是热心的 MBA 学生）突然出现教育你。',
+  photoSpots: [
+    '从顶层露台俯瞰被红杉环绕的校园',
+    '充满现代感的玻璃幕墙与蓝天白云的倒影'
+  ],
+  accessibility: '极其完善的无障碍设施，每一层都宽敞明亮，电梯通达所有楼层。',
+  officialLink: 'https://haas.berkeley.edu/facilities/the-haas-campus/chou-hall/',
+  tags: ['Business', 'Modern', 'Sustainability', 'Zero Waste']
+  },
+
+  {
+  images: ['https://www.zgf.com/images/2017_07_83e717f2-5612-4c24-9074-afa68c06c1dc.jpg?w=1920'],
+  id: 'lks',
+  title: 'Li Ka Shing Center (LKS)',
+  yearBuilt: '2011',
+  architect: 'ZGF Architects',
+  summary: '校园西侧的玻璃宫殿，研究绝症的高科技堡垒 🧬',
+  description: `
+    这座由香港首富李嘉诚捐资 4000 万美元建造的大楼，是伯克利生物医学和健康科学研究的中心。建筑外观极其现代，巨大的玻璃幕墙和赤土色瓷砖让它在校园西侧格外显眼。
+
+    这里汇集了研究癌症、阿兹海默症和传染病的顶尖科学家。虽然这里主要是研究实验室，但其开放式的设计和采光极佳的中庭，让它看起来更像是一个高级硅谷科技公司的总部，而不是传统的教学楼。
+  `,
+  funFacts: [
+    '这栋楼获得了 LEED 金级认证，使用了大量可再生材料，甚至屋顶上还种了植物来吸引蝴蝶和蜜蜂。',
+    '虽然李嘉诚本人没有在这栋楼里办公，但他捐赠这栋楼是为了纪念他在贫困和疾病中度过的童年，希望推动医学发展。',
+    '大楼内部采用了大量再生木材，有些木材甚至是从当地拆除的旧仓库里回收的。'
+  ],
+  studentTips: [
+    '🤫 **顶级自习地：** 虽然主要是实验室，但二楼的休息区和中庭有不少舒适的沙发和桌椅，而且相对比较安静，适合需要专注的时候。',
+    '🚽 **厕所评级 S：** 作为新楼，这里的厕所设施非常现代化且干净，虽然离核心教学区有点远，但绝对值得多走几步路。',
+    '🌳 **绿色屋顶：** 虽然不像传统的草坪那么好躺，但大楼的生态设计让周围的空气似乎都清新了一些，是个放松眼睛的好地方。',
+    '🎬 **电影既视感：** 走在里面，你会感觉自己置身于某部科幻电影或医疗剧的片场，非常适合拍一些"高大上"的照片发朋友圈。'
+  ],
+  relatedLegend: '并没有太多灵异传说，可能因为这里太科学、太明亮了，连鬼魂都觉得这里太"无菌"了。',
+  photoSpots: [
+    '充满未来感的玻璃中庭和旋转楼梯',
+    '建筑外立面的赤土色与玻璃交错的现代设计'
+  ],
+  accessibility: '极其完善的无障碍设施，宽敞的走廊和现代化的电梯，对所有人都非常友好。',
+  officialLink: 'https://lks.berkeley.edu/',
+  tags: ['STEM', 'Research', 'Modern', 'Health']
+  }
 ];

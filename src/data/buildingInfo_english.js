@@ -279,4 +279,300 @@ export const knowLocations = [
     officialLink: 'https://ce.berkeley.edu/about/facilities/davis',
     tags: ['STEM', 'Engineering', 'Construction', 'Labs']
   },
+
+  {
+  images: ['https://funginstitute.berkeley.edu/wp-content/uploads/2015/06/vlsb.jpg'],
+  id: 'valley_life',
+  title: 'Valley Life Sciences Building (VLSB)',
+  yearBuilt: '1930',
+  architect: 'George W. Kelham',
+  summary: 'Home to a T-Rex, a Pteranodon, and your endless bio labs 🦖',
+  description: `
+    Welcome to the largest building on campus! VLSB is basically a fortress of biology. When you walk into the main atrium, you aren't greeted by a receptionist, but by "Osborn," a life-sized Tyrannosaurus Rex skeleton, and "Wallace," a Pteranodon soaring above you.
+
+    Originally built in 1930 as the largest concrete structure west of the Mississippi, VLSB houses the departments of Integrative Biology and Molecular & Cell Biology. It's also home to the Museum of Paleontology (UCMP) and the Museum of Vertebrate Zoology (MVZ). While the research collections are private, the hallways are lined with fascinating fossils and specimens visible to everyone.
+  `,
+  funFacts: [
+    'The T-Rex in the lobby, "Osborn," is a 90% complete cast. The original bones are from Montana.',
+    'It cost $1.8 million to build in 1930, but over $100 million to renovate in the early 1990s.',
+    'Despite looking like an impenetrable fortress, it was considered seismically unsafe before its massive renovation.'
+  ],
+  studentTips: [
+    '🤫 **Study Spot:** The Bioscience & Natural Resources Library inside is a hidden gem. It’s quiet, beautiful, and often less crowded than Moffitt.',
+    '🚽 **Restroom Hack:** Avoid the dungeon-like restrooms on the lower levels if you can. The ones inside the library or on the upper faculty floors are much nicer.',
+    '🧭 **Navigation:** This building is a maze. If you have a lab here, arrive 10 minutes early just to find the room.'
+  ],
+  relatedLegend: 'Some say the building is haunted by the spirits of the thousands of specimens stored in the basement museums (or maybe it\'s just the ventilation system).',
+  photoSpots: [
+    'Selfie with Osborn the T-Rex in the atrium (Campus Classic)',
+    'The spiral staircase inside the Bioscience Library'
+  ],
+  accessibility: 'Accessible entrances with ramps are available. Elevators serve all floors, though the layout can be confusing.',
+  officialLink: 'https://bds.berkeley.edu/vlsb',
+  tags: ['STEM', 'Museum', 'Library', 'Landmark']
+  },
+
+  {
+  images: ['https://bloximages.chicago2.vip.townnews.com/dailycal.org/content/tncms/assets/v3/editorial/4/ae/4ae9190c-2f4f-11ef-a3fa-838acad1d195/6674a48d2a90f.image.jpg'],
+  id: 'evans',
+  title: 'Evans Hall',
+  yearBuilt: '1971',
+  architect: 'Gardner Dailey',
+  summary: 'The Brutalist giant everyone loves to hate. Enjoy the view before it\'s demolished 🚧',
+  description: `
+    Standing tall (and gray) since 1971, Evans Hall is the fortress of the Math, Economics, and Statistics departments. Infamous for its windowless classrooms, confusing layout, and imposing Brutalist architecture, it notoriously blocks the view of the Golden Gate Bridge from Memorial Glade.
+
+    Due to seismic concerns and its aesthetic unpopularity, the university has official plans to demolish it and replace it with open space and a new academic building. It’s a building that students love to complain about, binding generations of Cal Bears together in shared struggle.
+  `,
+  funFacts: [
+    'The best view of Berkeley is rumored to be from the roof of Evans Hall—simply because it’s the only place on campus where you can\'t see Evans Hall.',
+    'Mythbusting: Rumor has it that the Unabomber (Ted Kaczynski) taught here. False! He left Berkeley in 1969, two years before Evans opened.',
+    'It was originally painted a specific color to blend in with the hills, but weathering has turned it into the concrete gray we see today.'
+  ],
+  studentTips: [
+    '🚧 **Status Update:** It is slated for demolition in the near future. Visit while you can for a piece of history.',
+    '🛗 **Elevator Roulette:** The elevators are notoriously slow, creaky, and unreliable. Take the stairs for a workout if you\'re going to floors 1-4.',
+    '🚽 **Restroom Hack:** The first floor has individual gender-neutral stalls that offer decent privacy compared to the dungeon-like restrooms on other floors.',
+    '🌅 **Secret View:** Try to sneak a peek from the 10th-floor balcony/lounge area for one of the best sunsets on campus.'
+  ],
+  relatedLegend: 'Students joke that the building was designed to look like a punch card from the early computing era, but that\'s just an urban legend trying to justify the architecture.',
+  photoSpots: [
+    '10th Floor Balcony (Panaromic Bay View)',
+    'View from the Glade (To capture the "Wall" before it\'s gone)'
+  ],
+  accessibility: 'Accessible via ramps on the ground floor. Elevators serve all floors but can be crowded.',
+  officialLink: 'https://www.berkeley.edu/map/evans-hall/',
+  tags: ['Academic', 'STEM', 'Views', 'Demolition']
+  },
+
+  {
+  images: ['https://dac.berkeley.edu/sites/default/files/styles/openberkeley_widgets_spotlight_full/public/buildings-2/buildings-2/Leconte-Building.jpg?itok=GKbRHrAN'],
+  id: 'physics_north',
+  title: 'Physics North (Old LeConte)',
+  yearBuilt: '1924',
+  architect: 'John Galen Howard',
+  summary: 'The birthplace of the atomic bomb and home to Oppenheimer\'s secret office ⚛️',
+  description: `
+    This isn't just a physics building; it's hallowed ground for science history. Formerly known as LeConte Hall, Physics North is where J. Robert Oppenheimer held the first secret meetings for what would become the Manhattan Project.
+
+    Built in 1924 by campus architect John Galen Howard, this Beaux-Arts beauty has housed some of the greatest minds in history. Ernest Lawrence built the world's first cyclotron (atom smasher) here. Walking through its halls feels like stepping onto a movie set—which makes sense, since Christopher Nolan filmed scenes for *Oppenheimer* right here.
+  `,
+  funFacts: [
+    'Oppenheimer\'s office was located in the northwest corner of the top floor (4th floor), featuring a balcony where he would step out for fresh air during intense discussions.',
+    'The building was renamed "Physics North" in 2020 to disassociate from the LeConte brothers\' racist history.',
+    'Nolan\'s *Oppenheimer* film crew restored parts of the building to its 1940s appearance for authenticity during filming.'
+  ],
+  studentTips: [
+    '⚛️ **Oppenheimer Spotting:** You can visit the floor where Oppenheimer worked. The history is palpable, even if you can\'t enter the exact office.',
+    '🚽 **Restroom Reality:** Being a historic building, the restrooms are... vintage. You might find better facilities in the connected Physics South or nearby Birge Hall.',
+    '📚 **Secret Library:** The Physics-Astronomy Library is underground, connecting North and South halls. It\'s a quiet, bunker-like spot perfect for intense study sessions.',
+    '🏆 **Parking Perks:** Look for the "NL" (Nobel Laureate) reserved parking spaces outside—a uniquely Berkeley flex.'
+  ],
+  relatedLegend: 'Some say the ghost of Ernest Lawrence still roams the halls, tinkering with invisible machinery late at night.',
+  photoSpots: [
+    'The iconic Beaux-Arts columns at the main entrance',
+    'The "Nobel Laureate Reserved Parking" signs nearby'
+  ],
+  accessibility: 'Ramps are available at the main entrances. Elevators connect floors, though they can be slow due to the building\'s age.',
+  officialLink: 'https://physics.berkeley.edu/',
+  tags: ['STEM', 'History', 'Library', 'Oppenheimer']
+  },
+
+  {
+  images: ['https://www.usnews.com/cmsmedia/b2/f7/0776ad8f4bdb81e93fd317995d14/hero-azh-511m-1920x760.jpg'],
+  id: 'haas',
+  title: 'Haas School of Business',
+  yearBuilt: '1995',
+  architect: 'Charles Moore',
+  summary: 'The "mini-campus" with the best restrooms and sharpest suits 💼',
+  description: `
+    Step into the Haas School of Business, and you might feel like you've left the rest of UC Berkeley behind. This "mini-campus" consists of interconnected buildings surrounding a pristine central courtyard, designed to foster community (and networking, of course).
+
+    Designed by renowned architect Charles Moore, Haas is a blend of modern facilities and collaborative spaces. It houses state-of-the-art classrooms, the Long Business Library, and an atmosphere that buzzes with entrepreneurial energy. It's the place where future CEOs are made, and where everyone seems to own a blazer.
+  `,
+  funFacts: [
+    'Haas is the second-oldest business school in the United States and the oldest at a public university, founded in 1898.',
+    'The complex cost $55 million to build, funded entirely by private donations.',
+    'Unlike the "bougie" stereotypes of other top business schools, Haas prides itself on a culture of "Confidence Without Attitude."'
+  ],
+  studentTips: [
+    '🚽 **Throne Room:** Hands down, Haas has the best restrooms on campus. They are clean, modern, and often have full-length mirrors. Worth the walk.',
+    '🤫 **Study Haven:** The Long Business Library is a fantastic, quiet study spot with comfortable seating, even if you aren\'t a business major.',
+    '☕ **Cafe Culture:** The on-site cafe is a great spot to grab a bite, but be prepared for prices that reflect the future salaries of the students.',
+    '🐍 **Stereotype Alert:** You might hear jokes about "Haas-holes" or "snakes" due to the competitive grading curve, but many students find the community genuinely supportive.'
+  ],
+  relatedLegend: 'Legend has it that if you whisper "investment banking" in the courtyard, three recruiters will appear out of thin air.',
+  photoSpots: [
+    'The central courtyard and its iconic archways',
+    'The modern glass facade of Chou Hall'
+  ],
+  accessibility: 'Excellent accessibility with ramps and elevators connecting all levels of the complex.',
+  officialLink: 'https://haas.berkeley.edu/',
+  tags: ['Business', 'Modern', 'Library', 'Study Spot']
+  },
+
+  {
+  images: ['https://images.squarespace-cdn.com/content/v1/5d5b8ebf066cad00017d0b0f/1618700101777-VPK9BBKN6GWAJZAKWDB3/UCB+Latimer+Hall+Renovations+1.png?format=2500w'],
+  id: 'latimer',
+  title: 'Latimer Hall',
+  yearBuilt: '1963',
+  architect: 'Anshen & Allen',
+  summary: 'The heart of the Chemistry complex, featuring secret tunnels and Nobel vibes ⚗️',
+  description: `
+    Latimer Hall is the central hub of the College of Chemistry. Built in the 1960s, it's known for its complex layout and connections to surrounding buildings. It serves as the main administrative and research center for the department and is the gateway to the famous rotating lecture hall, Pimentel Hall.
+
+    While it may look like a standard modernist box from the outside, its significance is immense. The halls have been walked by numerous Nobel Laureates, and the air is often filled with the faint (and sometimes strong) scent of chemical breakthroughs.
+  `,
+  funFacts: [
+    'Named after Wendell Latimer, a former dean of the College of Chemistry and a protégé of the legendary Gilbert N. Lewis.',
+    'It connects to Lewis Hall and Pimentel Hall via a confusing web of underground and above-ground walkways, making it a true maze for first-timers.',
+    'The small cupola on the southwest plaza is the only surviving remnant of the original "Old Chemistry Building" that once stood on campus.'
+  ],
+  studentTips: [
+    '🚧 **Construction Alert:** With the new Heathcock Hall being built nearby, expect some of the usual bridges and pathways connecting Latimer to be closed or rerouted.',
+    '🤫 **Secret Tunnel:** You can access Pimentel Hall directly through the basement corridors of Latimer, avoiding the sun or rain (if you can navigate the labyrinth).',
+    '🚽 **Restroom Hack:** Head to the upper floors (6th floor and above) for restrooms that are significantly cleaner and less crowded than the ground floor ones.',
+    '☕ **Pit Stop:** Bixby Commons, located near the Pimentel entrance, is the go-to spot for chem students to grab a snack or panic before a midterm.'
+  ],
+  relatedLegend: 'Rumor has it that the spirits of past chemists still roam the labs late at night, arguing over the periodic table (or maybe it\'s just sleep-deprived grad students).',
+  photoSpots: [
+    'The view of the Campanile from the upper-floor breezeways',
+    'The historic Cupola on the plaza (a piece of 19th-century campus history)'
+  ],
+  accessibility: 'Accessible via ramps at the main entrance. Elevators serve all floors, though navigating to Pimentel might require detours.',
+  officialLink: 'https://chemistry.berkeley.edu/',
+  tags: ['STEM', 'Chemistry', 'History', 'Maze']
+  },
+  
+  {
+  images: ['https://eventservices.berkeley.edu/wp-content/uploads/2022/10/Social-Sciences-C.-3.jpg'],
+  id: 'social_sciences',
+  title: 'The Social Sciences Building (Old Barrows)',
+  yearBuilt: '1964',
+  architect: 'Aleck Wilson',
+  summary: 'Formerly Barrows Hall. Home to sociology, graffiti, and possibly ghosts 👻',
+  description: `
+    Located on the south side of campus, this building was known as Barrows Hall until 2020, when it was unnamed due to the namesake's racist history. It is now temporarily referred to as "The Social Sciences Building."
+
+    It houses the departments of Sociology, Political Science, and Ethnic Studies. With its dim, long corridors and notoriously glitchy elevators, the building gives off a distinctively eerie vibe. Despite its gloomy architecture, it remains a vibrant hub for student activism and intellectual debate.
+  `,
+  funFacts: [
+    'The unnaming in 2020 was the result of years of student activism, as the original namesake, David Prescott Barrows, was a proponent of colonialism and white supremacy.',
+    'Despite the drab exterior, some classrooms on the 8th floor offer stunning views of the San Francisco Bay (if the windows are clean).',
+    'The restroom stalls here are famous for hosting high-level intellectual debates via graffiti, earning them the nickname "Offline Reddit."'
+  ],
+  studentTips: [
+    '👻 **Haunted Elevators:** The elevators are legendary for stopping at empty floors, making weird noises, or just not working. Ride at your own risk.',
+    '🚽 **Graffiti Gallery:** The restrooms on the lower floors may not be the cleanest, but the graffiti is top-tier, ranging from political manifestos to professor reviews.',
+    '📚 **Hidden Study Spots:** The top floor (8th floor) has some quiet corners and empty classrooms perfect for introverts looking to escape the library crowds.',
+    '📢 **Activism Hub:** Being right next to Sproul Plaza, the area in front of the building is often ground zero for student protests and rallies.'
+  ],
+  relatedLegend: 'Some claim to hear the sound of phantom typewriters coming from empty offices late at night.',
+  photoSpots: [
+    'Sunset views of the Bay from the 8th-floor windows',
+    'The ever-changing student banners and posters hanging from the exterior'
+  ],
+  accessibility: 'Elevators are available but unreliable. Ramps provide access to the main entrance, but the internal layout can be tricky.',
+  officialLink: 'https://www.berkeley.edu/map/social-sciences-building/',
+  tags: ['Social Sciences', 'History', 'Activism', 'Haunted']
+  },
+
+  {
+  images: ['https://www.sosbrutalism.org/sixcms/media.php/1685/thumbnails/Wurster%20Hall%20-%20UC%20Berkeley%20%28Vernon%20De%20Mars%2C%20Donald%20Olsen%2C%20Joseph%20Esherick%2C%201964%29%2C%20Berkeley.jpg.3065879.jpg'],
+  id: 'bauer_wurster',
+  title: 'Bauer Wurster Hall',
+  yearBuilt: '1964',
+  architect: 'DeMars, Esherick, and Olsen',
+  summary: 'The Brutalist fortress of the Architecture students. You either love it or hate it 🏗️',
+  description: `
+    Home to the College of Environmental Design (CED), Bauer Wurster Hall is a polarizing masterpiece of Brutalist architecture. With its raw concrete facade and massive sunshades, it often competes with Evans Hall for the title of "Campus's Ugliest Building."
+
+    However, the design is intentional. It was built to be a "rough" building that students could learn from—pipes, ducts, and structural elements are left exposed as a teaching tool. Inside, you'll find the tireless architecture students who practically live in the studios, pulling all-nighters to finish their models.
+  `,
+  funFacts: [
+    'Originally named Wurster Hall, it was renamed Bauer Wurster Hall in 2020 to honor both Dean William Wurster and his wife, the pioneering urban planner Catherine Bauer Wurster.',
+    'William Wurster famously wanted a building that looked like a "ruin that no regent would like," challenging the traditional Beaux-Arts style of the rest of the campus.',
+    'The "ugly" concrete sunshades (brise-soleil) are actually highly functional, designed to keep the building cool without air conditioning.'
+  ],
+  studentTips: [
+    '☕ **Ramona\'s Cafe:** Located on the ground floor, this cafe is the lifeblood of CED students. Great coffee, decent food, and a classic 60s vibe.',
+    '🎨 **Student Work:** The hallways and courtyard often feature impressive student models and art installations. It\'s like a free rotating art gallery.',
+    '🚽 **Restroom Roulette:** In the tower, restrooms often alternate by floor (men\'s on one, women\'s on the next), so check the signs before you commit to a floor.',
+    '🌅 **Studio Views:** If you make friends with an architecture student, try to get into the upper-floor studios for some of the best panoramic views of the Bay.'
+  ],
+  relatedLegend: 'A persistent myth claims the building was designed to be riot-proof during the 1960s protests, but the architects deny this—it\'s just Brutalism being brutal.',
+  photoSpots: [
+    'Looking up at the imposing concrete sunshades (for that dystopian aesthetic)',
+    'The view of the Campanile from the upper-floor studios'
+  ],
+  accessibility: 'Accessible via ramps. Large freight elevators are available (often shared with giant architectural models).',
+  officialLink: 'https://ced.berkeley.edu/',
+  tags: ['Arts & Design', 'Architecture', 'Brutalist', 'Views']
+  },
+
+  {
+  images: ['https://www.usgbc.org/sites/default/files/chou-hall-v2.jpg'],
+  id: 'chou',
+  title: 'Chou Hall',
+  yearBuilt: '2018',
+  architect: 'Perkins+Will',
+  summary: 'The greenest building in the US, where trash cans are extinct ♻️',
+  description: `
+    Connie & Kevin Chou Hall is the newest jewel in the Haas School of Business crown. It holds the distinction of being the country's greenest academic building, boasting LEED Platinum, TRUE Zero Waste, and WELL certifications.
+
+    The most striking feature? There are no landfill bins inside. The building operates on a strict "pack-in, pack-out" or compost/recycle policy. With its floor-to-ceiling windows nestled among the redwoods, it feels less like a classroom and more like a high-tech treehouse.
+  `,
+  funFacts: [
+    'It is the first academic building in the nation to be designed for both LEED Platinum and WELL certifications.',
+    'The building has a strict "Zero Waste" policy—you won\'t find standard trash cans here. Everything must be composted, recycled, or taken with you.',
+    'Funded by a $15 million donation from alum Kevin Chou (founder of Kabam), the largest gift from an alum under 40 in Berkeley history.'
+  ],
+  studentTips: [
+    '♻️ **BYO Everything:** Bring your own reusable bottle and containers. The zero-waste culture here is serious, and finding a place to toss a wrapper can be a challenge.',
+    '☕ **Cafe Think:** Located on the second floor, this cafe offers healthy, organic options and is a prime spot for networking (or just people-watching).',
+    '🤫 **Premium Study Rooms:** The breakout rooms are equipped with top-tier tech and soundproofing, making them the envy of every other department.',
+    '🚽 **Eco-Luxury:** Even the restrooms are sustainable, using rainwater for flushing. They are also arguably the nicest on campus.'
+  ],
+  relatedLegend: 'Rumor has it that if you try to throw a plastic wrapper in the compost bin, a sustainability alarm will sound (okay, not really, but you *will* get judged).',
+  photoSpots: [
+    'The top-floor terrace with views of the surrounding redwood grove',
+    'The sleek, modern glass exterior reflecting the sky and trees'
+  ],
+  accessibility: 'State-of-the-art accessibility features, with spacious elevators and automatic doors throughout.',
+  officialLink: 'https://haas.berkeley.edu/facilities/the-haas-campus/chou-hall/',
+  tags: ['Business', 'Modern', 'Sustainability', 'Zero Waste']
+  },
+
+  {
+  images: ['https://www.zgf.com/images/2017_07_83e717f2-5612-4c24-9074-afa68c06c1dc.jpg?w=1920'],
+  id: 'lks',
+  title: 'Li Ka Shing Center (LKS)',
+  yearBuilt: '2011',
+  architect: 'ZGF Architects',
+  summary: 'The glass palace of biomedical research on the west side 🧬',
+  description: `
+    Funded by a $40 million donation from global philanthropist Li Ka-shing, this building is the cutting-edge hub for biomedical and health sciences at Berkeley. With its massive glass facade and terracotta tiles, it stands out as a beacon of modernity on the western edge of campus.
+
+    Inside, top scientists work on curing cancer, Alzheimer's, and infectious diseases. The open, airy design feels more like a high-end Silicon Valley tech HQ than a university building, symbolizing the future of medical research.
+  `,
+  funFacts: [
+    'The building is LEED Gold certified, featuring a green roof designed to attract native butterflies and bees.',
+    'Li Ka-shing donated the funds to support medical research, inspired by his own childhood experiences with poverty and illness.',
+    'Much of the wood paneling inside is reclaimed from demolished local warehouses, blending sustainability with modern aesthetics.'
+  ],
+  studentTips: [
+    '🤫 **Study Oasis:** While it\'s research-heavy, the second-floor lounge areas and the atrium offer comfortable seating and a quiet atmosphere, perfect for focused study.',
+    '🚽 **S-Tier Restrooms:** As a newer building, the facilities here are modern, clean, and spacious. It\'s a bit of a walk from the main quad, but absolutely worth it.',
+    '🌳 **Eco-Vibes:** The building\'s sustainable design, including natural lighting and green features, makes for a refreshing change of pace from the concrete dungeons elsewhere.',
+    '🎬 **Cinematic Feel:** Walking through the atrium feels like being in a sci-fi movie or a high-stakes medical drama—great for "main character energy" photos.'
+  ],
+  relatedLegend: 'Not many ghost stories here; it\'s perhaps too sterile and well-lit for any self-respecting campus spirit to haunt.',
+  photoSpots: [
+    'The futuristic glass atrium and spiral staircase',
+    'The modern exterior facade mixing terracotta and glass'
+  ],
+  accessibility: 'Excellent accessibility with wide corridors, automatic doors, and reliable elevators throughout.',
+  officialLink: 'https://lks.berkeley.edu/',
+  tags: ['STEM', 'Research', 'Modern', 'Health']
+  }
 ];
