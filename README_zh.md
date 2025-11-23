@@ -4,15 +4,15 @@
 
 <div align="center">
 
-**一个专为加州大学伯克利分校学生设计的智能校园助手：Go & Know**
+**一个专为加州大学伯克利分校学生设计的校园助手：Go & Know**
 
 [![React](https://img.shields.io/badge/React-19.2.0-61DAFB?logo=react)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-7.2.2-646CFF?logo=vite)](https://vitejs.dev/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.1.17-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
 [![Google Maps](https://img.shields.io/badge/Google%20Maps-API-4285F4?logo=google-maps)](https://developers.google.com/maps)
 
-"Where To Go" 帮助新生和全体学生轻松规划课间路线，准时到达教室！
-"Where To Know" 带你探索建筑背后的故事。
+- **Where To Go**：你的智能导航助手，帮助你规划校园路线。
+- **Where To Know**：你的校园故事探索指南，带你了解校园历史和传说。
 
 ### [🚀 在线使用](https://berkeleywheretogo.vercel.app)
 
@@ -89,6 +89,7 @@
 - **Markdown 渲染** - 精美排版的文本，支持点击外部链接
 - **互动图库** - 高质量的校园地标图片
 - **学生生存指南** - 来自学长学姐的实用建议
+- **智能排序与筛选** - 支持按熟悉度、学院类别或热门程度对建筑进行排序和筛选
 - **最佳拍照点** - 发现适合发 Instagram 的绝佳角度
 
 ### 📊 海拔分析工具
@@ -100,8 +101,8 @@
 ### 🏢 智能建筑选择器
 
 - **双重选择模式** - 满足不同需求：
-  - 👶 **新生模式**：精选 38 个新生必备建筑
-  - 🎓 **高级模式**：包含 100+ 个校园地点的完整数据库
+  - 👶 **新生模式**：精选 39 个新生必备建筑
+  - 🎓 **高级模式**：包含 139 个校园地点的完整数据库
 - **全屏浮动面板** - 现代化的建筑选择界面，浮动在地图上方
 - **实时搜索** - 支持建筑名称即时搜索过滤
 - **分类浏览** - 全面的分类系统：
@@ -398,11 +399,11 @@ npm run build
 - [x] Where To Know 校园故事模式
 - [x] Markdown 富文本支持
 - [x] GitHub 快捷访问
+- [x] Know 界面中英文切换
 
 ### 🚧 规划中
 
 - [ ] 移动端适配
-- [ ] Know 界面中英文切换
 - [ ] 夜间模式
 - [ ] PWA 离线支持
 - [ ] 用户评论和建议功能

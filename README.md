@@ -89,6 +89,7 @@ But campus life isn't just about rushing to class. It's also about understanding
 - **Markdown Rendering** - Beautifully formatted text with clickable links to external resources
 - **Interactive Gallery** - High-quality images of campus landmarks
 - **Student Survival Tips** - Practical advice from seniors for each location
+- **Smart Sorting & Filtering** - Sort and filter buildings by familiarity, category, or popularity
 - **Photo Spots** - Find the best angles for your Instagram shots
 
 ### 📊 Elevation Analysis
@@ -100,8 +101,8 @@ But campus life isn't just about rushing to class. It's also about understanding
 ### 🏢 Smart Building Selector
 
 - **Dual Selection Modes** - Tailored for different needs:
-  - 👶 **Freshman Mode**: Curated list of 38 essential buildings for new students
-  - 🎓 **Advanced Mode**: Complete database of over 100 campus locations
+  - 👶 **Freshman Mode**: Curated list of 39 essential buildings for new students
+  - 🎓 **Advanced Mode**: Complete database of 139 campus locations
 - **Full-Screen Floating Panel** - Modern building selection interface floating over map
 - **Real-Time Search** - Instant building name search filtering
 - **Category Browsing** - Comprehensive categorization:
@@ -114,7 +115,7 @@ But campus life isn't just about rushing to class. It's also about understanding
 
 ### 🏛️ Building Database
 
-Covers **Over 100 campus buildings** (Advanced Mode), including:
+Covers **139 campus buildings** (Advanced Mode), including:
 
 - **Academic Halls**: Dwinelle, Wheeler, Pimentel, VLSB, Evans
 - **Engineering**: Soda, Cory, Etcheverry, Jacobs, Hearst Mining
@@ -398,11 +399,11 @@ When deploying to production, ensure `VITE_GOOGLE_MAPS_API_KEY` is configured in
 - [x] Where To Know Campus Stories
 - [x] Markdown Text Rendering
 - [x] GitHub Repository Link
+- [x] Know Interface Language Switch
 
 ### 🚧 Planned
 
 - [ ] Mobile Support
-- [ ] Know Interface Language Switch
 - [ ] Dark Mode
 - [ ] PWA Offline Support
 - [ ] User Comments and Suggestions
