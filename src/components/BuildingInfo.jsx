@@ -52,7 +52,7 @@ import { sortOrders } from '../data/know_sorting';
 
 // ... (imports remain the same)
 
-function BuildingInfo({ onBack, currentView, onNavigate }) {
+function BuildingInfo({ onBack, currentView }) {
   const [selectedBuildingId, setSelectedBuildingId] = useState(null);
   const [language, setLanguage] = useState('CN'); // 'CN' or 'EN'
   const [sortMethod, setSortMethod] = useState('students'); // 'students', 'categorical', 'popularity'
@@ -125,7 +125,6 @@ function BuildingInfo({ onBack, currentView, onNavigate }) {
             sortMethod={sortMethod}
             onSortChange={setSortMethod}
             currentView={currentView}
-            onNavigate={onNavigate}
           />
         )}
       </AnimatePresence>
@@ -133,7 +132,7 @@ function BuildingInfo({ onBack, currentView, onNavigate }) {
   );
 }
 
-function BuildingGrid({ sections, onSelect, language, onToggleLanguage, sortMethod, onSortChange, currentView, onNavigate }) {
+function BuildingGrid({ sections, onSelect, language, onToggleLanguage, sortMethod, onSortChange, currentView }) {
   const scrollRef = React.useRef(null);
   const { scrollY } = useScroll({ container: scrollRef });
 
@@ -236,7 +235,6 @@ function BuildingGrid({ sections, onSelect, language, onToggleLanguage, sortMeth
              >
                 <Header 
                     currentView={currentView} 
-                    onNavigate={onNavigate} 
                     centered={true}
                     titleOpacity={titleOpacity}
                     compact={true}

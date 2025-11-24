@@ -1,12 +1,14 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import logoGo from '../assets/WhereToGo_Logo.png';
 import logoKnow from '../assets/WhereToKnow_Logo.png';
 
-function Header({ onNavigate, currentView, hasResults, centered = false, hideTitle = false, hideSubtitle = false, compact = false, titleOpacity = 1, backgroundOpacity = 1 }) {
+function Header({ currentView, hasResults, centered = false, hideTitle = false, hideSubtitle = false, compact = false, titleOpacity = 1, backgroundOpacity = 1 }) {
   const [isHovering, setIsHovering] = React.useState(false);
   const closeTimeoutRef = React.useRef(null);
   const openTimeoutRef = React.useRef(null);
+  const navigate = useNavigate();
 
   const openMenu = () => {
     if (closeTimeoutRef.current) {
@@ -45,7 +47,7 @@ function Header({ onNavigate, currentView, hasResults, centered = false, hideTit
   
   const dropdownTitle = isNavigation ? 'Where To Know' : 'Where To Go';
   const dropdownSubtitle = isNavigation ? 'Explore Buildings' : 'Campus Navigation';
-  const dropdownTargetView = isNavigation ? 'info' : 'navigation';
+  const dropdownTargetRoute = isNavigation ? '/know' : '/go';
 
   // Logos
   const mainLogo = isNavigation ? logoGo : logoKnow;
@@ -154,7 +156,7 @@ function Header({ onNavigate, currentView, hasResults, centered = false, hideTit
                     
                     onMouseEnter={openMenu}
                     onClick={() => {
-                        onNavigate(dropdownTargetView);
+                        navigate(dropdownTargetRoute);
                         setIsHovering(false);
                     }}
                     className={`absolute glass rounded-2xl px-6 py-4 flex items-center gap-4 shadow-xl shadow-primary-900/10 bg-white/95 backdrop-blur-md border border-white/20 z-10 text-left hover:bg-white transition-colors
