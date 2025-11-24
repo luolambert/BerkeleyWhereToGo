@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import logoGo from '../assets/WhereToGo_Logo.png';
 import logoKnow from '../assets/WhereToKnow_Logo.png';
 
-function Header({ onNavigate, currentView, hasResults, centered = false }) {
+function Header({ onNavigate, currentView, hasResults, centered = false, hideTitle = false, hideSubtitle = false, compact = false, titleOpacity = 1, backgroundOpacity = 1 }) {
   const [isHovering, setIsHovering] = React.useState(false);
   const closeTimeoutRef = React.useRef(null);
   const openTimeoutRef = React.useRef(null);
@@ -59,10 +59,10 @@ function Header({ onNavigate, currentView, hasResults, centered = false }) {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`w-full relative z-50 ${centered ? 'flex justify-center items-start pt-6' : ''}`}
+      className={`${compact ? 'w-auto' : 'w-full'} relative z-50 ${centered ? 'flex justify-center items-start pt-6' : ''} ${compact ? '!pt-0' : ''}`}
     >
       <div 
-        className={`relative ${centered ? 'inline-flex items-center' : ''}`}
+        className={`relative ${centered ? 'inline-flex items-center' : ''} ${compact ? 'flex items-center' : ''}`}
         onMouseLeave={closeMenu}
       >
         {/* 
@@ -71,8 +71,9 @@ function Header({ onNavigate, currentView, hasResults, centered = false }) {
         */}
         <motion.div 
             layoutId={`${mainLayoutId}-bg`}
+            style={{ opacity: backgroundOpacity }}
             className={
-                centered 
+                (centered || compact)
                 ? "fixed inset-0 w-[150vmax] h-[150vmax] -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 bg-white/0 z-0 pointer-events-none" // Know View: Massive, transparent, centered
                 : "absolute inset-0 glass rounded-2xl shadow-xl shadow-primary-900/10 bg-white/90 backdrop-blur-md border border-white/20 z-0" // Go View: Standard Panel
             }
@@ -91,7 +92,9 @@ function Header({ onNavigate, currentView, hasResults, centered = false }) {
             className={`relative z-20 transition-all duration-300
                 ${centered 
                     ? 'flex items-center gap-6 justify-center' // Know View: Row, Centered Content
-                    : 'px-6 py-4 flex items-center gap-4' // Go View: Padding inside the glass panel
+                    : compact 
+                        ? 'flex items-center gap-4' // Compact View: No padding
+                        : 'px-6 py-4 flex items-center gap-4' // Go View: Padding inside the glass panel
                 }
             `}
         >
@@ -105,7 +108,10 @@ function Header({ onNavigate, currentView, hasResults, centered = false }) {
                 <img src={mainLogo} alt="App Logo" className="w-full h-full object-contain drop-shadow-sm" />
             </motion.div>
 
-            <div className={`min-w-0 ${centered ? 'text-left' : ''}`}>
+            <motion.div 
+              className={`min-w-0 ${centered ? 'text-left' : ''} ${hideTitle ? 'hidden' : 'block'}`}
+              style={{ opacity: titleOpacity }}
+            >
                 <motion.h1 
                     layoutId={`${mainLayoutId}-title`}
                     className={`font-bold text-neutral-800 tracking-tight leading-tight whitespace-nowrap overflow-hidden text-ellipsis
@@ -119,11 +125,12 @@ function Header({ onNavigate, currentView, hasResults, centered = false }) {
                     className={`font-medium truncate
                         ${centered ? 'text-lg' : 'text-xs'}
                         ${isExploreSubtitle(mainSubtitle) ? 'text-neutral-500' : 'text-neutral-500'}
+                        ${hideSubtitle ? 'hidden' : 'block'}
                     `}
                 >
                     {mainSubtitle}
                 </motion.p>
-            </div>
+            </motion.div>
         </motion.div>
 
         {/* Dropdown Bar */}

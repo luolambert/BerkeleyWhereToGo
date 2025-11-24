@@ -1,0 +1,179 @@
+export const buildingImages = {
+  // ---------------------------------------------------------
+  // 1. The "Big Three" (核心通识课大教室)
+  // ---------------------------------------------------------
+  dwinelle: ['https://upload.wikimedia.org/wikipedia/commons/5/5d/Dwinelle_hall_uc_berkeley.jpg'],
+  wheeler: ['https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Wheeler_Hall--UC_Berkeley--Panoramic.jpg/2560px-Wheeler_Hall--UC_Berkeley--Panoramic.jpg'],
+  pimentel: ['https://chemistry.berkeley.edu/sites/default/files/styles/panopoly_image_original/public/pimentel_hall_photo_yijian-shan-_staff.jpg?itok=ch5N3vzl&timestamp=1572625477'],
+
+  // ---------------------------------------------------------
+  // 2. STEM Core (理科与工程基础课)
+  // ---------------------------------------------------------
+  valley_life: ['https://funginstitute.berkeley.edu/wp-content/uploads/2015/06/vlsb.jpg'],
+  evans: ['https://bloximages.chicago2.vip.townnews.com/dailycal.org/content/tncms/assets/v3/editorial/4/ae/4ae9190c-2f4f-11ef-a3fa-838acad1d195/6674a48d2a90f.image.jpg'],
+  physics_north: ['https://dac.berkeley.edu/sites/default/files/styles/openberkeley_widgets_spotlight_full/public/buildings-2/buildings-2/Leconte-Building.jpg?itok=GKbRHrAN'],
+  latimer: ['https://images.squarespace-cdn.com/content/v1/5d5b8ebf066cad00017d0b0f/1618700101777-VPK9BBKN6GWAJZAKWDB3/UCB+Latimer+Hall+Renovations+1.png?format=2500w'],
+  soda: ['https://people.eecs.berkeley.edu/~sequin/soda/NewPhotos/SodaW.JPG'],
+  cory: ['https://engineering.berkeley.edu/wp-content/uploads/2020/01/1950cory_aerial.jpg'],
+  etcheverry: ['https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Etcheverry_Hall.jpg/2560px-Etcheverry_Hall.jpg'],
+  hearst_mining: [], // Placeholder needed
+
+  // ---------------------------------------------------------
+  // 3. Libraries & Study Spaces (主要图书馆)
+  // ---------------------------------------------------------
+  moffitt: ['https://www.lib.berkeley.edu/sites/default/files/inline-images/Mitchell_Moffitt%20Library_20.jpg'],
+  doe: ['https://upload.wikimedia.org/wikipedia/commons/9/9a/Doe_Library%2C_main_facade%2C_July_2018.jpg',
+        'https://thomasguignard.photo/wp-content/uploads/sites/6/2020/05/tguignard-ucberkeley-web-0723.jpg'],
+  east_asian: [],
+  kresge: [],
+  bancroft: [],
+
+  // ---------------------------------------------------------
+  // 4. Social Sciences, Arts & Professional (文社科与专业学院)
+  // ---------------------------------------------------------
+  social_sciences: ['https://eventservices.berkeley.edu/wp-content/uploads/2022/10/Social-Sciences-C.-3.jpg'],
+  bauer_wurster: ['https://www.sosbrutalism.org/sixcms/media.php/1685/thumbnails/Wurster%20Hall%20-%20UC%20Berkeley%20%28Vernon%20De%20Mars%2C%20Donald%20Olsen%2C%20Joseph%20Esherick%2C%201964%29%2C%20Berkeley.jpg.3065879.jpg'],
+  haas: ['https://www.usnews.com/cmsmedia/b2/f7/0776ad8f4bdb81e93fd317995d14/hero-azh-511m-1920x760.jpg'],
+  morgan: [],
+  genetics: [],
+  anth_art: [],
+
+  // ---------------------------------------------------------
+  // 5. Student Life & Essentials (生活服务与活动)
+  // ---------------------------------------------------------
+  mlk: [],
+  sproul: [],
+  rsf: [],
+  tang_center: [],
+  golden_bear_cafe: [],
+
+  // ---------------------------------------------------------
+  // 6. Iconic Landmarks (地标)
+  // ---------------------------------------------------------
+  sather_gate: [],
+  campanile: [],
+  memorial_glade: [],
+
+  // ---------------------------------------------------------
+  // 7. Athletics & Culture (体育与文化)
+  // ---------------------------------------------------------
+  stadium: [],
+  haas_pavilion: [],
+  bampfa: [],
+
+  // ---------------------------------------------------------
+  // 8. Housing (宿舍)
+  // ---------------------------------------------------------
+  unit_1: [],
+  unit_2: [],
+  unit_3: [],
+  blackwell: [],
+  foothill: [],
+  clark_kerr: [],
+
+  // ---------------------------------------------------------
+  // Additional Buildings from advanced_building.js
+  // ---------------------------------------------------------
+  stephens: [],
+  philosophy: [],
+  south_hall: [],
+  cal_hall: [],
+  durant: [],
+  anthony: [],
+  jacobs: ['https://engineering.berkeley.edu/wp-content/uploads/files/images/news/top/2016/12/jacobs1.jpg'],
+  lks: ['https://www.ckh.com.hk/upload/en/media/press/n111022d_dpi.jpg'],
+  physics_south: [],
+  lewis: [],
+  hildebrand: [],
+  tan: [],
+  gilman: [],
+  giauque: [],
+  campbell: [],
+  birge: [],
+  stanley: [],
+  davis: ['https://engineering.berkeley.edu/wp-content/uploads/2023/07/facilities-davis.jpg'],
+  mclaughlin: [],
+  obrien: [],
+  sutardja_dai: [],
+  hesse: [],
+  mccone: [],
+  the_gateway: [],
+  berkeley_way_west: [],
+  koshland: [],
+  barker: [],
+  mulford: [],
+  hilgard: [],
+  wellman: [],
+  giannini: [],
+  weill: [],
+  hertz: [],
+  morrison: [],
+  aapb: [], // Same as anth_art
+  north_gate: [],
+  chou: ['https://www.usgbc.org/sites/default/files/chou-hall-v2.jpg'],
+  cheit: [],
+  law_building: [],
+  minor: [],
+  haviland: [],
+  goldman_school: [],
+  hargrove: [],
+  eshleman: [],
+  cesar_chavez: [],
+  zellerbach: [],
+  alumni_house: [],
+  faculty_club: [],
+  womens_faculty_club: [],
+  career_engagement: [],
+  stern: [],
+  bowles: [],
+  anchor_house: [],
+  i_house: [],
+  martinez: [],
+  jackson_house: [],
+  manville: [],
+  rssb: [],
+  edwards: [],
+  hearst_gym: [],
+  spieker: [],
+  legends_aquatic: [],
+  goldman_field: [],
+  levine_fricke: [],
+  maxwell_field: [],
+  underhill: [],
+  strawberry_canyon: [],
+  golden_bear_rec: [],
+  lhs: [],
+  lbnl: [],
+  ssl: [],
+  msri: [],
+  calvin: [],
+  igi: [],
+  simon_hall: [],
+  donner: [],
+  blulm: [],
+  rfs: [],
+  university_hall: [],
+  police: [],
+  a_and_e: [],
+  '2483_hearst': [],
+  udar: [],
+  senior_hall: [],
+  heating_plant: [],
+  hazmat: [],
+  greenhouse_oxford: [],
+  insectary: [],
+  child_study: [],
+  haste_child_dev: [],
+  founders_rock: [],
+  hearst_greek_theatre: [],
+  botanical_garden: [],
+  class_of_1914: [],
+  west_gate: [],
+  lower_sproul_garage: [],
+  rsf_garage: [],
+  ellsworth_parking: [],
+  stadium_parking: [],
+  underhill_parking: [],
+  foothill_parking: [],
+  bart: []
+};

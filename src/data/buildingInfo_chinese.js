@@ -108,7 +108,7 @@ export const knowLocations = [
   {
     images: ['https://people.eecs.berkeley.edu/~sequin/soda/NewPhotos/SodaW.JPG'],
     id: 'soda',
-    title: 'Soda Hall (CS)',
+    title: 'Soda Hall',
     yearBuilt: '1994',
     architect: 'Anshen & Allen',
     summary: 'CS 人的第二个家（或者说是第一个），充满咖啡因和赶 Due 的气息 💻',
@@ -143,7 +143,7 @@ export const knowLocations = [
   {
     images: ['https://engineering.berkeley.edu/wp-content/uploads/2020/01/1950cory_aerial.jpg'],
     id: 'cory',
-    title: 'Cory Hall (EE)',
+    title: 'Cory Hall',
     yearBuilt: '1950',
     architect: '未知 (1985年加建层有芯片设计元素)',
     summary: 'EE 人的修仙基地，充满了电路板的味道和历史的回响 ⚡️',
@@ -543,7 +543,7 @@ export const knowLocations = [
   },
 
   {
-  images: ['https://www.zgf.com/images/2017_07_83e717f2-5612-4c24-9074-afa68c06c1dc.jpg?w=1920'],
+  images: ['https://www.ckh.com.hk/upload/en/media/press/n111022d_dpi.jpg'],
   id: 'lks',
   title: 'Li Ka Shing Center (LKS)',
   yearBuilt: '2011',
@@ -573,5 +573,76 @@ export const knowLocations = [
   accessibility: '极其完善的无障碍设施，宽敞的走廊和现代化的电梯，对所有人都非常友好。',
   officialLink: 'https://lks.berkeley.edu/',
   tags: ['STEM', 'Research', 'Modern', 'Health']
-  }
+  },
+
+  {
+    images: ['https://www.lib.berkeley.edu/sites/default/files/inline-images/Mitchell_Moffitt%20Library_20.jpg'],
+    id: 'moffitt',
+    title: 'Moffitt Library',
+    yearBuilt: '1970',
+    architect: 'John Carl Warnecke',
+    summary: '曾经的通宵圣地，现在的装修工地 🚧',
+    description: `
+      如果你是老生，这里有你无数个赶 Due 到天亮的记忆；如果你是新生，很遗憾，你可能暂时只能看到它的围挡。
+      
+      Moffitt 是伯克利最著名的本科生图书馆，也是校园里为数不多曾经 **24小时开放** 的地方。它的 4 楼和 5 楼在 2016 年翻新过，风格非常现代（硅谷风），一度是全校最难抢座位的风水宝地。
+      
+      目前（2025年起），Moffitt 正经历下三层的大规模翻新，被称为 "Center for Connected Learning" 项目。虽然现在进不去，但它依然是伯克利的精神地标之一——毕竟，谁没在 RRR Week 见过这里的裸奔大军呢？
+    `,
+    funFacts: [
+      '这里的 4 楼曾经是著名的 "社交楼层"，不仅允许说话，还有白板，非常适合小组讨论（或者名为讨论实为聊天）。',
+      '5 楼则是 "绝对安静区"，掉根针都能听见，是考前突击的绝佳场所。',
+      '它通过地下的 Gardner Stacks 与 Doe Library 相连，下雨天可以通过地下通道穿梭两馆。',
+      '建筑风格属于 "粗野主义" (Brutalism)，看起来像个混凝土堡垒，本来设计是为了防暴乱的（60年代特色）。'
+    ],
+    studentTips: [
+      '⚠️ **重大变动**：Moffitt 目前因 "Center for Connected Learning" 项目施工处于**闭馆状态**，预计 2026 年才会重新开放。别白跑一趟！',
+      '想找类似的通宵自习室？目前 Main Stacks 和 Doe Library 部分区域延长了开放时间作为替代。',
+      '虽然进不去，但门口的 FSM (Free Speech Movement) Café 露台依然是晒太阳和看来往行人的好地方。'
+    ],
+    relatedLegend: '每学期 RRR Week（死周）的周四晚上，这里会是著名的 "Naked Run" (裸奔) 的必经之路。如果你在复习时听到外面有人尖叫狂奔，别怕，那是传统的减压方式。🏃💨',
+    photoSpots: [
+      '站在 FSM Cafe 的露台上，可以拍到包含 Moffitt 混凝土外墙和钟楼同框的照片。'
+    ],
+    accessibility: '目前因施工关闭。正常情况下，入口位于三楼，有电梯通往各层。',
+    officialLink: 'https://www.lib.berkeley.edu/visit/moffitt',
+    tags: ['Library', 'Renovation', 'Student Life', 'Landmark']
+  },
+
+  {
+    images: ['https://upload.wikimedia.org/wikipedia/commons/9/9a/Doe_Library%2C_main_facade%2C_July_2018.jpg'],
+    id: 'doe',
+    title: 'Doe Memorial Library',
+    yearBuilt: '1911',
+    architect: 'John Galen Howard',
+    summary: '全校最神圣的学术殿堂，地底藏着52英里的书海 📚',
+    description: `
+      如果说 Sather Gate 是伯克利的门面，那么 Doe Library 就是它的灵魂。这座新古典主义建筑是校园里最庄严的存在，也是全校最大的图书馆。
+      
+      即使你不进去借书，你也一定要去参观一下 **North Reading Room**——巨大的拱形窗户和长条木桌，让你仿佛置身于霍格沃茨。进门大厅的 **Morrison Library** 则是另一个极端，它是全校最舒服的“客厅”，甚至禁止使用电脑，只能看闲书或睡觉。
+      
+      而在 Doe 的地底下，是著名的 **Main (Gardner) Stacks**。这是一个深达四层的地下迷宫，拥有 52 英里长的书架。这里是全校最安静（也最压抑）的地方，也是赶 Final 时的精神时光屋。
+    `,
+    funFacts: [
+      'Main Stacks 的书架总长度超过 52 英里（约 84 公里），你可以从这里一路走到圣何塞。',
+      'Doe Library 的地基是在 1906 年旧金山大地震后建造的，所以它的设计格外坚固，外墙用的是来自加州 Sierra 的花岗岩。',
+      'Morrison Library 其实允许并在某种程度上鼓励睡觉，那是全校最舒服的沙发没有之一。',
+      '这里有一个都市传说：Main Stacks 的螺旋楼梯附近在深夜会听到低语声，那是被 Final 折磨的幽灵在背书。👻'
+    ],
+    studentTips: [
+      '⚠️ **手机信号警告**：进入 Main Stacks 的地下层后，手机信号会极差甚至消失。如果你需要与人联系，请在进楼梯前发完消息。',
+      '想找霍格沃茨的感觉？去二楼的 **North Reading Room**。想在绝对安静中闭关修炼？去 **Main Stacks Level C**。',
+      '**关于 Morrison Library 用电脑**：官方规定是“禁止使用电脑”以保持安静氛围。虽然实际上很多人偷偷用，但如果你键盘敲得太响或大张旗鼓找插座，可能会被管理员“请”出去。',
+      '由于 Moffitt 正在装修，Doe Library 现在的开放时间延长了，是目前主要的深夜自习据点。',
+      '进 Main Stacks 需要刷 Cal 1 Card，别忘了带卡！'
+    ],
+    relatedLegend: '关于 Main Stacks 有很多恐怖传说，最著名的是关于一个在大地震中失踪的学生。虽然听起来很假，但半夜两点在空无一人的地下三层找书时，你可能真的会觉得背后发凉...',
+    photoSpots: [
+      'North Reading Room 的全景照是必拍的，利用巨大的拱形窗户做背景。',
+      '站在 Memorial Glade 草坪上拍摄 Doe Library 的正面全景，最好是在夕阳时分。'
+    ],
+    accessibility: '主入口设有坡道，馆内电梯可通往 Main Stacks 和各阅览室。',
+    officialLink: 'https://www.lib.berkeley.edu/visit/doe',
+    tags: ['Library', 'History', 'Architecture', 'Study Spot']
+  },
 ];

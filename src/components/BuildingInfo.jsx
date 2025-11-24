@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, MapPin, Calendar, User, Info, ExternalLink, Camera, BookOpen, Ghost, Accessibility, ChevronDown, Globe } from 'lucide-react';
+import { ArrowLeft, MapPin, Calendar, User, Info, ExternalLink, Camera, BookOpen, Ghost, Accessibility, ChevronDown, Globe, ChevronLeft, ChevronRight } from 'lucide-react';
+import Header from './Header';
+import { useScroll, useMotionValueEvent, useTransform } from 'framer-motion';
 import { knowLocations as knowLocationsCN } from '../data/buildingInfo_chinese';
 import { knowLocations as knowLocationsEN } from '../data/buildingInfo_english';
+import { buildingImages } from '../data/buildingImage';
 
 // Simple Markdown Renderer Component
 const MarkdownText = ({ text, className = "" }) => {
@@ -49,7 +52,7 @@ import { sortOrders } from '../data/know_sorting';
 
 // ... (imports remain the same)
 
-function BuildingInfo({ onBack }) {
+function BuildingInfo({ onBack, currentView, onNavigate }) {
   const [selectedBuildingId, setSelectedBuildingId] = useState(null);
   const [language, setLanguage] = useState('CN'); // 'CN' or 'EN'
   const [sortMethod, setSortMethod] = useState('students'); // 'students', 'categorical', 'popularity'
@@ -121,6 +124,8 @@ function BuildingInfo({ onBack }) {
             onToggleLanguage={toggleLanguage}
             sortMethod={sortMethod}
             onSortChange={setSortMethod}
+            currentView={currentView}
+            onNavigate={onNavigate}
           />
         )}
       </AnimatePresence>
@@ -128,7 +133,58 @@ function BuildingInfo({ onBack }) {
   );
 }
 
-function BuildingGrid({ sections, onSelect, language, onToggleLanguage, sortMethod, onSortChange }) {
+function BuildingGrid({ sections, onSelect, language, onToggleLanguage, sortMethod, onSortChange, currentView, onNavigate }) {
+  const scrollRef = React.useRef(null);
+  const { scrollY } = useScroll({ container: scrollRef });
+
+  const SCROLL_RANGE = 150;
+
+  // Container animations
+  const headerHeight = useTransform(scrollY, [0, SCROLL_RANGE], [160, 60]);
+  const headerPaddingTop = useTransform(scrollY, [0, SCROLL_RANGE], [24, 12]);
+  const headerPaddingBottom = useTransform(scrollY, [0, SCROLL_RANGE], [16, 12]);
+  const bgOpacity = useTransform(scrollY, [0, SCROLL_RANGE], [0, 0.9]);
+  const blurAmount = useTransform(scrollY, [0, SCROLL_RANGE], [0, 12]);
+  const shadowOpacity = useTransform(scrollY, [0, SCROLL_RANGE], [0, 0.05]);
+
+  // Convert to CSS strings
+  const backgroundColor = useTransform(bgOpacity, (v) => `rgba(250, 250, 250, ${v})`);
+  const backdropFilter = useTransform(blurAmount, (v) => `blur(${v}px)`);
+  const boxShadow = useTransform(shadowOpacity, (v) => `0 1px 2px rgba(0, 0, 0, ${v})`);
+
+  // Title fade out (in Header component)
+  const titleOpacity = useTransform(scrollY, [0, SCROLL_RANGE * 0.4], [1, 0]);
+
+  // Logo scale
+  const logoScale = useTransform(scrollY, [0, SCROLL_RANGE], [1, 0.8]);
+
+  // Subtitle animations
+  const subtitleFontSize = useTransform(scrollY, [0, SCROLL_RANGE], [18, 14]);
+  const subtitleOpacity = useTransform(scrollY, [0, SCROLL_RANGE], [1, 0.85]);
+  
+  // Controls scale
+  const controlsScale = useTransform(scrollY, [0, SCROLL_RANGE], [1, 1]);
+
+  // Layout Transforms (Absolute Positioning)
+  
+  // Logo: Center Top -> Left Center
+  const logoTop = useTransform(scrollY, [0, SCROLL_RANGE], ["-4px", "50%"]);
+  const logoLeft = useTransform(scrollY, [0, SCROLL_RANGE], ["50%", "0%"]);
+  const logoX = useTransform(scrollY, [0, SCROLL_RANGE], ["-50%", "0%"]);
+  const logoY = useTransform(scrollY, [0, SCROLL_RANGE], ["0%", "-50%"]);
+
+  // Subtitle: Center Middle -> Center Middle (but moves up)
+  const subtitleTop = useTransform(scrollY, [0, SCROLL_RANGE], ["56px", "50%"]);
+  const subtitleLeft = useTransform(scrollY, [0, SCROLL_RANGE], ["50%", "50%"]); // Stays centered horizontally
+  const subtitleX = useTransform(scrollY, [0, SCROLL_RANGE], ["-50%", "-50%"]);
+  const subtitleY = useTransform(scrollY, [0, SCROLL_RANGE], ["0%", "-50%"]);
+
+  // Controls: Center Bottom -> Right Center
+  const controlsTop = useTransform(scrollY, [0, SCROLL_RANGE], ["85px", "50%"]);
+  const controlsLeft = useTransform(scrollY, [0, SCROLL_RANGE], ["50%", "100%"]);
+  const controlsX = useTransform(scrollY, [0, SCROLL_RANGE], ["-50%", "-100%"]);
+  const controlsY = useTransform(scrollY, [0, SCROLL_RANGE], ["0%", "-50%"]);
+
   const title = language === 'CN' 
     ? "Discover the stories and legends behind Berkeley's campus buildings"
     : "Discover the stories and legends behind Berkeley's campus buildings"; 
@@ -149,49 +205,100 @@ function BuildingGrid({ sections, onSelect, language, onToggleLanguage, sortMeth
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
-      className="w-full h-full flex flex-col px-6 py-2 sm:px-8 sm:py-4 overflow-y-auto"
+      className="w-full h-full flex flex-col overflow-hidden"
     >
-      {/* Increased width to 90% as requested */}
-      <div className="w-[90%] max-w-[1920px] mx-auto">
-        {/* Header Section with Subtitle, Sort Control, and Toggle */}
-        <div className="relative flex flex-col items-center justify-center mb-8 gap-4">
-            <p className="text-neutral-600 text-lg text-center font-medium max-w-2xl mx-auto">
-            {title}
-            </p>
+      {/* Scrollable Container */}
+      <div ref={scrollRef} className="w-full h-full overflow-y-auto px-6 sm:px-8 pb-12">
+        
+        {/* Sticky Header Container */}
+        <motion.div 
+          className="sticky top-0 z-40 -mx-6 sm:-mx-8 px-8 mb-6"
+          style={{
+            height: headerHeight,
+            paddingTop: headerPaddingTop,
+            paddingBottom: headerPaddingBottom,
+            backgroundColor,
+            backdropFilter,
+            boxShadow
+          }}
+        >
+          <div className="mx-auto w-full max-w-[1920px] h-full relative">
+             {/* Main Header Component (Logo) */}
+             <motion.div 
+               className="absolute w-auto"
+               style={{
+                 scale: logoScale,
+                 top: logoTop,
+                 left: logoLeft,
+                 x: logoX,
+                 y: logoY
+               }}
+             >
+                <Header 
+                    currentView={currentView} 
+                    onNavigate={onNavigate} 
+                    centered={true}
+                    titleOpacity={titleOpacity}
+                    compact={true}
+                    hideSubtitle={true}
+                />
+             </motion.div>
 
-            {/* Sort Control */}
-            <div className="flex items-center p-1 bg-neutral-200/50 backdrop-blur-xl rounded-full border border-white/20 shadow-[inset_0_1px_3px_rgba(0,0,0,0.06)] relative">
-              {sortOptions.map((option) => (
-                <button
-                  key={option.id}
-                  onClick={() => onSortChange(option.id)}
-                  className={`relative px-4 py-1.5 rounded-full text-sm font-medium transition-colors duration-200 z-10 ${
-                    sortMethod === option.id
-                      ? 'text-neutral-900'
-                      : 'text-neutral-500 hover:text-neutral-700'
-                  }`}
-                >
-                  {sortMethod === option.id && (
-                    <motion.div
-                      layoutId="activeSort"
-                      className="absolute inset-0 bg-white shadow-[0_2px_8px_rgba(0,0,0,0.12),0_1px_2px_rgba(0,0,0,0.08)] rounded-full z-[-1]"
-                      transition={{ 
-                        type: "spring", 
-                        stiffness: 400, 
-                        damping: 30 
-                      }}
-                    />
-                  )}
-                  {option.label}
-                </button>
-              ))}
-            </div>
-            
-            {/* Toggle Button - Absolute positioned to right of container, vertically centered relative to the whole header block or just top? 
-                Let's keep it aligned with the subtitle line roughly, or top right. 
-                Given the new layout, top right of the container might be best.
-            */}
-            <div className="absolute right-0 top-0">
+             {/* Subtitle */}
+             <motion.p 
+               className="absolute text-neutral-600 font-medium text-center whitespace-nowrap w-auto"
+               style={{
+                 fontSize: subtitleFontSize,
+                 opacity: subtitleOpacity,
+                 top: subtitleTop,
+                 left: subtitleLeft,
+                 x: subtitleX,
+                 y: subtitleY
+               }}
+             >
+                {title}
+             </motion.p>
+
+             {/* Controls Row */}
+             <motion.div 
+               className="absolute flex items-center gap-4 w-auto"
+               style={{
+                 scale: controlsScale,
+                 top: controlsTop,
+                 left: controlsLeft,
+                 x: controlsX,
+                 y: controlsY
+               }}
+             >
+                {/* Sort Control */}
+                <div className="flex items-center p-1 bg-neutral-200/50 backdrop-blur-xl rounded-full border border-white/20 shadow-[inset_0_1px_3px_rgba(0,0,0,0.06)] relative">
+                  {sortOptions.map((option) => (
+                    <button
+                      key={option.id}
+                      onClick={() => onSortChange(option.id)}
+                      className={`relative px-4 py-1.5 rounded-full text-sm font-medium transition-colors duration-200 z-10 whitespace-nowrap ${
+                        sortMethod === option.id
+                          ? 'text-neutral-900'
+                          : 'text-neutral-500 hover:text-neutral-700'
+                      }`}
+                    >
+                      {sortMethod === option.id && (
+                        <motion.div
+                          layoutId="activeSort"
+                          className="absolute inset-0 bg-white shadow-[0_2px_8px_rgba(0,0,0,0.12),0_1px_2px_rgba(0,0,0,0.08)] rounded-full z-[-1]"
+                          transition={{ 
+                            type: "spring", 
+                            stiffness: 400, 
+                            damping: 30 
+                          }}
+                        />
+                      )}
+                      {option.label}
+                    </button>
+                  ))}
+                </div>
+                
+                {/* Language Toggle */}
                 <button
                     onClick={onToggleLanguage}
                     className="flex items-center gap-2 px-3 py-1.5 bg-white hover:bg-neutral-50 text-neutral-800 rounded-full shadow-sm hover:shadow border border-neutral-200 group transition-all"
@@ -201,11 +308,12 @@ function BuildingGrid({ sections, onSelect, language, onToggleLanguage, sortMeth
                     {language === 'CN' ? 'EN' : '中'}
                     </span>
                 </button>
-            </div>
-        </div>
-        
-        {/* Sections Grid */}
-        <div className="pb-12 space-y-12">
+             </motion.div>
+          </div>
+        </motion.div>
+
+        {/* Content Grid */}
+        <div className="w-[90%] max-w-[1920px] mx-auto pb-12 space-y-12">
           {sections.map((section, sectionIndex) => (
             <div key={sectionIndex}>
               {section.title && (
@@ -213,7 +321,7 @@ function BuildingGrid({ sections, onSelect, language, onToggleLanguage, sortMeth
                   {section.title}
                 </h3>
               )}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
                 {section.buildings.map((building) => (
                   <motion.div
                     key={building.id}
@@ -221,7 +329,7 @@ function BuildingGrid({ sections, onSelect, language, onToggleLanguage, sortMeth
                     whileHover={{ scale: 1.02, y: -5 }}
                     whileTap={{ scale: 0.98 }}
                     // Image background card style
-                    className="group cursor-pointer relative rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden h-[220px]"
+                    className="group cursor-pointer relative rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden h-[280px]"
                   >
                     {/* Full background image */}
                     <motion.img 
@@ -272,15 +380,15 @@ function BuildingGrid({ sections, onSelect, language, onToggleLanguage, sortMeth
 
 function BuildingDetail({ building, onBack, language }) {
   const labels = language === 'CN' ? {
-    built: "Built",
+    built: "建成于",
     intro: "简介",
-    funFacts: "冷知识 (Fun Facts)",
+    funFacts: "冷知识",
     studentTips: "学生生存指南",
     legend: "校园传说",
     photoSpots: "最佳拍照点",
     accessibility: "无障碍设施",
-    officialWeb: "Official Web",
-    scroll: "Scroll for details"
+    officialWeb: "官方网站",
+    scroll: "下滑查看详情"
   } : {
     built: "Built",
     intro: "Introduction",
@@ -293,6 +401,34 @@ function BuildingDetail({ building, onBack, language }) {
     scroll: "Scroll for details"
   };
 
+  // Get images from centralized file, fallback to building.images
+  const images = buildingImages[building.id] && buildingImages[building.id].length > 0
+    ? buildingImages[building.id]
+    : building.images || [];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Auto-rotation for carousel
+  useEffect(() => {
+    if (images.length <= 1) return;
+
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    }, 5000); // Rotate every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [currentImageIndex, images.length]);
+
+  const nextImage = (e) => {
+    e.stopPropagation();
+    setCurrentImageIndex((prev) => (prev + 1) % images.length);
+  };
+
+  const prevImage = (e) => {
+    e.stopPropagation();
+    setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
+  };
+
   return (
     <motion.div 
       initial={{ opacity: 0, y: 50 }}
@@ -301,18 +437,55 @@ function BuildingDetail({ building, onBack, language }) {
       transition={{ duration: 0.3, ease: "easeInOut" }}
       className="fixed inset-0 z-[100] w-full h-full overflow-y-auto bg-white"
     >
-      {/* Hero Section - Full Screen */}
-      <div className="relative w-full h-screen">
-        {/* Main Image - Full screen cover */}
-        <motion.img 
-          src={building.images[0]} 
-          alt={building.title}
-          className="w-full h-full object-cover"
-        />
+      {/* Hero Section - Full Screen Carousel */}
+      <div className="relative w-full h-screen group bg-black">
+        <AnimatePresence>
+          <motion.img 
+            key={currentImageIndex}
+            src={images[currentImageIndex]} 
+            alt={`${building.title} - Image ${currentImageIndex + 1}`}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.6, ease: "easeInOut" }}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </AnimatePresence>
         
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-20" />
         
+        {/* Navigation Arrows (Only if multiple images) */}
+        {images.length > 1 && (
+          <>
+            <button 
+              onClick={prevImage}
+              className="absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-black/20 hover:bg-black/40 backdrop-blur-sm rounded-full text-white/80 hover:text-white transition-all z-40 opacity-0 group-hover:opacity-100"
+            >
+              <ChevronLeft className="w-8 h-8" />
+            </button>
+            <button 
+              onClick={nextImage}
+              className="absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-black/20 hover:bg-black/40 backdrop-blur-sm rounded-full text-white/80 hover:text-white transition-all z-40 opacity-0 group-hover:opacity-100"
+            >
+              <ChevronRight className="w-8 h-8" />
+            </button>
+
+            {/* Dots Indicator */}
+            <div className="absolute bottom-24 left-1/2 -translate-x-1/2 flex gap-2 z-40">
+              {images.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setCurrentImageIndex(idx)}
+                  className={`w-2 h-2 rounded-full transition-all ${
+                    idx === currentImageIndex ? 'bg-white w-6' : 'bg-white/50 hover:bg-white/80'
+                  }`}
+                />
+              ))}
+            </div>
+          </>
+        )}
+
         <button 
           onClick={onBack}
           className="absolute top-6 left-6 p-3 bg-black/30 hover:bg-black/50 backdrop-blur-md rounded-full text-white transition-colors border border-white/10 group z-50"
@@ -321,8 +494,8 @@ function BuildingDetail({ building, onBack, language }) {
         </button>
 
         {/* Bottom Left Info */}
-        <div className="absolute bottom-0 left-0 w-full p-6 sm:p-10 z-30 flex flex-col justify-end h-full pb-24">
-          <div className="max-w-7xl mx-auto w-full">
+        <div className="absolute bottom-0 left-0 w-full p-6 sm:p-10 z-30 flex flex-col justify-end h-full pb-24 pointer-events-none">
+          <div className="max-w-7xl mx-auto w-full pointer-events-auto">
             <motion.h1 
               className="text-4xl sm:text-6xl font-bold text-white mb-6"
             >
@@ -342,7 +515,7 @@ function BuildingDetail({ building, onBack, language }) {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-0 w-full flex justify-center z-30">
+        <div className="absolute bottom-8 left-0 w-full flex justify-center z-30 pointer-events-none">
             <motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}

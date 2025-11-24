@@ -108,7 +108,7 @@ export const knowLocations = [
   {
     images: ['https://people.eecs.berkeley.edu/~sequin/soda/NewPhotos/SodaW.JPG'],
     id: 'soda',
-    title: 'Soda Hall (CS)',
+    title: 'Soda Hall',
     yearBuilt: '1994',
     architect: 'Anshen & Allen',
     summary: 'The Mothership for CS majors, fueled by caffeine and deadline panic 💻',
@@ -143,7 +143,7 @@ export const knowLocations = [
   {
     images: ['https://engineering.berkeley.edu/wp-content/uploads/2020/01/1950cory_aerial.jpg'],
     id: 'cory',
-    title: 'Cory Hall (EE)',
+    title: 'Cory Hall',
     yearBuilt: '1950',
     architect: 'Unknown (1985 addition has chip motifs)',
     summary: 'Hardware HQ, smelling of solder and echoing with history ⚡️',
@@ -544,7 +544,7 @@ export const knowLocations = [
   },
 
   {
-  images: ['https://www.zgf.com/images/2017_07_83e717f2-5612-4c24-9074-afa68c06c1dc.jpg?w=1920'],
+  images: ['https://www.ckh.com.hk/upload/en/media/press/n111022d_dpi.jpg'],
   id: 'lks',
   title: 'Li Ka Shing Center (LKS)',
   yearBuilt: '2011',
@@ -574,5 +574,76 @@ export const knowLocations = [
   accessibility: 'Excellent accessibility with wide corridors, automatic doors, and reliable elevators throughout.',
   officialLink: 'https://lks.berkeley.edu/',
   tags: ['STEM', 'Research', 'Modern', 'Health']
+  },
+
+  {
+    images: ['https://www.lib.berkeley.edu/sites/default/files/inline-images/Mitchell_Moffitt%20Library_20.jpg'],
+    id: 'moffitt',
+    title: 'Moffitt Library',
+    yearBuilt: '1970',
+    architect: 'John Carl Warnecke',
+    summary: 'Formerly the 24/7 grind hub, currently a construction zone 🚧',
+    description: `
+      If you're a senior, this place holds your memories of caffeine-fueled all-nighters. If you're a freshman, sorry, you might only see the construction fences for a while.
+      
+      Moffitt is the quintessential undergraduate library. Its upper floors (4th & 5th) were renovated in 2016 into a sleek, Silicon Valley-esque workspace that was notoriously hard to find a seat in. 
+      
+      Currently (as of 2025), the lower three floors are undergoing a massive transformation into the "Center for Connected Learning." While you can't study here right now, it remains a spiritual landmark of UC Berkeley student life—home of the legendary RRR Week Naked Run.
+    `,
+    funFacts: [
+      'The 4th floor was famously the "social floor" (a.k.a. "Buzz"), great for group projects and gossip. The 5th floor was the "silent floor" (a.k.a. "Hush")—drop a pen and everyone glares at you.',
+      'It is connected to Doe Library via the underground Gardner Stacks—perfect for dodging rain.',
+      'The architecture is classic "Brutalism"—lots of raw concrete. It was designed in the 60s, partially to be riot-proof.',
+      'Before closing, it housed the famous "Wellness Lounge" with nap pods.'
+    ],
+    studentTips: [
+      '⚠️ **CONSTRUCTION ALERT**: Moffitt is currently **CLOSED** for renovation. It is expected to reopen around 2026. Don\'t walk all the way here expecting to study!',
+      'Need a late-night spot? Check the hours for Main Stacks or the Engineering Library as alternatives.',
+      'The Free Speech Movement (FSM) Café terrace next door is still a prime spot for people-watching and grabbing a latte.'
+    ],
+    relatedLegend: 'The "Naked Run" during RRR Week (Dead Week). If you are studying nearby on Thursday night and hear screaming, don\'t panic—it\'s just a bunch of naked Bears destressing before finals. 🏃💨',
+    photoSpots: [
+      'The terrace outside FSM Café offers a great angle of Moffitt\'s brutalist facade with the Campanile in the background.'
+    ],
+    accessibility: 'Currently closed for construction. Normally, the main entrance is on the 3rd floor with elevator access.',
+    officialLink: 'https://www.lib.berkeley.edu/visit/moffitt',
+    tags: ['Library', 'Renovation', 'Student Life', 'Landmark']
+  },
+
+  {
+    images: ['https://upload.wikimedia.org/wikipedia/commons/9/9a/Doe_Library%2C_main_facade%2C_July_2018.jpg'],
+    id: 'doe',
+    title: 'Doe Memorial Library',
+    yearBuilt: '1911',
+    architect: 'John Galen Howard',
+    summary: 'The academic soul of campus, hiding 52 miles of books underground 📚',
+    description: `
+      If Sather Gate is the face of Berkeley, Doe Library is its soul. This Beaux-Arts masterpiece is the grandest building on campus and the heart of the university's library system.
+      
+      Even if you don't need to check out a book, you must visit the **North Reading Room**—its massive arched windows and long wooden tables give off major Hogwarts vibes. On the ground floor, the **Morrison Library** offers a completely different vibe: it's the campus "living room" where laptops are banned, and napping on the plush sofas is practically encouraged.
+      
+      Beneath Doe lies the legendary **Main (Gardner) Stacks**, a four-story underground labyrinth housing 52 miles of bookshelves. It is the quietest (and most intense) place on campus—the ultimate "Hyperbolic Time Chamber" for finals week.
+    `,
+    funFacts: [
+      'The bookshelves in Main Stacks span over 52 miles (84 km)—long enough to reach San Jose from campus.',
+      'Built right after the 1906 San Francisco earthquake, its granite walls are exceptionally thick and sturdy.',
+      'Morrison Library is one of the few places on campus where napping is culturally accepted and encouraged. Those sofas are dangerous.',
+      'Urban Legend: Students whisper that the spiral staircase in Main Stacks is haunted by the ghosts of past students who cracked under finals pressure. 👻'
+    ],
+    studentTips: [
+      '⚠️ **SIGNAL DEAD ZONE**: Cell service dies quickly in the underground Stacks. Send your "I\'m going in" texts before you descend.',
+      'Want Hogwarts vibes? Go to the **North Reading Room** (2nd Floor). Want absolute silence and isolation? Head to **Main Stacks Level C**.',
+      '**Laptops in Morrison?** Officially, they are banned to keep the "tech-free" vibe. Realistically, if you are quiet and subtle, you might get away with it, but don\'t be surprised if staff ask you to put it away.',
+      'With Moffitt closed for renovation, Doe has extended its hours and is now the primary late-night study spot.',
+      'You need your Cal 1 Card to enter the Main Stacks. Don\'t forget it!'
+    ],
+    relatedLegend: 'The Main Stacks can get spooky at 2 AM. There are stories of "The Whisperer," a spectral voice heard in the lower levels during finals week. Whether it\'s a ghost or just sleep deprivation is up for debate.',
+    photoSpots: [
+      'The North Reading Room is iconic—capture the light streaming through the massive arched windows.',
+      'A wide shot of the Doe Library facade from Memorial Glade at sunset is a classic Berkeley postcard shot.'
+    ],
+    accessibility: 'Ramp access at the main entrance; elevators connect to Main Stacks and all reading rooms.',
+    officialLink: 'https://www.lib.berkeley.edu/visit/doe',
+    tags: ['Library', 'History', 'Architecture', 'Study Spot']
   }
 ];

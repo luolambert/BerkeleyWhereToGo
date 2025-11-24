@@ -225,16 +225,11 @@ function App() {
             >
                  <div className="relative z-10 w-full h-full flex flex-col items-center">
                      {/* Centered Header */}
-                     <div className="w-full flex justify-center shrink-0">
-                        <Header 
-                            currentView={currentView} 
-                            onNavigate={setCurrentView} 
-                            centered={true}
+                     <div className="flex-1 w-full overflow-hidden mx-auto pb-8">
+                        <BuildingInfo 
+                            currentView={currentView}
+                            onNavigate={setCurrentView}
                         />
-                     </div>
-
-                     <div className="flex-1 w-full overflow-hidden mx-auto px-4 sm:px-6 lg:px-8 pb-8">
-                        <BuildingInfo />
                      </div>
                  </div>
             </motion.div>
