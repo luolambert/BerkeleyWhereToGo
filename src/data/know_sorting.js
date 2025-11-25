@@ -14,7 +14,7 @@ export const sortOrders = {
     },
     {
       title: "📚 Tier 3: Study & Student Hubs",
-      ids: ['moffitt', 'doe', 'mlk', 'east_asian', 'kresge']
+      ids: ['moffitt', 'doe', 'mlk', 'east_asian', 'grimes']
     },
     {
       title: "🏛️ Tier 4: Secondary Academic Buildings",
@@ -69,7 +69,7 @@ export const sortOrders = {
     },
     {
       title: "5. Libraries",
-      ids: ['moffitt', 'doe', 'bancroft', 'east_asian', 'kresge', 'hargrove']
+      ids: ['moffitt', 'doe', 'bancroft', 'east_asian', 'grimes', 'hargrove']
     },
     {
       title: "6. Campus Life",
@@ -118,7 +118,7 @@ export const sortOrders = {
             'davis', 'donner', 'durant', 'edwards', 'ellsworth_parking', 'eshleman', 'foothill_parking', 'foothill', 
             'founders_rock', 'genetics', 'giannini', 'giauque', 'gilman', 'golden_bear_rec', 'goldman_field', 'goldman_school', 
             'hargrove', 'child_study', 'haste_child_dev', 'haviland', 'hazmat', 'hearst_gym', 'hertz', 'hesse', 'hildebrand', 
-            'hilgard', 'jackson_house', 'igi', 'insectary', 'koshland', 'kresge', 'latimer', 'lbnl', 'legends_aquatic', 
+            'hilgard', 'jackson_house', 'igi', 'insectary', 'koshland', 'grimes', 'latimer', 'lbnl', 'legends_aquatic', 
             'levine_fricke', 'lewis', 'lower_sproul_garage', 'manville', 'martinez', 'msri', 'maxwell_field', 'mccone', 
             'mclaughlin', 'minor', 'morgan', 'morrison', 'mulford', 'north_gate', 'obrien', 'greenhouse_oxford', 'philosophy', 
             'physics_south', 'rsf_garage', 'rssb', 'rfs', 'senior_hall', 'simon_hall', 'south_hall', 'ssl', 'spieker', 

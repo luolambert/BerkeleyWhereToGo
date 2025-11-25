@@ -645,4 +645,107 @@ export const knowLocations = [
     officialLink: 'https://www.lib.berkeley.edu/visit/doe',
     tags: ['Library', 'History', 'Architecture', 'Study Spot']
   },
+
+  {
+  images: ['https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/481044662_1207552781218380_7311915614725282251_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=PbuuwH_5-gEQ7kNvwGDPSGc&_nc_oc=Adl59X11cySSx8ijgM_5ur-SUpmaDbbVsmy7edIUO7XcegUhcXE6qlfmhLsM4752j4mJqTw4Jt1zrriFzxxOONtO&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=7ujKEvUpqz9ekiFcgPFpkQ&oh=00_AfjSwQox5gFF43LxxiUa5LMJ5q4d1zfjiPcR87yBUCc64Q&oe=692AB8E7'],
+  id: 'mlk',
+  title: 'Martin Luther King Jr. Student Union',
+  yearBuilt: '1961 (Original) / 2015 (Renovated)',
+  architect: 'Vernon DeMars (Original) / Moore Ruble Yudell (Renovation)',
+  summary: '校园的“大客厅”，ASUC 大本营，吃喝玩乐睡一站式解决 🛋️',
+  description: `
+    欢迎来到伯克利校园的“大客厅”！MLK Student Union 不仅仅是一栋楼，它是伯克利本科生学生会 (ASUC) 的心脏，也是你可以从早待到晚的地方。
+
+    这栋楼在 2015 年经历了大规模翻新，现在的它是连接 Upper Sproul 和 Lower Sproul 的关键枢纽。这里有你在校园里最需要的几样东西：**食物、亚马逊包裹柜 (Amazon Hub) 和可以睡觉的沙发**。
+
+    一楼是热闹的美食区和亚马逊取件点，二楼有舒适的 Goldie's Coffee 和宽敞的休息区，地下室则通向 Lower Sproul 广场和学生商店 (Cal Student Store)。顶层的 Pauley Ballroom 则是举办大型招聘会、舞会和音乐会的地方。无论是赶 Due、领快递，还是在两节课之间找个地方“瘫”一会儿，MLK 永远为你敞开大门。
+  `,
+  funFacts: [
+    '💸 **建楼资金来源**：这栋楼最初的建设资金（1959年），竟然是来自 ASUC 将 Cal 运动队的所有权卖给大学所获得的钱！',
+    '🌉 **空中连廊**：二楼有一座玻璃天桥直接连接隔壁的 Eshleman Hall，下雨天去那里上自习完全不用淋雨。',
+    '🛋️ **设计理念**：2015 年翻新时的核心理念就是打造一个“Campus Living Room”（校园客厅），所以你会发现这里到处都是看起来很想让你坐下的软家具。',
+    '📦 **快递圣地**：这里的 Amazon Hub 是全校最繁忙的地方之一，几乎每个伯克利学生都有过在这里排队拆快递的高光时刻。'
+  ],
+  studentTips: [
+    '🛌 **午睡圣地**：如果你想找个地方补觉，别在一楼挤。去 **4楼或5楼** 的休息区（如果有开放），那里通常更安静，沙发也更舒服。曾经 Moffitt 5楼关门时，这里是最佳替代品。',
+    '📦 **Amazon 取件技巧**：开学季或者黑色星期五之后，楼下的 Amazon Hub 会排起长龙。尽量避开中午 12 点到下午 2 点的高峰期去取包裹。',
+    '🚻 **厕所指南**：一楼的洗手间永远在排队且经常缺纸。**坐电梯去高层**，或者走连廊去隔壁 Eshleman Hall，那里的洗手间不仅人少，而且通常更干净。',
+    '🍔 **吃点什么**：一楼有 Ladle & Leaf 和 Monsoon Kitchens。虽然选择不多，但 Goldie\'s Coffee (2楼) 的咖啡和糕点是早八人的续命神器。'
+  ],
+  photoSpots: [
+    '📸 **二楼露台 (Upper Sproul 侧)**：走出二楼的大门，站在露台上，你可以拍到 **Sather Gate** 的完美俯以此为背景，还能俯瞰整个 Upper Sproul 广场熙熙攘攘的人群。',
+    '📸 **玻璃连廊 (Skybridge)**：连接 MLK 和 Eshleman 的玻璃桥上光线极好，背景是现代化的建筑线条，很适合拍极简风的人像。'
+  ],
+  accessibility: '大楼完全无障碍。电梯位于建筑中心，可通往所有楼层。从 Upper Sproul (2楼) 和 Lower Sproul (地下/1楼) 均有平层入口。',
+  officialLink: 'https://studentunion.berkeley.edu/',
+  tags: ['Campus Life', 'Food', 'Study Spot', 'Landmark']
+  },
+
+  {
+  images: ['https://www.mccarthy.com/sites/default/files/styles/hero_slide_md_desktop_1x/public/2023-03/UC-Berkeley-Library-32.jpg?h=9782657d&itok=EIoZaxws'],
+  id: 'east_asian',
+  title: 'C.V. Starr East Asian Library',
+  yearBuilt: '2008',
+  architect: 'Tod Williams Billie Tsien Architects',
+  summary: '坐落在纪念草坪旁的现代建筑瑰宝，藏书百万的东亚文化宝库 📚',
+  description: `
+    C.V. Starr East Asian Library (EAL) 是伯克利校园里最现代、最优雅的建筑之一，正对着 Doe Library 和 Memorial Glade。它不仅仅是一个图书馆，更是连接东西方文化的桥梁。
+
+    这栋建筑的设计巧妙地融合了亚洲传统元素与现代风格，外部巨大的青铜屏风不仅美观，还能调节光线。内部空间通过天窗采光，通透明亮，与许多伯克利老建筑的“地牢感”截然不同。
+
+    这里收藏了超过一百万册的中、日、韩文书籍，是西方世界最大的东亚研究收藏之一。对于学生来说，这里的阅读室安静舒适，而且不像 Moffitt 那么拥挤，是寻找深度专注时刻的绝佳去处。
+  `,
+  funFacts: [
+    '📚 **百万藏书**：它是北美第一座专门为东亚馆藏建造的独立图书馆大楼，藏书量在西方大学中名列前茅。',
+    '🧩 **青铜屏风**：外墙上独特的青铜格栅是在中国杭州铸造的，图案结合了传统的“冰裂纹”和现代网格，象征着传统与现代的交融。',
+    '🤫 **绝对安静**：相比于 Moffitt 的热闹和 Doe 的庄严，EAL 拥有全校最安静的氛围之一，甚至连翻书的声音都听得见。',
+    '💡 **自然采光**：建筑中心有一个巨大的天窗，光线可以直通到底层，这种设计让你即使在地下阅览室也能感受到自然光。'
+  ],
+  studentTips: [
+    '⚠️ **重要提示：目前该图书馆已关闭进行施工（最新消息显示预计2025年重新开放，具体请查阅官网）。**',
+    '🛋️ **最佳座位**：二楼的阅览室有超大的窗户对着 Memorial Glade，风景绝佳。如果想稍微放松一下，可以去那里发呆。',
+    '🤫 **专注神器**：这里的学习氛围非常严肃（Serious Study），如果你想和朋友讨论小组作业，**千万别来这里**，会被眼神“杀”死。',
+    '🚻 **干净厕所**：这里的洗手间是全校公认最干净、最现代化的之一（毕竟楼比较新），而且就在阅览室旁边，非常方便。'
+  ],
+  photoSpots: [
+    '📸 **正门阶梯**：站在图书馆正门的大台阶上，以青铜屏风为背景，或者转身以 Memorial Glade 和 Campannile 为背景，都是毕业照的经典机位。',
+    '📸 **内部楼梯**：馆内的中央楼梯线条几何感很强，配合天窗投下的光影，非常适合拍建筑摄影或清冷风的人像。'
+  ],
+  accessibility: '完全无障碍。正门设有坡道，馆内有电梯通往所有楼层。',
+  officialLink: 'https://www.lib.berkeley.edu/visit/east-asian',
+  tags: ['Library', 'Study Spot', 'Architecture', 'Quiet']
+  },
+
+  {
+  images: ['https://www.berkeley.edu/wp-content/uploads/2024/04/Grimes-magcover_20250512.jpg'],
+  id: 'grimes',
+  title: 'Grimes Engineering Center',
+  yearBuilt: '1980 (Original) / 2025 (Renovation)',
+  architect: 'George Matsumoto (1980) / SOM (2025)',
+  summary: '刚“整容”回来的工科心脏，虽然变漂亮了，但这里依然弥漫着 GPA 的焦灼气息 🚧✨',
+  description: `
+    这里曾经是著名的“Bechtel Engineering Center”，也就是大家口中的“The Bunker”（碉堡）。但在 2025 年 6 月，它刚刚完成了一次史诗级的“整容手术”，作为 **Grimes Engineering Center** 重新开放！
+    
+    现在它不仅是 Kresge 工程图书馆，还把隔壁 Evans Hall 的数学统计图书馆（Math Stats Library）给“吞”了进来，变成了全新的 **Kresge Engineering & Mathematical Sciences Library**。虽然增加了天窗和自然光，试图以此驱散工科生的阴霾，但别指望这里的气压会变低——毕竟，这里依然是全校赶 Due 最疯狂的地方。
+  `,
+  funFacts: [
+    '🏗️ **改头换面**：以前因为像个防空洞被称为“The Bunker”，现在加盖了两层玻璃楼阁，终于能见到阳光了（不知道能不能拯救发际线）。',
+    '📚 **联姻现场**：这是工程学院和数学系“联姻”的产物，原来的数学图书馆从 Evans Hall 搬过来了，双倍的硬核，双倍的脱发。',
+    '❄️ **空调救命**：翻新后升级了空调系统，是校园里为数不多夏天真的凉快（甚至有点冷）的地方。'
+  ],
+  studentTips: [
+    '⚠️ **最新动态**：图书馆已于 2025 年 6 月重新开放！还没去过的赶紧去打卡新装修。',
+    '🧹 **卫生警告**：虽然是新装修，但 Reddit 上已经有同学吐槽地板上有碎屑了。请大家爱护环境，不要让这里变回“垃圾场”。',
+    '🔌 **抢座攻略**：虽然增加了空间，但因为合并了两个大系的图书馆，期末周（Finals Week）这里绝对是全校最难抢座的地方之一，建议自备排插。',
+    '😴 **睡觉圣地**：新的休息区（Rest Zones）比以前舒服多了，是刷夜党补觉的绝佳选择。'
+  ],
+  relatedLegend: '虽然刚翻新，但旧 Bechtel 的传说依然流传：据说在这里通宵复习的工科生，能听到墙壁里传出 C++ 编译报错的声音。',
+  photoSpots: [
+    '📸 **新露台 (New Terrace)**：Grimes Center 新建的二层露台，视野开阔，适合拍那种“我在伯克利努力奋斗”的装逼照。',
+    '🌲 **Memorial Glade 视角**：从草坪看向新的玻璃加盖层，新旧建筑的对比很有意思。'
+  ],
+  accessibility: '翻新后无障碍设施全面升级，电梯和坡道都非常丝滑，连接 Evans Hall 的路径也有所改善。',
+  officialLink: 'https://www.berkeley.edu/map/grimes-engineering-center/',
+  tags: ['Library', 'STEM', 'Renovated', 'Study Spot']
+  },
 ];

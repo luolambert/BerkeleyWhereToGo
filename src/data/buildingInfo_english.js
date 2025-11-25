@@ -645,5 +645,108 @@ export const knowLocations = [
     accessibility: 'Ramp access at the main entrance; elevators connect to Main Stacks and all reading rooms.',
     officialLink: 'https://www.lib.berkeley.edu/visit/doe',
     tags: ['Library', 'History', 'Architecture', 'Study Spot']
+  },
+
+  {
+  images: ['https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/481044662_1207552781218380_7311915614725282251_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=PbuuwH_5-gEQ7kNvwGDPSGc&_nc_oc=Adl59X11cySSx8ijgM_5ur-SUpmaDbbVsmy7edIUO7XcegUhcXE6qlfmhLsM4752j4mJqTw4Jt1zrriFzxxOONtO&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=7ujKEvUpqz9ekiFcgPFpkQ&oh=00_AfjSwQox5gFF43LxxiUa5LMJ5q4d1zfjiPcR87yBUCc64Q&oe=692AB8E7'],
+  id: 'mlk',
+  title: 'Martin Luther King Jr. Student Union',
+  yearBuilt: '1961 (Original) / 2015 (Renovated)',
+  architect: 'Vernon DeMars (Original) / Moore Ruble Yudell (Renovation)',
+  summary: 'The "Living Room" of campus, ASUC HQ, and your one-stop shop for food, naps, and Amazon packages 🛋️',
+  description: `
+    Welcome to the campus "Living Room"! The MLK Student Union isn't just a building; it's the beating heart of the Associated Students of the University of California (ASUC) and a place where you can practically live from dawn till dusk.
+
+    Extensively renovated in 2015, MLK serves as the vital link between Upper and Lower Sproul Plazas. It houses the holy trinity of student needs: **Food, the Amazon Hub, and nap-worthy couches**.
+
+    The first floor is a bustling mix of eateries and the Amazon locker. The second floor features Goldie's Coffee and sprawling lounge areas. The basement connects you to Lower Sproul and the Cal Student Store. Up top, the Pauley Ballroom hosts everything from career fairs to concerts. Whether you're grinding for a deadline, picking up a package, or just looking to crash between classes, MLK is always open for you.
+  `,
+  funFacts: [
+    '💸 **Funded by Sports**: The original construction funds (in 1959) came from the ASUC selling the ownership of Cal sports teams to the University!',
+    '🌉 ** The Skybridge**: There is a glass skybridge on the 2nd floor that connects directly to Eshleman Hall next door. Perfect for getting to your club meeting without getting wet on rainy days.',
+    '🛋️ **Design Philosophy**: The 2015 renovation was specifically designed to create a "Campus Living Room," which is why you\'ll find so much soft furniture begging you to sit down.',
+    '📦 **Package Central**: The Amazon Hub here is one of the busiest spots on campus. Opening a package here is practically a Berkeley rite of passage.'
+  ],
+  studentTips: [
+    '🛌 **Nap Strategy**: Avoid the busy 1st floor. Head up to the **4th or 5th floors** (or the bridge level) for quieter lounges and comfier couches. It\'s a solid backup when Moffitt is full.',
+    '📦 **Amazon Hub Tactics**: During the start of the semester or after Black Friday, the line for the Amazon Hub can get insane. Avoid the 12 PM - 2 PM rush if you can.',
+    '🚻 **Restroom Hack**: The 1st-floor restrooms are always crowded and often out of paper towels. **Go up** to higher floors, or cross the bridge to Eshleman Hall, where the restrooms are cleaner and much less trafficked.',
+    '🍔 **Food & Caffeine**: The 1st floor has Ladle & Leaf and Monsoon Kitchens. For a quick fix, Goldie\'s Coffee on the 2nd floor is a lifesaver for 8 AM classes.'
+  ],
+  photoSpots: [
+    '📸 **2nd Floor Terrace (Upper Sproul Side)**: Step out onto the balcony for a classic view of **Sather Gate**. It’s one of the best angles to capture the gate with the bustling plaza in the foreground.',
+    '📸 **The Skybridge**: The glass bridge connecting to Eshleman offers great natural light and modern architectural lines, perfect for a clean, minimalist portrait.'
+  ],
+  accessibility: 'Fully accessible. Elevators are located centrally and serve all floors. Level entrances are available from both Upper Sproul (2nd floor) and Lower Sproul (Basement/1st floor).',
+  officialLink: 'https://studentunion.berkeley.edu/',
+  tags: ['Campus Life', 'Food', 'Study Spot', 'Landmark']
+  },
+
+  {
+  images: ['https://www.mccarthy.com/sites/default/files/styles/hero_slide_md_desktop_1x/public/2023-03/UC-Berkeley-Library-32.jpg?h=9782657d&itok=EIoZaxws'],
+  id: 'east_asian',
+  title: 'C.V. Starr East Asian Library',
+  yearBuilt: '2008',
+  architect: 'Tod Williams Billie Tsien Architects',
+  summary: 'A modern architectural gem on the Glade, housing a million volumes of East Asian treasures 📚',
+  description: `
+    The C.V. Starr East Asian Library (EAL) is one of the most modern and elegant buildings on campus, sitting prominently across from Doe Library on Memorial Glade. It stands not just as a library, but as a bridge connecting Eastern and Western cultures.
+
+    The design masterfully blends traditional Asian elements with modern aesthetics. The massive bronze screens on the exterior are not only visually striking but also regulate sunlight. Inside, a central skylight floods the space with natural light—a stark and welcome contrast to the "dungeon" vibes of some older campus buildings.
+
+    Housing over one million volumes in Chinese, Japanese, and Korean, it is one of the largest East Asian research collections in the Western world. For students, the reading rooms offer a quiet, comfortable sanctuary, far removed from the chaos of Moffitt, making it the perfect spot for deep focus.
+  `,
+  funFacts: [
+    '📚 **One in a Million**: It was the first freestanding library building at a U.S. university dedicated exclusively to an East Asian collection.',
+    '🧩 **Bronze Screens**: The distinctive bronze grilles on the exterior were cast in Hangzhou, China. The pattern combines a traditional "cracked ice" motif with a modern grid, symbolizing the fusion of old and new.',
+    '🤫 **Pin-Drop Quiet**: Compared to the buzz of Moffitt or the grandeur of Doe, EAL has one of the quietest atmospheres on campus. You can practically hear a page turn.',
+    '💡 **Let There Be Light**: A massive central skylight cuts through the building, allowing natural light to penetrate all the way to the lowest level, so you never feel like you\'re studying in a basement.'
+  ],
+  studentTips: [
+    '⚠️ **Important Update: The library is currently CLOSED for construction (latest updates suggest reopening in 2025, check official site).**',
+    '🛋️ **Prime Real Estate**: The 2nd-floor reading room has massive windows facing Memorial Glade. It\'s the best spot for scenic studying (or people-watching on the Glade).',
+    '🤫 **Serious Study Only**: The vibe here is intense. If you need to chat for a group project, **do not come here**. You will get glared at.',
+    '🚻 **Restroom Tier List**: S-Tier. The restrooms here are widely considered some of the cleanest and most modern on campus, likely because the building is relatively new.'
+  ],
+  photoSpots: [
+    '📸 **Front Steps**: The grand staircase at the entrance offers a dual backdrop: the intricate bronze screens of the library itself, or turn around for a sweeping view of Memorial Glade and the Campanile.',
+    '📸 **Interior Staircase**: The central staircase inside features strong geometric lines and beautiful lighting from the skylight above, perfect for architectural shots or moody portraits.'
+  ],
+  accessibility: 'Fully accessible. Ramp access is available at the main entrance, and elevators serve all floors.',
+  officialLink: 'https://www.lib.berkeley.edu/visit/east-asian',
+  tags: ['Library', 'Study Spot', 'Architecture', 'Quiet']
+  },
+
+  {
+  images: ['https://www.berkeley.edu/wp-content/uploads/2024/04/Grimes-magcover_20250512.jpg'],
+  id: 'grimes',
+  title: 'Grimes Engineering Center',
+  yearBuilt: '1980 (Original) / 2025 (Renovation)',
+  architect: 'George Matsumoto (1980) / SOM (2025)',
+  summary: 'The "Bunker" got a glow-up. Now merging Engineering & Math, it\'s cleaner but the stress levels remain the same. 🚧✨',
+  description: `
+    Formerly known as the "Bechtel Engineering Center" (or affectionately, "The Bunker"), this place just underwent a massive glow-up and reopened in June 2025 as the **Grimes Engineering Center**.
+    
+    It has now absorbed the Mathematics Statistics Library from Evans Hall, evolving into the **Kresge Engineering & Mathematical Sciences Library**. While the architects added skylights and glass pavilions to bring in natural light, don't be fooled—the air is still thick with the tension of debugging code and solving differential equations.
+  `,
+  funFacts: [
+    '🏗️ **From Bunker to Glass**: Historically known as a windowless concrete bunker. The 2025 renovation added two new airy floors, so you can finally see the sun while your code fails to compile.',
+    '📚 **The Merger**: It officially swallowed the Math Stats Library from Evans Hall. Double the books, double the academic pressure.',
+    '❄️ **Climate Control**: The AC upgrade is real. It’s one of the best places to escape the heat, though bring a hoodie because it can get chilly.'
+  ],
+  studentTips: [
+    '⚠️ **Status Update**: JUST REOPENED (June 2025)! If you haven\'t seen the new interior yet, go check it out.',
+    '🧹 **Keep it Clean**: Redditors are already complaining about crumbs on the new carpets. Don\'t be that person—clean up your snacks!',
+    '🔌 **Power Wars**: Despite the expansion, merging two major libraries means seats fill up instantly during RRR week. Bring a power strip if you want to make friends.',
+    '😴 **Nap Potential**: The new furniture and designated rest zones are prime real estate for a mid-day power nap.'
+  ],
+  relatedLegend: 'Ghost of Bugs Past: Legend says if you listen closely to the old concrete walls, you can still hear the screams of students from the 90s trying to fix a segmentation fault.',
+  photoSpots: [
+    '📸 **The New Terrace**: The upper-level outdoor terrace offers a great view and a breath of fresh air away from the books.',
+    '🌲 **Glade View**: Capture the shiny new glass addition contrasting with the classic brutalist base from Memorial Glade.'
+  ],
+  accessibility: 'Fully upgraded accessibility features with new elevators and ramps connecting to the surrounding engineering complex.',
+  officialLink: 'https://www.berkeley.edu/map/grimes-engineering-center/',
+  tags: ['Library', 'STEM', 'Renovated', 'Study Spot']
   }
 ];

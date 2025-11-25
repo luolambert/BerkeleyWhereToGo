@@ -120,7 +120,7 @@ Covers **139 campus buildings** (Advanced Mode), including:
 - **Academic Halls**: Dwinelle, Wheeler, Pimentel, VLSB, Evans
 - **Engineering**: Soda, Cory, Etcheverry, Jacobs, Hearst Mining
 - **Professional Schools**: Haas, Berkeley Law, Optometry
-- **Libraries**: Moffitt, Doe, Kresge, East Asian, Bancroft
+- **Libraries**: Moffitt, Doe, Grimes, East Asian, Bancroft
 - **Housing**: Units 1-3, Blackwell, Foothill, Clark Kerr, I-House
 - **Athletics**: Memorial Stadium, RSF, Haas Pavilion
 - **Research**: LBNL, Space Sciences Lab

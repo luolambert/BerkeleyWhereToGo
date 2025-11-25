@@ -120,7 +120,7 @@
 - **主要教学楼**：Dwinelle, Wheeler, Pimentel, VLSB, Evans
 - **工程学院**：Soda, Cory, Etcheverry, Jacobs, Hearst Mining
 - **专业学院**：Haas, Berkeley Law, Optometry
-- **图书馆**：Moffitt, Doe, Kresge, East Asian, Bancroft
+- **图书馆**：Moffitt, Doe, Grimes, East Asian, Bancroft
 - **学生宿舍**：Units 1-3, Blackwell, Foothill, Clark Kerr, I-House
 - **体育设施**：Memorial Stadium, RSF, Haas Pavilion
 - **科研中心**：LBNL, Space Sciences Lab

@@ -24,8 +24,8 @@ export const buildingImages = {
   moffitt: ['https://www.lib.berkeley.edu/sites/default/files/inline-images/Mitchell_Moffitt%20Library_20.jpg'],
   doe: ['https://upload.wikimedia.org/wikipedia/commons/9/9a/Doe_Library%2C_main_facade%2C_July_2018.jpg',
         'https://thomasguignard.photo/wp-content/uploads/sites/6/2020/05/tguignard-ucberkeley-web-0723.jpg'],
-  east_asian: [],
-  kresge: [],
+  east_asian: ['https://www.mccarthy.com/sites/default/files/styles/hero_slide_md_desktop_1x/public/2023-03/UC-Berkeley-Library-32.jpg?h=9782657d&itok=EIoZaxws'],
+  grimes: [],
   bancroft: [],
 
   // ---------------------------------------------------------
@@ -41,7 +41,7 @@ export const buildingImages = {
   // ---------------------------------------------------------
   // 5. Student Life & Essentials (生活服务与活动)
   // ---------------------------------------------------------
-  mlk: [],
+  mlk: ['https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/481044662_1207552781218380_7311915614725282251_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=PbuuwH_5-gEQ7kNvwGDPSGc&_nc_oc=Adl59X11cySSx8ijgM_5ur-SUpmaDbbVsmy7edIUO7XcegUhcXE6qlfmhLsM4752j4mJqTw4Jt1zrriFzxxOONtO&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=7ujKEvUpqz9ekiFcgPFpkQ&oh=00_AfjSwQox5gFF43LxxiUa5LMJ5q4d1zfjiPcR87yBUCc64Q&oe=692AB8E7'],
   sproul: [],
   rsf: [],
   tang_center: [],

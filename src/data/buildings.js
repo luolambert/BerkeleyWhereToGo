@@ -24,7 +24,7 @@ export const buildings = [
   { id: 'moffitt', name: 'Moffitt Library', lat: 37.8726, lng: -122.2606, category: 'Library', undergrad: true, grad: true },
   { id: 'doe', name: 'Doe Memorial Library', lat: 37.8721, lng: -122.2593, category: 'Library', undergrad: true, grad: true },
   { id: 'east_asian', name: 'C.V. Starr East Asian Library', lat: 37.8730, lng: -122.2599, category: 'Library', undergrad: true, grad: true },
-  { id: 'kresge', name: 'Kresge Engineering Library', lat: 37.8739, lng: -122.2583, category: 'Library', undergrad: true, grad: true },
+  { id: 'grimes', name: 'Grimes Engineering Center', lat: 37.8739, lng: -122.2583, category: 'Library', undergrad: true, grad: true },
   { id: 'bancroft', name: 'Bancroft Library', lat: 37.8723, lng: -122.2598, category: 'Library', undergrad: true, grad: true },
 
   // ---------------------------------------------------------
