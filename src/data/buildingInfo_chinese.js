@@ -320,7 +320,7 @@ export const knowLocations = [
   architect: 'Gardner Dailey',
   summary: '全校公认"最丑"建筑，数学和经济系的堡垒，拆除倒计时中 🚧',
   description: `
-    如果你觉得这栋楼挡住了从草坪（Memorial Glade）看金门大桥的视线，别担心，你不是一个人——校方也这么觉得，所以它已经被列入了拆除计划。
+    如果你觉得这栋楼挡住了从草坪（Memorial Glade）看金门大桥的视线，别担心，你不是一个人——校方也这么觉得，所以它已经被列入了拆除计划，Undergraduate Academic Building部分设计目的就是替代Evans Hall的教室功能。
 
     Evans Hall 是典型的野兽派（Brutalist）建筑，外观灰暗厚重，内部像是迷宫。这里是数学、经济和统计系的各种 "得分为 C 的噩梦" 的发源地。尽管大家都在吐槽它的长相，但它确实承载了无数伯克利学子刷题和赶 Due 的记忆。
   `,

@@ -320,9 +320,9 @@ export const knowLocations = [
   architect: 'Gardner Dailey',
   summary: 'The Brutalist giant everyone loves to hate. Enjoy the view before it\'s demolished 🚧',
   description: `
-    Standing tall (and gray) since 1971, Evans Hall is the fortress of the Math, Economics, and Statistics departments. Infamous for its windowless classrooms, confusing layout, and imposing Brutalist architecture, it notoriously blocks the view of the Golden Gate Bridge from Memorial Glade.
+    If you feel that this building blocks the view of the Golden Gate Bridge from Memorial Glade, don't worry, you are not alone—the university agrees. It has been officially slated for demolition, and the upcoming Undergraduate Academic Building is designed in part to replace Evans Hall's classroom functions.
 
-    Due to seismic concerns and its aesthetic unpopularity, the university has official plans to demolish it and replace it with open space and a new academic building. It’s a building that students love to complain about, binding generations of Cal Bears together in shared struggle.
+    Evans Hall is a typical Brutalist structure—gray, heavy, and maze-like inside. It is the fortress of the Math, Economics, and Statistics departments and the birthplace of many "C-grade nightmares." While students love to complain about its aesthetics, it binds generations of Cal Bears together in their shared struggle of grinding through problem sets and deadlines.
   `,
   funFacts: [
     'The best view of Berkeley is rumored to be from the roof of Evans Hall—simply because it’s the only place on campus where you can\'t see Evans Hall.',
