@@ -11,7 +11,7 @@ export const buildingImages = {
   // ---------------------------------------------------------
   valley_life: ['https://funginstitute.berkeley.edu/wp-content/uploads/2015/06/vlsb.jpg'],
   evans: ['https://bloximages.chicago2.vip.townnews.com/dailycal.org/content/tncms/assets/v3/editorial/4/ae/4ae9190c-2f4f-11ef-a3fa-838acad1d195/6674a48d2a90f.image.jpg'],
-  physics_north: ['https://dac.berkeley.edu/sites/default/files/styles/openberkeley_widgets_spotlight_full/public/buildings-2/buildings-2/Leconte-Building.jpg?itok=GKbRHrAN'],
+  physics: ['https://dac.berkeley.edu/sites/default/files/styles/openberkeley_widgets_spotlight_full/public/buildings-2/buildings-2/Leconte-Building.jpg?itok=GKbRHrAN'],
   latimer: ['https://images.squarespace-cdn.com/content/v1/5d5b8ebf066cad00017d0b0f/1618700101777-VPK9BBKN6GWAJZAKWDB3/UCB+Latimer+Hall+Renovations+1.png?format=2500w'],
   soda: ['https://people.eecs.berkeley.edu/~sequin/soda/NewPhotos/SodaW.JPG'],
   cory: ['https://engineering.berkeley.edu/wp-content/uploads/2020/01/1950cory_aerial.jpg'],
@@ -82,7 +82,7 @@ export const buildingImages = {
   anthony: [],
   jacobs: ['https://engineering.berkeley.edu/wp-content/uploads/files/images/news/top/2016/12/jacobs1.jpg'],
   lks: ['https://www.ckh.com.hk/upload/en/media/press/n111022d_dpi.jpg'],
-  physics_south: [],
+
   lewis: [],
   hildebrand: [],
   tan: [],

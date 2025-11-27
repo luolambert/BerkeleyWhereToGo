@@ -9,7 +9,7 @@ export const sortOrders = {
         en: "🌋 Tier 1: The Essential Buildings",
         cn: "🌋 第一梯队: 核心建筑"
       },
-      ids: ['dwinelle', 'wheeler', 'soda', 'cory', 'doe', 'moffitt', 'valley_life', 'pimentel', 'physics_north']
+      ids: ['dwinelle', 'wheeler', 'soda', 'cory', 'doe', 'moffitt', 'valley_life', 'pimentel', 'physics']
     },
     {
       title: {
@@ -23,7 +23,7 @@ export const sortOrders = {
         en: "📚 Tier 3: Specialized & Support Services",
         cn: "📚 第三梯队: 专业课程和支持服务"
       },
-      ids: ['davis', 'bancroft', 'lewis', 'hildebrand', 'tan', 'gilman', 'hearst_mining', 'physics_south', 'stephens', 'philosophy']
+      ids: ['davis', 'bancroft', 'lewis', 'hildebrand', 'tan', 'gilman', 'hearst_mining', 'stephens', 'philosophy']
     },
     {
       title: {
@@ -62,7 +62,7 @@ export const sortOrders = {
         en: "🧪 2. Academic - STEM",
         cn: "🧪 2. 学术 - 理工科"
       },
-      ids: ['soda', 'cory', 'etcheverry', 'jacobs', 'valley_life', 'lks', 'pimentel', 'physics_north', 'evans', 'physics_south', 
+      ids: ['soda', 'cory', 'etcheverry', 'jacobs', 'valley_life', 'lks', 'pimentel', 'physics', 'evans', 
             'lewis', 'latimer', 'hildebrand', 'tan', 'gilman', 'giauque', 'campbell', 'birge', 'stanley', 'davis', 
             'mclaughlin', 'obrien', 'hearst_mining', 'sutardja_dai', 'hesse', 'mccone', 'the_gateway', 'berkeley_way_west', 
             'koshland', 'genetics', 'barker', 'morgan', 'mulford', 'hilgard', 'wellman', 'giannini', 'weill']
@@ -135,7 +135,7 @@ export const sortOrders = {
       ids: ['bauer_wurster', 'bampfa', 'berkeley_way_west', 'blackwell', 'east_asian', 'stadium', 'chou', 'clark_kerr', 
             'cory', 'doe', 'dwinelle', 'etcheverry', 'evans', 'haas_pavilion', 'haas', 'hearst_mining', 
             'anchor_house', 'i_house', 'jacobs', 'lhs', 'lks', 'mlk', 'moffitt', 
-            'physics_north', 'pimentel', 'rsf', 'soda', 'sproul', 'social_sciences', 
+            'physics', 'pimentel', 'rsf', 'soda', 'sproul', 'social_sciences', 
             'unit_1', 'unit_2', 'unit_3', 'tang_center', 'valley_life', 'wheeler', 'zellerbach', 'grimes']
     },
     {
@@ -151,7 +151,7 @@ export const sortOrders = {
             'hilgard', 'jackson_house', 'igi', 'insectary', 'koshland', 'latimer', 'lbnl', 'legends_aquatic', 
             'levine_fricke', 'lewis', 'lower_sproul_garage', 'manville', 'martinez', 'msri', 'maxwell_field', 'mccone', 
             'mclaughlin', 'minor', 'morgan', 'morrison', 'mulford', 'north_gate', 'obrien', 'greenhouse_oxford', 'philosophy', 
-            'physics_south', 'rsf_garage', 'rssb', 'rfs', 'senior_hall', 'simon_hall', 'south_hall', 'ssl', 'spieker', 
+            'rsf_garage', 'rssb', 'rfs', 'senior_hall', 'simon_hall', 'south_hall', 'ssl', 'spieker', 
             'stanley', 'stephens', 'stern', 'strawberry_canyon', 'sutardja_dai', 'tan', 'the_gateway', 'law_building', 
             'police', 'underhill', 'underhill_parking', 'udar', 'university_hall', 'weill', 
             'wellman', 'womens_faculty_club']

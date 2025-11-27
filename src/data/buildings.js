@@ -11,7 +11,7 @@ export const buildings = [
   // ---------------------------------------------------------
   { id: 'valley_life', name: 'Valley Life Sciences (VLSB)', lat: 37.8715, lng: -122.2620, category: 'Science', undergrad: true, grad: true },
   { id: 'evans', name: 'Evans Hall', lat: 37.8736, lng: -122.2578, category: 'Science', undergrad: true, grad: true },
-  { id: 'physics_north', name: 'Physics North', lat: 37.8729, lng: -122.2573, category: 'Science', undergrad: true, grad: true },
+  { id: 'physics', name: 'Physics Building', lat: 37.8729, lng: -122.2573, category: 'Science', undergrad: true, grad: true },
   { id: 'latimer', name: 'Latimer Hall', lat: 37.8732, lng: -122.2567, category: 'Science', undergrad: true, grad: true },
   { id: 'soda', name: 'Soda Hall', lat: 37.8756, lng: -122.2588, category: 'Engineering', undergrad: true, grad: true },
   { id: 'cory', name: 'Cory Hall', lat: 37.8752, lng: -122.2576, category: 'Engineering', undergrad: true, grad: true },

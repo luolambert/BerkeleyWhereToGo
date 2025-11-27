@@ -351,35 +351,37 @@ export const knowLocations = [
 
   {
   images: ['https://dac.berkeley.edu/sites/default/files/styles/openberkeley_widgets_spotlight_full/public/buildings-2/buildings-2/Leconte-Building.jpg?itok=GKbRHrAN'],
-  id: 'physics_north',
-  title: 'Physics North (Old LeConte)',
+  id: 'physics',
+  title: 'Physics Building (North & South)',
   yearBuilt: '1924',
   architect: 'John Galen Howard',
   summary: 'The birthplace of the atomic bomb and home to Oppenheimer\'s secret office ⚛️',
   description: `
-    This isn't just a physics building; it's hallowed ground for science history. Formerly known as LeConte Hall, Physics North is where J. Robert Oppenheimer held the first secret meetings for what would become the Manhattan Project.
+      This building isn't just the Physics Department HQ; it's a holy site for modern physics. The early meetings of the famous Manhattan Project happened right here—secretly convened by J. Robert Oppenheimer in his top-floor corner office.
 
-    Built in 1924 by campus architect John Galen Howard, this Beaux-Arts beauty has housed some of the greatest minds in history. Ernest Lawrence built the world's first cyclotron (atom smasher) here. Walking through its halls feels like stepping onto a movie set—which makes sense, since Christopher Nolan filmed scenes for *Oppenheimer* right here. Maybe if you study here, you'll absorb some genius by osmosis.
-  `,
-  funFacts: [
-    'Oppenheimer\'s office was located in the northwest corner of the top floor (4th floor), featuring a balcony where he would step out for fresh air during intense discussions.',
-    'The building was renamed "Physics North" in 2020 to disassociate from the LeConte brothers\' racist history.',
-    'Nolan\'s *Oppenheimer* film crew restored parts of the building to its 1940s appearance for authenticity during filming.'
-  ],
-  studentTips: [
-    '⚛️ **Oppenheimer Spotting:** You can visit the floor where Oppenheimer worked. The history is palpable, even if you can\'t enter the exact office.',
-    '🚽 **Restroom Reality:** Being a historic building, the restrooms are... vintage. You might find better facilities in the connected Physics South or nearby Birge Hall.',
-    '📚 **Secret Library:** The Physics-Astronomy Library is underground, connecting North and South halls. It\'s a quiet, bunker-like spot perfect for intense study sessions.',
-    '🏆 **Parking Perks:** Look for the "NL" (Nobel Laureate) reserved parking spaces outside—a uniquely Berkeley flex.'
-  ],
-  relatedLegend: 'Some say the ghost of Ernest Lawrence still roams the halls, tinkering with invisible machinery late at night.',
-  photoSpots: [
-    'The iconic Beaux-Arts columns at the main entrance',
-    'The "Nobel Laureate Reserved Parking" signs nearby'
-  ],
-  accessibility: 'Ramps are available at the main entrances. Elevators connect floors, though they can be slow due to the building\'s age.',
-  officialLink: 'https://physics.berkeley.edu/',
-  tags: ['STEM', 'History', 'Library', 'Oppenheimer']
+      Formerly known as "LeConte Hall," it is a classic Beaux-Arts structure. Today's Physics Building complex includes both North and South halls. It has witnessed the birth of countless Nobel Prizes, including where Ernest Lawrence built the world's first cyclotron ("Atom Smasher"). While the history is heavy, the classroom facilities can feel a bit "vintage," but maybe taking classes here will help you absorb some genius IQ... or at least some good luck?
+    `,
+    funFacts: [
+      'Oppenheimer\'s office was in the northwest corner of the top floor (4th floor) of Physics North. Rumor has it he organized secret "Luminaries" meetings there.',
+      'This place has one of the highest densities of Nobel Prizes on campus. The hallways are lined with photos of past laureates, and there are even reserved parking spots just for them.',
+      'Even though it was built in 1924, Christopher Nolan\'s *Oppenheimer* crew returned here to film, perfectly recreating the atmosphere of the era.',
+      'Room 325 in Physics South is where Ernest Lawrence built the very first cyclotron. The original is in a museum now, but the air here still smells like high-energy particles (kidding).'
+    ],
+    studentTips: [
+      '⚛️ **History Pilgrimage:** If you\'re an *Oppenheimer* fan, you must visit the top floor of Physics North. The office might be closed, but the hallway vibes are immaculate.',
+      '🚽 **Restroom Warning:** Classic old building problem—the facilities are dated. Go to Physics South or Birge Hall for a better experience.',
+      '📚 **Study Vibes:** The Physics-Astronomy Library is located underground, connecting North and South halls. It\'s super quiet, atmospheric, and perfect for deep-focus "hermit mode" studying.',
+      '🏆 **Parking Flex:** Look for the "NL" (Nobel Laureate) reserved parking spots outside—the ultimate Berkeley flex.'
+    ],
+    relatedLegend: 'Legend says if you hear strange metallic clanking in the labs late at night, it\'s Ernest Lawrence\'s ghost tuning his cyclotron (it\'s probably just the heating pipes expanding).',
+    photoSpots: [
+      'The classical colonnade at the main entrance of Physics South (John Galen Howard\'s signature Beaux-Arts style).',
+      'The "Nobel Laureate Parking" signs outside—perfect for a "manifesting success" photo.',
+      'The giant wooden tables and busts in the Physics Reading Room—very dark academia.'
+    ],
+    accessibility: 'As an older building, accessibility features were retrofitted. Main entrances have ramps, and elevators connect floors, though some mezzanines might require detours.',
+    officialLink: 'https://physics.berkeley.edu/',
+    tags: ['STEM', 'History', 'Library', 'Oppenheimer']
   },
 
   {
@@ -756,5 +758,196 @@ export const knowLocations = [
   accessibility: 'Fully upgraded accessibility features with new elevators and ramps connecting to the surrounding engineering complex.',
   officialLink: 'https://www.berkeley.edu/map/grimes-engineering-center/',
   tags: ['Library', 'STEM', 'Renovated', 'Study Spot']
+  },
+
+  {
+    images: ['https://www.visitberkeley.com/imager/files_idss_com/C199/d7cb8adb-9092-42e0-a284-47bb62f8e13e_930104bc5592b0f48aa7a928055610d9.jpg'],
+    id: 'bancroft',
+    title: 'Bancroft Library',
+    yearBuilt: '1949',
+    architect: 'Arthur Brown Jr.',
+    summary: 'The Fort Knox of history and Mark Twain\'s home 📜',
+    description: `
+      The Bancroft isn't just a library; it's the vault of California and Western American history. Located within the Doe Library annex, it houses rare artifacts ranging from Gold Rush diaries to ancient Egyptian papyri.
+
+      It is the premier special collections library at UC Berkeley and home to the world's largest collection of Mark Twain's papers and manuscripts. Unlike your average study hall, every page turned here is a direct conversation with history.
+    `,
+    funFacts: [
+      'It houses the infamous "Drake\'s Plate of Brass," once thought to prove Francis Drake landed in California in 1579. It turned out to be a complex prank pulled by Berkeley professors on their colleague that spiraled out of control for 40 years.',
+      'It holds the world\'s largest collection of Mark Twain\'s private papers—yes, even his love letters.',
+      'While acquired by UC in 1905, the collection started with Hubert Howe Bancroft\'s obsessive collecting spree back in 1859.'
+    ],
+    studentTips: [
+      '⚠️ Strict entry rules: All bags and coats MUST go in lockers. Bring a Quarter coin (it\'s refundable, but you need one to lock it).',
+      '🚫 NO INK allowed! Pencils only. If you forget yours, the front desk will loan you one.',
+      'This is not a spot to grind CS 61A p-sets. It is a silent reading room for researchers handling delicate materials.',
+      'The Bancroft Gallery near the entrance is usually free and open to the public—a great way to see treasures without the paperwork.'
+    ],
+    relatedLegend: 'The Drake\'s Plate Hoax: A fake artifact created by Cal pranksters that fooled the world for decades. The fake is now proudly displayed inside.',
+    photoSpots: [
+      'The Rotunda at the entrance with its stunning marble floors and bronze doors.'
+    ],
+    accessibility: 'Accessible entrance via the east side of Doe Library through the connecting corridor.',
+    officialLink: 'https://www.lib.berkeley.edu/visit/bancroft',
+    tags: ['History', 'Library', 'Museum']
+  },
+  
+  {
+    images: ['https://www.berkeley.edu/wp-content/uploads/2024/04/lewis.jpg'],
+    id: 'lewis',
+    title: 'Lewis Hall',
+    yearBuilt: '1948',
+    architect: 'Arthur Brown Jr.',
+    summary: 'Home of the dot structure and active construction zones 🧪',
+    description: `
+      A core building of the College of Chemistry, named after the legendary Gilbert N. Lewis (yes, the "Lewis Dot Structure" guy you learned about in high school).
+      
+      The building itself is historic (read: old) and is currently heavily impacted by the construction of the new "Heathcock Hall" right next door. If you're a chem major, this is home; if not, you'll likely just walk past it to get to Latimer or Pimentel.
+    `,
+    funFacts: [
+      'Gilbert N. Lewis actually died in his laboratory (Room 309) inside this building while working with liquid hydrogen cyanide.',
+      'Lewis was nominated for the Nobel Prize 41 times but never won, making him one of the biggest snubs in scientific history.',
+      'He coined the term "photon" right here at Berkeley.'
+    ],
+    studentTips: [
+      '🚧 Construction Alert: Due to the Heathcock Hall project next door (ongoing through 2027), corridors connecting Lewis and Latimer are often closed or detoured.',
+      'The building has a distinct "chemistry smell"—that\'s just the scent of science (and vintage fume hoods).',
+      'It may look unassuming, but this hallway has seen more Nobel Laureates walk through it than most countries.'
+    ],
+    relatedLegend: 'Legend has it Gilbert N. Lewis\'s ghost still roams the halls, silently judging your covalent bonds.',
+    photoSpots: [
+      'The west entrance with the "College of Chemistry" engraving—classic proof you survived the major.'
+    ],
+    accessibility: 'Two ground-level accessible entrances on the west side, one with an automatic opener.',
+    officialLink: 'https://chemistry.berkeley.edu/',
+    tags: ['STEM', 'History', 'Construction']
+  },
+
+  {
+    images: ['https://i0.wp.com/alterengineers.com/wp-content/uploads/2022/11/IMG_2652.jpg?fit=2716%2C2037&ssl=1'],
+    id: 'hildebrand',
+    title: 'Hildebrand Hall',
+    yearBuilt: '1966',
+    architect: 'Anshen & Allen',
+    summary: 'The underground library maze and home of the "Big Game Titration" ⚗️',
+    description: `
+      Hildebrand Hall is a workhorse of the College of Chemistry, named after the beloved professor and dean Joel Hildebrand.
+      
+      The coolest feature is undoubtedly the Chemistry, Astronomy & Physics Library, which is technically underground but features a sun-drenched atrium. It is the bunker where countless chemistry majors have survived p-chem.
+    `,
+    funFacts: [
+      'Joel Hildebrand invented the legendary "Big Game Titration," a Chem 1A tradition performed during Big Game Week where a solution magically turns from Stanford Red to Cal Gold.',
+      'Hildebrand lived to be 101 years old and cheekily attributed his longevity to "choosing his ancestors carefully."',
+      'The library is ingeniously designed underground to save space on the crowded campus, hiding a massive reading room beneath the plaza.'
+    ],
+    studentTips: [
+      '📚 The Chemistry Library here is one of the quietest, most focused study spots on campus. The underground reading room has a serious "academic weapon" vibe.',
+      'The library stays open late (usually until 10 PM), making it a prime spot for night owls.',
+      'The building hums. Literally. The lab ventilation systems create a constant "College of Chemistry white noise"—you\'ll either love it or hate it.'
+    ],
+    relatedLegend: 'Superstition says if the Big Game Titration in Chem 1A goes perfectly, Cal will win the Big Game that year.',
+    photoSpots: [
+      'The Breezeway connecting Hildebrand and Latimer offers cool lighting and architectural lines.',
+      'The library\'s underground atrium—looking up at the sky from below ground is a vibe.'
+    ],
+    accessibility: 'Main entrance is at the Plaza Level; elevators provide access to the underground library and upper lab floors.',
+    officialLink: 'https://chemistry.berkeley.edu/',
+    tags: ['STEM', 'Library', 'History']
+  },
+
+  {
+    images: ['https://chemistry.berkeley.edu/sites/default/files/styles/panopoly_image_original/public/tan_hall_2022.jpg?itok=oNFqJvNS&timestamp=1665500323'],
+    id: 'tan',
+    title: 'Tan Kah Kee Hall (Tan Hall)',
+    yearBuilt: '1997',
+    architect: 'Anshen & Allen',
+    summary: 'The youngest sibling of the Chem complex with a killer view 🧪',
+    description: `
+      Tan Hall is the relatively modern addition to the College of Chemistry complex, named after the renowned industrialist and philanthropist Tan Kah Kee.
+      
+      Unlike its older, more "aromatic" neighbors, Tan Hall features modern facilities dedicated to chemical engineering and synthetic chemistry. The top-floor conference room boasts one of the most stunning panoramic views of the Bay Area on campus.
+    `,
+    funFacts: [
+      'The building is named after Tan Kah Kee, the "Rubber King" of Southeast Asia. Though not a Berkeley alum, his philanthropic legacy in education is worldwide.',
+      'The 7th-floor McCollum Room has floor-to-ceiling windows with a jaw-dropping sunset view of the Golden Gate Bridge. Sadly, it\'s usually locked for VIP events.',
+      'It serves as a key node in the College of Chemistry\'s "underground tunnel system," allowing you to walk to Latimer and Hildebrand without seeing the sun.'
+    ],
+    studentTips: [
+      '🏢 This building is heavy on research labs for grad students. Undergrads usually only come here if they are "bricking" (doing undergraduate research) in a lab.',
+      'The first-floor lobby often hosts research poster sessions—a prime opportunity to learn about cutting-edge science (and maybe snag free pizza).',
+      'Despite being newer, the elevators can be agonizingly slow. Take the stairs if you\'re late.'
+    ],
+    relatedLegend: 'No ghosts reported yet. The building might be too new, or maybe the Feng Shui is just that good.',
+    photoSpots: [
+      'The connecting bridge from Latimer offers a nice angle of Tan Hall\'s modern brutalist-adjacent facade.',
+      'If you manage to sneak into the 7th-floor McCollum Room, the view of the Bay is unbeaten.'
+    ],
+    accessibility: 'Fully accessible main entrance; elevators connect all floors and underground passages to neighboring buildings.',
+    officialLink: 'https://chemistry.berkeley.edu/',
+    tags: ['STEM', 'Research', 'Modern']
+  },
+
+  {
+    images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gilman_Hall_from_Sather_Tower_%2852080995298%29.jpg/2560px-Gilman_Hall_from_Sather_Tower_%2852080995298%29.jpg'],
+    id: 'gilman',
+    title: 'Gilman Hall',
+    yearBuilt: '1917',
+    architect: 'John Galen Howard',
+    summary: 'The birthplace of Plutonium and cradle of Nobel Prizes ☢️',
+    description: `
+      Gilman Hall is one of the most historically significant buildings not just at Berkeley, but in the history of science. It serves as more than a classroom; it is the starting point of the nuclear age.
+      
+      Room 307 is a National Historic Landmark because this is where Glenn Seaborg and his team discovered Plutonium. The building feels old and the corridors are narrow, but that just adds to the "hallowed halls of science" vibe.
+    `,
+    funFacts: [
+      'Room 307 is a designated National Historic Landmark. In 1941, Glenn Seaborg identified Plutonium here, a discovery that won him a Nobel Prize and changed the course of World War II.',
+      'During WWII, the top floor (the attic) was fenced off with chicken wire for top-secret Manhattan Project research.',
+      'Despite being a chemistry hub, it\'s named after Daniel Coit Gilman, UC\'s second president who later left to found Johns Hopkins University.'
+    ],
+    studentTips: [
+      '☢️ Don\'t worry, the radiation is gone (it\'s been remediated). But students still joke about "feeling a glow" when taking selfies outside Room 307.',
+      'The first-floor lobby notice boards are a goldmine for finding undergraduate research opportunities in chemistry labs.',
+      'The building is old and creaky, and the fume hoods are loud, but that\'s just the white noise of hardcore science.'
+    ],
+    relatedLegend: 'Legend says if you walk the third-floor hallway alone at night, you can hear the cheers of scientists discovering a new element (or maybe it\'s just the HVAC).',
+    photoSpots: [
+      'The plaque outside Room 307 is mandatory for any chemistry student.',
+      'The main western entrance stairs offer a classic academic backdrop for graduation photos.'
+    ],
+    accessibility: 'Elevators have been retrofitted. An accessible entrance is available on the east side, connecting to Tan Hall.',
+    officialLink: 'https://chemistry.berkeley.edu/',
+    tags: ['History', 'STEM', 'Landmark']
+  },
+
+  {
+    images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Hearst_Memorial_Mining_Building_at_UC_Berkeley_%2852081227414%29.jpg/2560px-Hearst_Memorial_Mining_Building_at_UC_Berkeley_%2852081227414%29.jpg'],
+    id: 'hearst_mining',
+    title: 'Hearst Memorial Mining Building',
+    yearBuilt: '1907',
+    architect: 'John Galen Howard',
+    summary: 'The crown jewel of campus architecture ✨',
+    description: `
+      The Hearst Memorial Mining Building (HMMB) is widely regarded as the most beautiful building on the UC Berkeley campus. It was donated by William Randolph Hearst in memory of his father, Senator George Hearst.
+      
+      This Beaux-Arts masterpiece is stunning not just on the outside but features a breathtaking lobby with exposed brick and Guastavino tile domes. Originally built for mining engineering, it now houses the Department of Materials Science and Engineering (MSE). The lobby is a prime spot for quiet study or fancy department receptions.
+    `,
+    funFacts: [
+      'Despite looking like a fragile antique, this building sits on base isolators installed during a massive renovation in 2002. In an earthquake, the entire building can shift up to 28 inches horizontally, making it one of the safest historic buildings in the world.',
+      'The bronze portrait in the lobby is of George Hearst. It\'s tempting to touch for luck, but please respect the art (and the security guards).',
+      'This was the first major academic building designed by campus architect John Galen Howard.'
+    ],
+    studentTips: [
+      '☕ The lobby is surprisingly one of the most peaceful places to study, though the acoustics are echoey—so keep your gossip to a whisper.',
+      'If you\'re an MSE major, you\'ll likely live in the basement microscopy labs.',
+      'This is the one building you MUST take your parents to visit. It screams "prestigious university" louder than any other spot on campus.'
+    ],
+    relatedLegend: 'Some say you can hear the ghostly sounds of pickaxes at night, but it\'s probably just the heavy machinery in the basement labs.',
+    photoSpots: [
+      'The center of the lobby, looking straight up at the magnificent tiled domes.',
+      'The grand front entrance steps and arches—arguably the best graduation photo spot on campus.'
+    ],
+    accessibility: 'Excellent accessibility post-renovation. Ramps at the main entrance and elevators serving all floors.',
+    officialLink: 'https://mse.berkeley.edu/about/hearst-memorial-mining-building/',
+    tags: ['Landmark', 'Architecture', 'STEM', 'History']
   }
 ];

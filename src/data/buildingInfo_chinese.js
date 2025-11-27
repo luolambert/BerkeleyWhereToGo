@@ -351,35 +351,37 @@ export const knowLocations = [
 
   {
   images: ['https://dac.berkeley.edu/sites/default/files/styles/openberkeley_widgets_spotlight_full/public/buildings-2/buildings-2/Leconte-Building.jpg?itok=GKbRHrAN'],
-  id: 'physics_north',
-  title: 'Physics North (Old LeConte)',
+  id: 'physics',
+  title: 'Physics Building (North & South)',
   yearBuilt: '1924',
   architect: 'John Galen Howard',
   summary: '诺贝尔奖的摇篮，奥本海默曾经的秘密基地 ⚛️',
   description: `
-    这栋楼不仅仅是物理系的大本营，更是现代物理学的圣地。著名的曼哈顿计划（Manhattan Project）的早期会议就是在这里——J. Robert Oppenheimer 在顶楼角落的办公室里秘密召开的。
+      这栋楼不仅仅是物理系的大本营，更是现代物理学的圣地。著名的曼哈顿计划（Manhattan Project）的早期会议就是在这里——J. Robert Oppenheimer 在顶楼角落的办公室里秘密召开的。
 
-    它以前叫 "LeConte Hall"，是经典的 Beaux-Arts 风格建筑。这栋楼见证了无数诺贝尔奖的诞生，包括 Ernest Lawrence 在这里建造了世界上第一台回旋加速器（Atom Smasher）。虽然历史厚重，但这里的教室设施有点老旧，不过在这样的环境里上课，说不定能吸点“智商税”...啊不，是欧气呢？
-  `,
-  funFacts: [
-    '奥本海默（Oppenheimer）的办公室在顶楼西北角（4楼），据说当时为了保密，他在那里组织了 "Luminaries" 小组的会议。',
-    '这里是全校诺贝尔奖密度最高的地方之一，走廊里挂满了物理系历年诺奖得主的照片，甚至为此设有专门的预留停车位。',
-    '尽管这栋楼建于 1924 年，但为了纪念 Oppenheimer，诺兰的电影《奥本海默》剧组特地回到这里取景，还原了当年的氛围。'
-  ],
-  studentTips: [
-    '⚛️ **历史朝圣：** 如果你是《奥本海默》粉丝，一定要去顶楼看看。虽然办公室现在可能不开放，但走廊里的历史感依然拉满。',
-    '🚽 **厕所避坑：** 老楼的通病——厕所设施比较陈旧。建议去旁边较新的 Physics South 或者 Birge Hall 解决。',
-    '📚 **学习氛围：** 这里的物理天文图书馆（Physics-Astronomy Library）位于 Physics South 的地下，连接两栋楼，非常安静且有格调，适合深度自闭学习。',
-    '🏆 **停车特权**：找找外面的 “NL” (Nobel Laureate) 预留停车位——这可是伯克利独有的凡尔赛。'
-  ],
-  relatedLegend: '传说如果你在深夜的实验室里听到奇怪的金属撞击声，那是 Ernest Lawrence 的幽灵在调试他的回旋加速器（其实大概率是暖气管道的热胀冷缩）。',
-  photoSpots: [
-    'Physics North 正门的古典柱廊（John Galen Howard 的经典 Beaux-Arts 风格）',
-    '物理系楼下的 "Nobel Laureate Parking" 标志（吸欧气专用）'
-  ],
-  accessibility: '作为老建筑，无障碍设施主要是后期加装的。主要入口有坡道，楼内有电梯连接各层。',
-  officialLink: 'https://physics.berkeley.edu/',
-  tags: ['STEM', 'History', 'Library', 'Oppenheimer']
+      它以前叫 "LeConte Hall"，是经典的 Beaux-Arts 风格建筑。现在的 Physics Building 包含了 North 和 South 两栋楼。这栋楼见证了无数诺贝尔奖的诞生，包括 Ernest Lawrence 在这里建造了世界上第一台回旋加速器（Atom Smasher）。虽然历史厚重，但这里的教室设施有点老旧，不过在这样的环境里上课，说不定能吸点“智商税”...啊不，是欧气呢？
+    `,
+    funFacts: [
+      '奥本海默（Oppenheimer）的办公室在 Physics North 顶楼西北角（4楼），据说当时为了保密，他在那里组织了 "Luminaries" 小组的会议。',
+      '这里是全校诺贝尔奖密度最高的地方之一，走廊里挂满了物理系历年诺奖得主的照片，甚至为此设有专门的预留停车位。',
+      '尽管这栋楼建于 1924 年，但为了纪念 Oppenheimer，诺兰的电影《奥本海默》剧组特地回到这里取景，还原了当年的氛围。',
+      'Physics South 的 325 房间就是 Ernest Lawrence 建造第一台回旋加速器的地方，虽然原件已经进了博物馆，但这里的空气依然充满了高能粒子的味道。'
+    ],
+    studentTips: [
+      '⚛️ **历史朝圣：** 如果你是《奥本海默》粉丝，一定要去 Physics North 顶楼看看。虽然办公室现在可能不开放，但走廊里的历史感依然拉满。',
+      '🚽 **厕所避坑：** 老楼的通病——厕所设施比较陈旧。建议去 Physics South 或者 Birge Hall 解决。',
+      '📚 **学习氛围：** 这里的物理天文图书馆（Physics-Astronomy Library）位于地下，连接 North 和 South 两栋楼，非常安静且有格调，适合深度自闭学习。',
+      '🏆 **停车特权**：找找外面的 “NL” (Nobel Laureate) 预留停车位——这可是伯克利独有的凡尔赛。'
+    ],
+    relatedLegend: '传说如果你在深夜的实验室里听到奇怪的金属撞击声，那是 Ernest Lawrence 的幽灵在调试他的回旋加速器（其实大概率是暖气管道的热胀冷缩）。',
+    photoSpots: [
+      'Physics South 正门的古典柱廊（John Galen Howard 的经典 Beaux-Arts 风格），非常庄重。',
+      '物理系楼下的 "Nobel Laureate Parking" 标志（吸欧气专用）。',
+      'Physics Reading Room 里的巨型木桌和教授半身像，拍出来非常有学术范儿。'
+    ],
+    accessibility: '作为老建筑，无障碍设施主要是后期加装的。主要入口有坡道，楼内有电梯连接各层，但有些夹层可能需要绕路。',
+    officialLink: 'https://physics.berkeley.edu/',
+    tags: ['STEM', 'History', 'Library', 'Oppenheimer']
   },
 
   {
@@ -756,5 +758,196 @@ export const knowLocations = [
   accessibility: '翻新后无障碍设施全面升级，电梯和坡道都非常丝滑，连接 Evans Hall 的路径也有所改善。',
   officialLink: 'https://www.berkeley.edu/map/grimes-engineering-center/',
   tags: ['Library', 'STEM', 'Renovated', 'Study Spot']
+  },
+
+  {
+    images: ['https://www.visitberkeley.com/imager/files_idss_com/C199/d7cb8adb-9092-42e0-a284-47bb62f8e13e_930104bc5592b0f48aa7a928055610d9.jpg'],
+    id: 'bancroft',
+    title: 'Bancroft Library',
+    yearBuilt: '1949',
+    architect: 'Arthur Brown Jr.',
+    summary: '全校最严的特藏馆，也是马克·吐温手稿的家 📜',
+    description: `
+      Bancroft 不仅仅是一个图书馆，它是加州乃至整个美国西部历史的保险库。它位于 Doe Library 的附楼内，收藏了从淘金热日记到古埃及纸草的珍贵文物。
+      
+      这里是加州大学伯克利分校最负盛名的特藏中心，也是世界上收藏马克·吐温（Mark Twain）论文和手稿最全的地方。与普通的学习空间不同，这里的每一次翻阅都是与历史的直接对话。
+    `,
+    funFacts: [
+      '这里收藏了著名的“德雷克爵士黄铜盘”(Drake\'s Plate of Brass)，曾被认为是弗朗西斯·德雷克 1579 年登陆加州的证据，结果 40 年后被揭穿是伯克利教授为了恶搞同事伪造的恶作剧。',
+      '它是世界上最大的马克·吐温（Mark Twain）私人文件收藏地，连他的情书都在这里。',
+      '虽然成立于 1905 年，但其核心收藏始于 Hubert Howe Bancroft 在 1859 年开始的疯狂收集。'
+    ],
+    studentTips: [
+      '⚠️ 进门规矩极多：所有背包、外套都必须存放在储物柜里（记得带个 Quarter 硬币，虽然会退还）。',
+      '🚫 严禁使用墨水笔！只能使用铅笔。如果你没带，前台会借给你。',
+      '这里不是刷 CS 61A 作业的地方。这是以此为目的的阅览室，不仅安静，简直是肃静。',
+      'Bancroft 的展览走廊（Gallery）通常是对公众免费开放的，那是不用办手续也能看到珍宝的好去处。'
+    ],
+    relatedLegend: '著名的“德雷克黄铜盘”恶作剧：几个学生和教授合伙伪造古董，骗了全世界几十年，现在这个伪造品就骄傲地躺在馆里。',
+    photoSpots: [
+      '图书馆入口处的圆形大厅（Rotunda），拥有漂亮的大理石地板和青铜门。'
+    ],
+    accessibility: '无障碍入口位于 Doe Library 的东侧，通过连接通道进入。',
+    officialLink: 'https://www.lib.berkeley.edu/visit/bancroft',
+    tags: ['History', 'Library', 'Museum']
+  },
+
+  {
+    images: ['https://www.berkeley.edu/wp-content/uploads/2024/04/lewis.jpg'],
+    id: 'lewis',
+    title: 'Lewis Hall',
+    yearBuilt: '1948',
+    architect: 'Arthur Brown Jr.',
+    summary: '化学大佬的故居，旁边正在大兴土木 🧪',
+    description: `
+      这里是化学学院的核心建筑之一，以传奇化学家 Gilbert N. Lewis 命名（就是你在高中化学课画 "Lewis 点结构" 的那个 Lewis）。
+      
+      这栋楼本身比较有历史感，目前正处于 "Heathcock Hall" 新大楼的施工影响区，周围经常有围挡和噪音。如果你是化学专业的学生，这里是你的必经之地；如果不是，你大概率只会路过它去 Latimer 或者 Pimentel 上课。
+    `,
+    funFacts: [
+      'Gilbert N. Lewis 本人就在这栋楼里的 309 实验室去世的（他在处理液态氰化氢时发生意外，也有传言说是自杀）。',
+      'Lewis 被提名了 41 次诺贝尔奖，但一次都没赢过，是科学史上著名的“无冕之王”。',
+      '物理学中的光子 "Photon" 这个词，也是 Lewis 在这栋楼里创造的。'
+    ],
+    studentTips: [
+      '🚧 施工警告：由于隔壁 Heathcock Hall 的建设 (预计持续到2027年)，Lewis 和 Latimer 之间的连接通道经常关闭或改道，请留意路标。',
+      '这栋楼里总有一股淡淡的化学试剂味，那是知识（和老旧通风柜）的味道。',
+      '虽然楼很老，但它是伯克利化学学院连续产出诺贝尔奖得主的历史见证地。'
+    ],
+    relatedLegend: '传说 Gilbert N. Lewis 的幽灵还在楼里徘徊，尤其是当你在画共价键画错的时候...',
+    photoSpots: [
+      '大楼西侧的入口，上面刻着 "College of Chemistry" 的字样，是化学院学生的经典打卡点。'
+    ],
+    accessibility: '西侧地面层有两个无障碍入口，其中一个带自动开门器。',
+    officialLink: 'https://chemistry.berkeley.edu/',
+    tags: ['STEM', 'History', 'Construction']
+  },
+
+  {
+    images: ['https://i0.wp.com/alterengineers.com/wp-content/uploads/2022/11/IMG_2652.jpg?fit=2716%2C2037&ssl=1'],
+    id: 'hildebrand',
+    title: 'Hildebrand Hall',
+    yearBuilt: '1966',
+    architect: 'Anshen & Allen',
+    summary: '化学图书馆的地下迷宫，以及著名的"Big Game"滴定法 ⚗️',
+    description: `
+      Hildebrand Hall 是化学学院的主力建筑之一，以长期担任院长并深受学生喜爱的化学教授 Joel Hildebrand 命名。
+      
+      这栋建筑最酷的地方在于它的图书馆——Chemistry, Astronomy & Physics Library 实际上位于地下，但拥有一个采光极佳的中庭。这里也是无数化学专业学生日夜奋战的地方。
+    `,
+    funFacts: [
+      'Joel Hildebrand 发明了著名的 "Big Game Titration"（大比赛滴定），这是 Chem 1A 课程每年在大赛周（Big Game Week）都会进行的传统表演项目，通过化学反应让溶液瞬间从斯坦福红变成伯克利金。',
+      'Hildebrand 本人非常长寿，活到了 101 岁，他把长寿归功于“精心挑选祖先”。',
+      '这栋楼的地下图书馆设计非常独特，为了在拥挤的校园里节省空间，建筑师把主要的阅读区藏在了广场下面。'
+    ],
+    studentTips: [
+      '📚 这里的图书馆（Chemistry Library）是全校最安静、最专注的学习场所之一，尤其是地下的阅读区，非常有学术氛围。',
+      '图书馆目前开放时间较长（通常到晚上 10 点），是晚自习的好去处。',
+      '楼内的实验室通风系统噪音较大，也就是传说中的“化学学院白噪音”，习惯了能助眠，不习惯会抓狂。'
+    ],
+    relatedLegend: '传说只要你在 Chem 1A 的大比赛滴定实验中看到溶液变色成功，那一年的 Big Game 伯克利就会赢（虽然这更多是玄学）。',
+    photoSpots: [
+      'Breezeway（连接通道）：Hildebrand 和 Latimer 之间的露天走廊，光影效果很棒。',
+      '图书馆的地下中庭（Atrium），仰拍天空非常有设计感。'
+    ],
+    accessibility: '主入口位于广场层（Plaza Level），可以通过电梯到达地下图书馆和楼上实验室。',
+    officialLink: 'https://chemistry.berkeley.edu/',
+    tags: ['STEM', 'Library', 'History']
+  },
+
+  {
+    images: ['https://chemistry.berkeley.edu/sites/default/files/styles/panopoly_image_original/public/tan_hall_2022.jpg?itok=oNFqJvNS&timestamp=1665500323'],
+    id: 'tan',
+    title: 'Tan Kah Kee Hall (Tan Hall)',
+    yearBuilt: '1997',
+    architect: 'Anshen & Allen',
+    summary: '化学学院最年轻的成员，拥有绝美湾区景色的会议室 🧪',
+    description: `
+      Tan Hall（陈嘉庚楼）是化学学院建筑群中相对较新的一栋，以著名华侨领袖、实业家陈嘉庚（Tan Kah Kee）命名。
+      
+      这栋楼主要用于化学工程和合成化学的研究。不同于那些充满历史沧桑感（和旧实验室味道）的老楼，Tan Hall 的设施更加现代化。顶楼的会议室拥有俯瞰整个旧金山湾区的无敌视野，是很多高端学术会议的首选地。
+    `,
+    funFacts: [
+      '这栋楼是以东南亚著名的“橡胶大王”陈嘉庚命名的，尽管他本人并非伯克利校友，但他对教育事业的捐赠遍布全球。',
+      'Tan Hall 的顶层（7楼）有一个全玻璃幕墙的会议室（McCollum Room），那里的日落景色绝对是伯克利校园里最好的之一，可惜平时不对学生随意开放。',
+      '它是连接化学学院地下迷宫的重要节点，你可以从 Tan Hall 一路走到 Latimer 和 Hildebrand，全程不用晒太阳。'
+    ],
+    studentTips: [
+      '🏢 这里的实验室主要给研究生和教授做科研用，本科生来这里的机会相对较少，除非你进组搬砖（做本科生研究）。',
+      '一楼的大厅经常会有化学学院的海报展示（Poster Session），是蹭免费披zh...啊不，是学习前沿科学的好机会。',
+      '虽然楼很新，但电梯有时候会莫名其妙地慢，赶时间建议走楼梯。'
+    ],
+    relatedLegend: '没有什么特别的鬼故事，可能是因为这栋楼太新了，还没来得及积攒足够的“怨气”（或者是因为风水太好镇住了）。',
+    photoSpots: [
+      '从 Latimer 走过来的连接天桥上，可以拍到 Tan Hall 现代风格的外立面。',
+      '如果你有幸混进 7 楼的 McCollum Room，一定要拍一张金门大桥的远景。'
+    ],
+    accessibility: '主入口完全无障碍，通过电梯可到达所有楼层，且与周围建筑有便捷的连接通道。',
+    officialLink: 'https://chemistry.berkeley.edu/',
+    tags: ['STEM', 'Research', 'Modern']
+  },
+
+  {
+    images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gilman_Hall_from_Sather_Tower_%2852080995298%29.jpg/2560px-Gilman_Hall_from_Sather_Tower_%2852080995298%29.jpg'],
+    id: 'gilman',
+    title: 'Gilman Hall',
+    yearBuilt: '1917',
+    architect: 'John Galen Howard',
+    summary: '钚元素诞生之地，诺贝尔奖的摇篮 ☢️',
+    description: `
+      Gilman Hall 是化学学院乃至整个科学史上最重要的建筑之一。这里不仅仅是一个教学楼，更是人类进入核时代的起点。
+      
+      这栋楼的 307 房间是国家历史地标，因为 Glenn Seaborg 和他的团队就是在这里发现了钚（Plutonium）。虽然楼内设施古老，走廊狭窄，但这正是那种充满历史沉淀的学术殿堂感。
+    `,
+    funFacts: [
+      '这栋楼的 307 房间是国家历史地标（National Historic Landmark），因为 1941 年 Glenn Seaborg 在这里发现了钚元素（Plutonium），这一发现不仅让他获得了诺贝尔奖，也直接促成了原子弹的研发。',
+      '二战期间，Gilman Hall 的顶楼（阁楼）曾被铁丝网封锁，进行曼哈顿计划的绝密研究。',
+      '虽然它是一栋化学楼，但以加州大学第二任校长 Daniel Coit Gilman 命名，他后来去创办了约翰霍普金斯大学。'
+    ],
+    studentTips: [
+      '☢️ 别担心，虽然这里发现了放射性元素，但现在的辐射水平是安全的（经过了严格的清理）。不过在 307 门口打卡时，大家还是会开玩笑说“感觉身体发光了”。',
+      '一楼大厅经常有化学学院的活动和展示，而且这里的公告栏是找实验室 research 机会的好地方。',
+      '楼很老，隔音一般，而且实验室的通风系统声音很大，但这正是硬核科学的背景音。'
+    ],
+    relatedLegend: '传说如果你在深夜独自走在三楼走廊，能听到当年科学家们庆祝发现新元素的欢呼声（也可能是通风管道的风声）。',
+    photoSpots: [
+      '必须去 307 房间门口打卡（虽然进不去，但门口有铭牌）。',
+      '建筑西侧的主入口楼梯，是非常经典的学院派建筑风格，适合拍毕业照。'
+    ],
+    accessibility: '虽然是老楼，但后续加装了电梯。无障碍入口位于东侧，通过连接通道可以到达 Tan Hall。',
+    officialLink: 'https://chemistry.berkeley.edu/',
+    tags: ['History', 'STEM', 'Landmark']
+  },
+
+  {
+    images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Hearst_Memorial_Mining_Building_at_UC_Berkeley_%2852081227414%29.jpg/2560px-Hearst_Memorial_Mining_Building_at_UC_Berkeley_%2852081227414%29.jpg'],
+    id: 'hearst_mining',
+    title: 'Hearst Memorial Mining Building',
+    yearBuilt: '1907',
+    architect: 'John Galen Howard',
+    summary: '校园里最美的建筑，没有之一 ✨',
+    description: `
+      Hearst Memorial Mining Building (HMMB) 被广泛认为是加州大学伯克利分校最美丽的建筑。它是由著名的报业大亨威廉·伦道夫·赫斯特（William Randolph Hearst）为纪念他的父亲乔治·赫斯特（George Hearst）参议员而捐赠建造的。
+      
+      这栋 Beaux-Arts 风格的杰作不仅外观宏伟，内部的大厅（Lobby）更是令人叹为观止，拥有令人惊叹的Guastavino瓷砖穹顶。虽然它最初是为了矿业工程而建，现在它是材料科学与工程系（MSE）的家，大厅里也经常可以看到正在自习或举办高端酒会的学生和教授。
+    `,
+    funFacts: [
+      '赫斯特家族捐赠这栋楼时只有一个要求：它必须建在断层线上。实际上它确实离 Hayward 断层非常近，但在 2002 年的修复中，这栋楼被竟然整体抬起，并在地基下安装了巨大的隔震支座，使它成为世界上防震最强的历史建筑之一。',
+      '大厅里悬挂的黑色大理石板上的青铜肖像是乔治·赫斯特，据说摸摸他的胡子能带来好运（但请不要真的去摸，会被保安赶走的）。',
+      '这栋楼是著名建筑师 John Galen Howard 在伯克利校园内设计的第一栋主要学术建筑。'
+    ],
+    studentTips: [
+      '☕ 大厅虽然华丽，但实际上是一个非常安静且令人放松的自习点。这里的回声很大，所以尽量不要大声喧哗。',
+      '如果你是学材料科学的，你可能会在地下室的显微镜实验室度过大量时间。',
+      '这栋楼是校园里唯一的“皇宫”级别建筑，带父母或者约会对象来这里参观绝对能镇住场面。'
+    ],
+    relatedLegend: '有传言说，如果在深夜独自在大厅里，可以听到当年矿工们的幽灵在挖掘的声音（实际上可能是地下室实验室的机器声）。',
+    photoSpots: [
+      '站在大厅中央，向上仰拍那个令人窒息的黄色瓷砖穹顶。',
+      '大楼正面的入口台阶和宏伟的拱门，是拍毕业照的兵家必争之地。'
+    ],
+    accessibility: '经过翻修后，这栋楼的无障碍设施非常好。主入口有坡道，且内部电梯可通往所有楼层。',
+    officialLink: 'https://mse.berkeley.edu/about/hearst-memorial-mining-building/',
+    tags: ['Landmark', 'Architecture', 'STEM', 'History']
   },
 ];
