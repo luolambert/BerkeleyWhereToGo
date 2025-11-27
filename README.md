@@ -14,7 +14,7 @@
 "Where To Go" helps you plan routes and arrive on time.
 "Where To Know" helps you discover the stories behind the buildings.
 
-### [🚀 Try App Online](https://berkeleywheretogo.vercel.app)
+### [🚀 Try App Online](https://berkeleywhereto.vercel.app)
 
 </div>
 
