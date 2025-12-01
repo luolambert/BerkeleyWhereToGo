@@ -949,5 +949,35 @@ export const knowLocations = [
     accessibility: 'Excellent accessibility post-renovation. Ramps at the main entrance and elevators serving all floors.',
     officialLink: 'https://mse.berkeley.edu/about/hearst-memorial-mining-building/',
     tags: ['Landmark', 'Architecture', 'STEM', 'History']
+  },
+
+  {
+    images: ['https://dac.berkeley.edu/sites/default/files/styles/openberkeley_widgets_spotlight_full/public/general/stephens.jpg?itok=Gd3ngg37'],
+    id: 'stephens',
+    title: 'Stephens Hall',
+    yearBuilt: '1923',
+    architect: 'John Galen Howard',
+    summary: 'The OG Student Union turned Academic Senate HQ. Has a secret balcony perfect for zoning out 🤫',
+    description: `
+      Before MLK and Eshleman took over, **Stephens Hall was the original Student Union**. Back in the day (until 1961), this was *the* spot for student life.
+
+      Designed by John Galen Howard in classic Collegiate Gothic style, it was named after Henry Morse Stephens, a legendary history prof who loved hanging out with students. Today, it houses the **Academic Senate** and the **Ethnic Studies Library**. Despite the serious admin vibes now, it still keeps its chill roots—especially that balcony overlooking Faculty Glade, which is easily one of the most underrated spots on campus.
+    `,
+    funFacts: [
+      'It served as the campus Student Union for nearly 40 years before the current MLK building was built.',
+      'Professor Stephens (the namesake) actually lived in the Faculty Club right across the glade and was famous for his "fireside chats" with students.',
+      'The ground floor houses the Ethnic Studies Library, a crucial resource born out of the student movements of the late 60s.'
+    ],
+    studentTips: [
+      '🌟 **Hidden Gem**: There is a semi-outdoor courtyard/terrace area that overlooks Faculty Glade. It’s super quiet and perfect for reading.',
+      'Bathrooms here are low-key much cleaner and less crowded than Dwinelle or Wheeler.',
+      'Great spot to grab some shade before napping on the grass at Faculty Glade.'
+    ],
+    photoSpots: [
+      'The archway framing Faculty Glade',
+      'Gothic details in the inner courtyard'
+    ],
+    officialLink: 'https://capitalstrategies.berkeley.edu/stephens-hall',
+    tags: ['History', 'Admin', 'Library', 'Hidden Gem']
   }
 ];

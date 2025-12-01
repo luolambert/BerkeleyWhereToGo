@@ -950,4 +950,34 @@ export const knowLocations = [
     officialLink: 'https://mse.berkeley.edu/about/hearst-memorial-mining-building/',
     tags: ['Landmark', 'Architecture', 'STEM', 'History']
   },
+
+  {
+    images: ['https://dac.berkeley.edu/sites/default/files/styles/openberkeley_widgets_spotlight_full/public/general/stephens.jpg?itok=Gd3ngg37'],
+    id: 'stephens',
+    title: 'Stephens Hall',
+    yearBuilt: '1923',
+    architect: 'John Galen Howard',
+    summary: '曾经的第一代学生活动中心，现在是学术委员会的大本营。有个隐秘的阳台很适合发呆 🤫',
+    description: `
+      别看它现在安安静静的，Stephens Hall 可是伯克利**最早的学生活动中心 (Student Union)**！在1961年现在的 MLK 建好之前，这里才是学生们聚会、吃喝、搞事情的地方。
+
+      它是 John Galen Howard 设计的经典哥特式建筑，以深受学生喜爱的历史学教授 Henry Morse Stephens 命名。如今它是**学术评议会 (Academic Senate)** 和**族裔研究图书馆 (Ethnic Studies Library)** 的所在地。虽然功能变了，但这栋楼依然保留着一种“休闲”的气质，特别是那个面向 Faculty Glade 的露台，绝对是校园里被低估的午休圣地。
+    `,
+    funFacts: [
+      '它是伯克利历史上第一个 Student Union，比现在的 MLK 早了近40年。',
+      '是以历史学教授 Henry Morse Stephens 命名的，他当年就住在对面的 Faculty Club 里，经常邀请学生去聊天。',
+      '一楼藏着一个宝藏图书馆：Ethnic Studies Library，里面有很多关于少数族裔运动的珍贵资料。'
+    ],
+    studentTips: [
+      '🌟 **隐藏机位**：二楼有一个半露天的庭院/阳台，可以俯瞰 Faculty Glade，非常安静，适合阅读或发呆。',
+      '这里的洗手间通常比 Dwinelle 或 Wheeler 干净且人少，因为楼里主要是行政人员。',
+      '就在 Faculty Glade 旁边，累了可以直接去草坪上睡一觉。'
+    ],
+    photoSpots: [
+      '面向 Faculty Glade 的拱门和露台',
+      '建筑内部的哥特式庭院细节'
+    ],
+    officialLink: 'https://capitalstrategies.berkeley.edu/stephens-hall',
+    tags: ['History', 'Admin', 'Library', 'Hidden Gem']
+  },
 ];
