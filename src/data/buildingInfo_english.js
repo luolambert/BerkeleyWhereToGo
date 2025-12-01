@@ -979,5 +979,65 @@ export const knowLocations = [
     ],
     officialLink: 'https://capitalstrategies.berkeley.edu/stephens-hall',
     tags: ['History', 'Admin', 'Library', 'Hidden Gem']
+  },
+
+  {
+    images: ['https://miro.medium.com/v2/resize:fit:4800/format:webp/1*ErwLiX8Ag5OBvbvFSBlhfA.png'],
+    id: 'philosophy',
+    title: 'Philosophy Hall',
+    yearBuilt: '1931',
+    architect: 'George W. Kelham',
+    summary: 'Formerly Moses Hall, un-named in 2023. A quiet, contemplative hub for deep thinkers 🤔',
+    description: `
+      You probably know this building as **Moses Hall**, but as of 2023, it's officially **Philosophy Hall**. The name was removed to acknowledge and reject the racist views held by its former namesake, Bernard Moses.
+
+      Located in the historic core near the Campanile, this Tudor Revival building is the home of the **Philosophy Department**. It feels appropriately serious and contemplative. Inside, you'll find the **Howison Philosophy Library**, a hidden gem for anyone who needs absolute silence to focus.
+    `,
+    funFacts: [
+      'It was known as Moses Hall until 2023, when the name was removed following a campus-wide review of historical figures.',
+      'Fun fact: It was actually the *original* Eshleman Hall! It housed student publications until the 1960s when the new Eshleman was built on Lower Sproul.',
+      'The Howison Library on the 3rd floor is named after George Howison, the founder of the philosophy department here.'
+    ],
+    studentTips: [
+      '🤫 **Study Spot**: The Howison Philosophy Library (3rd floor) is one of the quietest places on campus. Perfect if you really need to focus.',
+      'The courtyard shared with Stephens Hall and Anthony Hall (the Pelican building) is a top-tier spot for a peaceful lunch.',
+      'Bathrooms here are generally cleaner and less crowded than the main libraries or Dwinelle.'
+    ],
+    photoSpots: [
+      'The Gothic-style main entrance',
+      'The courtyard connecting to Stephens Hall'
+    ],
+    officialLink: 'https://philosophy.berkeley.edu/about/facilities',
+    tags: ['History', 'Renamed', 'Humanities', 'Library']
+  },
+
+  {
+    images: ['https://art.berkeley.edu/sites/default/files/styles/openberkeley_image_full/public/general/anthropology_art_practice_building.jpg?itok=ocZrL1ja&timestamp=1724787106'],
+    id: 'aapb',
+    title: 'Anth & Art Practice Building',
+    yearBuilt: '1959',
+    architect: 'Gardner Dailey',
+    summary: 'Formerly Kroeber Hall, un-named in 2021. A hub for art & anthropology with a hidden gallery 🎨',
+    description: `
+      Formerly known as **Kroeber Hall**, this building was un-named in 2021. The university removed Alfred Kroeber's name to acknowledge the harm his practices caused to Native American communities, particularly his treatment of Ishi. It is now simply the **Anthropology and Art Practice Building (AAPB)**.
+
+      It houses a fascinating mix of departments: **Anthropology** and **Art Practice**. On the ground floor, you'll find the **Phoebe A. Hearst Museum of Anthropology** and the **Worth Ryder Art Gallery**. The vibe here is a unique blend of creative chaos (art studios) and academic rigor (anthro research).
+    `,
+    funFacts: [
+      'The removal of the Kroeber name in 2021 was a major moment in Berkeley\'s efforts to reckon with its history regarding Indigenous peoples.',
+      'It houses the Worth Ryder Art Gallery (Room 116), which hosts rotating exhibitions of student and contemporary art—totally free to visit!',
+      'The building is a hive of creation: sculpture studios in the basement, digital media labs on the 2nd floor, and painting studios with great natural light on the 3rd floor.'
+    ],
+    studentTips: [
+      '🚽 **Restroom Hack**: The 2nd-floor bathrooms are widely considered "A-Tier"—usually clean, quiet, and low-traffic.',
+      'The courtyard nestled between AAPB, Wurster, and Hertz Hall is a top-tier lunch spot. Grab a burrito from Ramona\'s in Wurster and eat here.',
+      'Check out the bulletin boards near the art offices; they often have info on cool campus art events or calls for submissions.'
+    ],
+    photoSpots: [
+      'The sun-dappled courtyard shared with Wurster',
+      'Inside the Worth Ryder Art Gallery'
+    ],
+    officialLink: 'https://art.berkeley.edu/spaces',
+    tags: ['Arts', 'History', 'Renamed', 'Museum']
   }
 ];

@@ -980,4 +980,64 @@ export const knowLocations = [
     officialLink: 'https://capitalstrategies.berkeley.edu/stephens-hall',
     tags: ['History', 'Admin', 'Library', 'Hidden Gem']
   },
+
+  {
+    images: ['https://miro.medium.com/v2/resize:fit:4800/format:webp/1*ErwLiX8Ag5OBvbvFSBlhfA.png'],
+    id: 'philosophy',
+    title: 'Philosophy Hall',
+    yearBuilt: '1931',
+    architect: 'George W. Kelham',
+    summary: '曾叫 Moses Hall，2023年因历史原因“去名”。环境清幽，哲学气息浓厚 🤔',
+    description: `
+      这就是之前的 **Moses Hall**！在2023年，因为原命名者 Bernard Moses 的种族主义观点，学校正式将它“去名”并改称为 Philosophy Hall。这栋楼位于校园的核心区域，紧邻 Stephens Hall 和那个可爱的 Pelican Building (Anthony Hall)。
+
+      作为**哲学系**的大本营，这里自带一种深沉冷静的气质。楼里藏着 **Howison Philosophy Library**，不仅书多，而且氛围极其适合沉浸式思考（或赶 Due）。建筑风格是新都铎哥特式，与旁边的老建筑群融为一体，非常有历史感。
+    `,
+    funFacts: [
+      '这栋楼在2023年之前叫 Moses Hall，改名是为了反思历史和促进包容性。',
+      '它最初其实是 Eshleman Hall (Student Publications)，直到1960年代新的 Eshleman Hall 建好后才改名。所以它其实换过两次名字！',
+      '三楼的 Howison Philosophy Library 是以伯克利哲学系创始人 George Howison 命名的，藏书非常丰富。'
+    ],
+    studentTips: [
+      '🤫 **学习圣地**：三楼的哲学图书馆非常安静，而且允许本科生进入，是逃离 Moffitt 喧嚣的好地方。',
+      '这栋楼和 Stephens Hall、Anthony Hall 围成了一个很棒的小庭院，非常适合课间休息或吃午饭。',
+      '虽然是老楼，但维护得不错，洗手间比隔壁的 Dwinelle 要好找得多（也更干净）。'
+    ],
+    photoSpots: [
+      '建筑正面的哥特式入口',
+      '与 Stephens Hall 之间的连廊和庭院'
+    ],
+    officialLink: 'https://philosophy.berkeley.edu/about/facilities',
+    tags: ['History', 'Renamed', 'Humanities', 'Library']
+  },
+
+    {
+    images: ['https://art.berkeley.edu/sites/default/files/styles/openberkeley_image_full/public/general/anthropology_art_practice_building.jpg?itok=ocZrL1ja&timestamp=1724787106'],
+    id: 'aapb',
+    title: 'Anth & Art Practice Building',
+    yearBuilt: '1959',
+    architect: 'Gardner Dailey',
+    summary: '曾叫 Kroeber Hall，2021年因历史正义“去名”。艺术与人类学的交汇点，楼里藏着博物馆和画廊 🎨',
+    description: `
+      这栋楼以前叫 **Kroeber Hall**。2021年，学校决定将其“去名”，因为原命名者 Alfred Kroeber 对待原住民（特别是 Ishi）的方式不仅极具争议，而且被认为不仅是不道德的，还对原住民社区造成了深远的伤害。现在它暂时被称为 **Anthropology and Art Practice Building (AAPB)**。
+
+      这里是**人类学系**和**艺术实践系**的家。一楼有 **Phoebe A. Hearst Museum of Anthropology**（虽然展厅常因文物返还工作而关闭，但它的存在感很强）和 **Worth Ryder Art Gallery**。这栋楼的氛围非常独特，一边是正在做雕塑和绘画的艺术生，另一边是研究人类历史的学者，这种碰撞非常“伯克利”。
+    `,
+    funFacts: [
+      '2021年1月，这栋楼的名字被正式移除。这是伯克利反思其与原住民历史关系的重要一步。',
+      '楼里藏着 Worth Ryder Art Gallery，经常举办学生和前卫艺术家的展览，是一个很容易被非艺术生错过的宝藏。',
+      '虽然外表看起来平平无奇，但它其实是校园里艺术创作的核心地带，地下室有雕塑工作室，楼上有绘画工作室。'
+    ],
+    studentTips: [
+      '🚽 **厕所测评**：二楼的洗手间常被评为校园里的“隐藏宝石”（Hidden Gem），通常很干净且人少。',
+      '它和 Wurster Hall、Hertz Hall 之间围成了一个非常舒服的庭院，那里有树荫和长椅，是绝佳的午餐地点（特别是如果你去 Wurster 吃 Ramona\'s 的话）。',
+      'Worth Ryder 画廊是免费开放的，路过时不妨进去看看，经常有令人大受震撼的学生作品。'
+    ],
+    photoSpots: [
+      '与 Wurster Hall 之间的庭院（光影很棒）',
+      'Worth Ryder Art Gallery 的展览现场'
+    ],
+    officialLink: 'https://art.berkeley.edu/spaces',
+    tags: ['Arts', 'History', 'Renamed', 'Museum']
+  },
 ];
